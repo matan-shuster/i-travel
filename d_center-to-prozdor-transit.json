@@ -1,0 +1,214 @@
+{
+    "geocoded_waypoints": [
+    {
+    "geocoder_status": "OK",
+    "place_id": "ChIJ2dPBAWRLHRURjHSoAFVA9Tc",
+    "types": [
+    "establishment",
+    "point_of_interest",
+    "store"
+    ]
+    },
+    {
+    "geocoder_status": "OK",
+    "place_id": "ChIJVcqdHXxMHRUR6wSPINMU6WI",
+    "types": [
+    "street_address"
+    ]
+    }
+    ],
+    "routes": [
+    {
+    "bounds": {
+    "northeast": {
+    "lat": 32.0791587,
+    "lng": 34.7747452
+    },
+    "southwest": {
+    "lat": 32.0749606,
+    "lng": 34.7684791
+    }
+    },
+    "copyrights": "Map data ©2022 Mapa GISrael",
+    "legs": [
+    {
+    "distance": {
+    "text": "0.9 km",
+    "value": 941
+    },
+    "duration": {
+    "text": "12 mins",
+    "value": 703
+    },
+    "end_address": "Mendele Mokher Sfarim St 3, Tel Aviv-Yafo, Israel",
+    "end_location": {
+    "lat": 32.0791587,
+    "lng": 34.7686342
+    },
+    "start_address": "דיזינגוף סנטר בנין A, Tel Aviv-Yafo, Israel",
+    "start_location": {
+    "lat": 32.0749606,
+    "lng": 34.7747452
+    },
+    "steps": [
+    {
+    "distance": {
+    "text": "0.9 km",
+    "value": 941
+    },
+    "duration": {
+    "text": "12 mins",
+    "value": 703
+    },
+    "end_location": {
+    "lat": 32.0791587,
+    "lng": 34.7686342
+    },
+    "html_instructions": "Walk to Mendele Mokher Sfarim St 3, Tel Aviv-Yafo, Israel",
+    "polyline": {
+    "points": "oswbEe}fsE?@Q^GNCDKZCJELEd@ALGTCFLHv@h@KX]z@CHc@`A[t@iAlCk@nAKVq@zAELeAvBSh@Wt@g@lAWn@q@bBuHqCAn@Ar@?N"
+    },
+    "start_location": {
+    "lat": 32.0749606,
+    "lng": 34.7747452
+    },
+    "steps": [
+    {
+    "distance": {
+    "text": "0.1 km",
+    "value": 99
+    },
+    "duration": {
+    "text": "1 min",
+    "value": 70
+    },
+    "end_location": {
+    "lat": 32.075317,
+    "lng": 34.773791
+    },
+    "html_instructions": "Head <b>northwest</b>",
+    "polyline": {
+    "points": "oswbEe}fsE?@Q^GNCDKZCJELEd@ALGTCF"
+    },
+    "start_location": {
+    "lat": 32.0749606,
+    "lng": 34.7747452
+    },
+    "travel_mode": "WALKING"
+    },
+    {
+    "distance": {
+    "text": "45 m",
+    "value": 45
+    },
+    "duration": {
+    "text": "1 min",
+    "value": 34
+    },
+    "end_location": {
+    "lat": 32.074974,
+    "lng": 34.77353
+    },
+    "html_instructions": "Turn <b>left</b> toward <b>Bograshov St</b>",
+    "maneuver": "turn-left",
+    "polyline": {
+    "points": "wuwbEewfsELHv@h@"
+    },
+    "start_location": {
+    "lat": 32.075317,
+    "lng": 34.773791
+    },
+    "travel_mode": "WALKING"
+    },
+    {
+    "distance": {
+    "text": "0.6 km",
+    "value": 558
+    },
+    "duration": {
+    "text": "7 mins",
+    "value": 409
+    },
+    "end_location": {
+    "lat": 32.077594,
+    "lng": 34.7684791
+    },
+    "html_instructions": "Turn <b>right</b> onto <b>Bograshov St</b>",
+    "maneuver": "turn-right",
+    "polyline": {
+    "points": "qswbEqufsEKX]z@CHc@`A[t@iAlCk@nAKVq@zAELeAvBSh@Wt@g@lAWn@q@bB"
+    },
+    "start_location": {
+    "lat": 32.074974,
+    "lng": 34.77353
+    },
+    "travel_mode": "WALKING"
+    },
+    {
+    "distance": {
+    "text": "0.2 km",
+    "value": 185
+    },
+    "duration": {
+    "text": "2 mins",
+    "value": 146
+    },
+    "end_location": {
+    "lat": 32.079138,
+    "lng": 34.769212
+    },
+    "html_instructions": "Turn <b>right</b> onto <b>Ben Yehuda St</b>",
+    "maneuver": "turn-right",
+    "polyline": {
+    "points": "}cxbE_vesEuHqC"
+    },
+    "start_location": {
+    "lat": 32.077594,
+    "lng": 34.7684791
+    },
+    "travel_mode": "WALKING"
+    },
+    {
+    "distance": {
+    "text": "54 m",
+    "value": 54
+    },
+    "duration": {
+    "text": "1 min",
+    "value": 44
+    },
+    "end_location": {
+    "lat": 32.0791587,
+    "lng": 34.7686342
+    },
+    "html_instructions": "Turn <b>left</b> onto <b>Mendele Mokher Sfarim St</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+    "maneuver": "turn-left",
+    "polyline": {
+    "points": "smxbEqzesEAn@Ar@?N"
+    },
+    "start_location": {
+    "lat": 32.079138,
+    "lng": 34.769212
+    },
+    "travel_mode": "WALKING"
+    }
+    ],
+    "travel_mode": "WALKING"
+    }
+    ],
+    "traffic_speed_entry": [],
+    "via_waypoint": []
+    }
+    ],
+    "overview_polyline": {
+    "points": "oswbEe}fsE]v@Of@Kr@Ib@CFLHv@h@KXa@dA_AvBuB|EiCxFk@~A_A|Bq@bBuHqCCbB?N"
+    },
+    "summary": "Bograshov St",
+    "warnings": [
+    "Walking directions are in beta. Use caution – This route may be missing sidewalks or pedestrian paths."
+    ],
+    "waypoint_order": []
+    }
+    ],
+    "status": "OK"
+    }

@@ -1,0 +1,116 @@
+{
+    "geocoded_waypoints": [],
+    "routes": [
+    {
+    "bounds": {},
+    "copyrights": "Map data ©2022 Mapa GISrael",
+    "legs": [
+    {
+    "arrival_time": {
+    "text": "22:58",
+    "time_zone": "Asia/Jerusalem",
+    "value": 1658606339
+    },
+    "departure_time": {
+    "text": "18:30",
+    "time_zone": "Asia/Jerusalem",
+    "value": 1658590200
+    },
+    "distance": {
+    "text": "348 ק\"מ",
+    "value": 348223
+    },
+    "duration": {
+    "text": "4 שעות 29 דקות",
+    "value": 16139
+    },
+    "end_address": "אילת, ישראל",
+    "end_location": {
+    "lat": 29.556961,
+    "lng": 34.952442
+    },
+    "start_address": "תל אביב-יפו, ישראל",
+    "start_location": {
+    "lat": 32.055908,
+    "lng": 34.779083
+    },
+    "steps": [
+    {
+    "distance": {
+    "text": "348 ק\"מ",
+    "value": 348223
+    },
+    "duration": {
+    "text": "4 שעות 29 דקות",
+    "value": 16139
+    },
+    "end_location": {
+    "lat": 29.556961,
+    "lng": 34.952442
+    },
+    "html_instructions": "אוטובוס לכיוון אילת_תחנה מרכזית",
+    "polyline": {},
+    "start_location": {
+    "lat": 32.055908,
+    "lng": 34.779083
+    },
+    "transit_details": {
+    "arrival_stop": {
+    "location": {
+    "lat": 29.556961,
+    "lng": 34.952442
+    },
+    "name": "ת. מרכזית אילת/הורדה"
+    },
+    "arrival_time": {
+    "text": "22:58",
+    "time_zone": "Asia/Jerusalem",
+    "value": 1658606339
+    },
+    "departure_stop": {
+    "location": {
+    "lat": 32.055908,
+    "lng": 34.779083
+    },
+    "name": "ת.מרכזית תל אביב קומה 6/רציפים"
+    },
+    "departure_time": {
+    "text": "18:30",
+    "time_zone": "Asia/Jerusalem",
+    "value": 1658590200
+    },
+    "headsign": "אילת_תחנה מרכזית",
+    "line": {
+    "agencies": [
+    {
+    "name": "אגד",
+    "url": "http://www.egged.co.il/"
+    }
+    ],
+    "color": "#018369",
+    "name": "ת. מרכזית אילת/רציפים-אילת<->ת.מרכזית תל אביב קומה 6/הורדה-תל אביב יפו-2#",
+    "short_name": "390",
+    "text_color": "#ffffff",
+    "vehicle": {
+    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png",
+    "name": "אוטובוס",
+    "type": "BUS"
+    }
+    },
+    "num_stops": 37
+    },
+    "travel_mode": "TRANSIT"
+    }
+    ],
+    "traffic_speed_entry": [],
+    "via_waypoint": []
+    }
+    ],
+    "overview_polyline": {},
+    "summary": "",
+    "warnings": [],
+    "waypoint_order": []
+    }
+    ],
+    "status": "OK"
+    }

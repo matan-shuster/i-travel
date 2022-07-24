@@ -1,0 +1,283 @@
+{
+    "geocoded_waypoints": [
+    {
+    "geocoder_status": "OK",
+    "place_id": "ChIJ2dPBAWRLHRURjHSoAFVA9Tc",
+    "types": [
+    "establishment",
+    "point_of_interest",
+    "store"
+    ]
+    },
+    {
+    "geocoder_status": "OK",
+    "place_id": "ChIJVcqdHXxMHRUR6wSPINMU6WI",
+    "types": [
+    "street_address"
+    ]
+    }
+    ],
+    "routes": [
+    {
+    "bounds": {
+    "northeast": {
+    "lat": 32.079185,
+    "lng": 34.779208
+    },
+    "southwest": {
+    "lat": 32.074158,
+    "lng": 34.767549
+    }
+    },
+    "copyrights": "Map data ©2022 Mapa GISrael",
+    "legs": [
+    {
+    "distance": {
+    "text": "2.3 km",
+    "value": 2262
+    },
+    "duration": {
+    "text": "12 mins",
+    "value": 736
+    },
+    "end_address": "Mendele Mokher Sfarim St 3, Tel Aviv-Yafo, Israel",
+    "end_location": {
+    "lat": 32.0791587,
+    "lng": 34.7686342
+    },
+    "start_address": "דיזינגוף סנטר בנין A, Tel Aviv-Yafo, Israel",
+    "start_location": {
+    "lat": 32.0751124,
+    "lng": 34.7748541
+    },
+    "steps": [
+    {
+    "distance": {
+    "text": "0.2 km",
+    "value": 190
+    },
+    "duration": {
+    "text": "1 min",
+    "value": 63
+    },
+    "end_location": {
+    "lat": 32.075589,
+    "lng": 34.776379
+    },
+    "html_instructions": "Head <b>southeast</b> toward <b>King George St</b>",
+    "polyline": {
+    "points": "mtwbEy}fsE@ADGLS?AF[?E@IG_@CICKKQGIQSMMIKOOSIYMECAA?A?A?A?C@CFSHU"
+    },
+    "start_location": {
+    "lat": 32.0751124,
+    "lng": 34.7748541
+    },
+    "travel_mode": "DRIVING"
+    },
+    {
+    "distance": {
+    "text": "0.1 km",
+    "value": 96
+    },
+    "duration": {
+    "text": "1 min",
+    "value": 34
+    },
+    "end_location": {
+    "lat": 32.0763434,
+    "lng": 34.7768738
+    },
+    "html_instructions": "Turn <b>left</b> onto <b>King George St</b>",
+    "maneuver": "turn-left",
+    "polyline": {
+    "points": "mwwbEkggsE_B{@u@e@"
+    },
+    "start_location": {
+    "lat": 32.075589,
+    "lng": 34.776379
+    },
+    "travel_mode": "DRIVING"
+    },
+    {
+    "distance": {
+    "text": "0.2 km",
+    "value": 228
+    },
+    "duration": {
+    "text": "1 min",
+    "value": 56
+    },
+    "end_location": {
+    "lat": 32.075859,
+    "lng": 34.779208
+    },
+    "html_instructions": "Turn <b>right</b> onto <b>HaNevi'im St</b>",
+    "maneuver": "turn-right",
+    "polyline": {
+    "points": "c|wbEmjgsE^cATaBh@mH"
+    },
+    "start_location": {
+    "lat": 32.0763434,
+    "lng": 34.7768738
+    },
+    "travel_mode": "DRIVING"
+    },
+    {
+    "distance": {
+    "text": "0.2 km",
+    "value": 190
+    },
+    "duration": {
+    "text": "1 min",
+    "value": 69
+    },
+    "end_location": {
+    "lat": 32.074158,
+    "lng": 34.779006
+    },
+    "html_instructions": "Turn <b>right</b> onto <b>Shmaryahu Levin St</b>",
+    "maneuver": "turn-right",
+    "polyline": {
+    "points": "cywbEaygsEdBHhBJdAH|@F"
+    },
+    "start_location": {
+    "lat": 32.075859,
+    "lng": 34.779208
+    },
+    "travel_mode": "DRIVING"
+    },
+    {
+    "distance": {
+    "text": "0.6 km",
+    "value": 573
+    },
+    "duration": {
+    "text": "3 mins",
+    "value": 170
+    },
+    "end_location": {
+    "lat": 32.076884,
+    "lng": 34.77447799999999
+    },
+    "html_instructions": "Turn <b>right</b> onto <b>Dizengoff St</b>",
+    "maneuver": "turn-right",
+    "polyline": {
+    "points": "onwbEywgsES~AYbCq@pFE^Mp@G\\CLKXa@x@GHGHc@d@{@v@EDIDOHg@VIBOD_Dv@"
+    },
+    "start_location": {
+    "lat": 32.074158,
+    "lng": 34.779006
+    },
+    "travel_mode": "DRIVING"
+    },
+    {
+    "distance": {
+    "text": "0.2 km",
+    "value": 246
+    },
+    "duration": {
+    "text": "1 min",
+    "value": 82
+    },
+    "end_location": {
+    "lat": 32.0755246,
+    "lng": 34.7724549
+    },
+    "html_instructions": "Turn <b>left</b> onto <b>Bar Kochva St</b>",
+    "maneuver": "turn-left",
+    "polyline": {
+    "points": "o_xbEo{fsEd@zA`AzBfBvB~@dA"
+    },
+    "start_location": {
+    "lat": 32.076884,
+    "lng": 34.77447799999999
+    },
+    "travel_mode": "DRIVING"
+    },
+    {
+    "distance": {
+    "text": "0.5 km",
+    "value": 542
+    },
+    "duration": {
+    "text": "3 mins",
+    "value": 207
+    },
+    "end_location": {
+    "lat": 32.078068,
+    "lng": 34.767549
+    },
+    "html_instructions": "Turn <b>right</b> onto <b>Bograshov St</b>",
+    "maneuver": "turn-right",
+    "polyline": {
+    "points": "_wwbEynfsEiAlCk@nAKVq@zAELeAvBSh@Wt@g@lAWn@q@bBoAzCO\\"
+    },
+    "start_location": {
+    "lat": 32.0755246,
+    "lng": 34.7724549
+    },
+    "travel_mode": "DRIVING"
+    },
+    {
+    "distance": {
+    "text": "0.1 km",
+    "value": 129
+    },
+    "duration": {
+    "text": "1 min",
+    "value": 28
+    },
+    "end_location": {
+    "lat": 32.079185,
+    "lng": 34.767909
+    },
+    "html_instructions": "Turn <b>right</b> onto <b>HaYarkon St</b>",
+    "maneuver": "turn-right",
+    "polyline": {
+    "points": "}fxbEepesESGg@IWIe@KcB_@"
+    },
+    "start_location": {
+    "lat": 32.078068,
+    "lng": 34.767549
+    },
+    "travel_mode": "DRIVING"
+    },
+    {
+    "distance": {
+    "text": "68 m",
+    "value": 68
+    },
+    "duration": {
+    "text": "1 min",
+    "value": 27
+    },
+    "end_location": {
+    "lat": 32.0791587,
+    "lng": 34.7686342
+    },
+    "html_instructions": "Turn <b>right</b> onto <b>Mendele Mokher Sfarim St</b><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+    "maneuver": "turn-right",
+    "polyline": {
+    "points": "{mxbEmresEB_C?O"
+    },
+    "start_location": {
+    "lat": 32.079185,
+    "lng": 34.767909
+    },
+    "travel_mode": "DRIVING"
+    }
+    ],
+    "traffic_speed_entry": [],
+    "via_waypoint": []
+    }
+    ],
+    "overview_polyline": {
+    "points": "mtwbEy}fsET_@Fa@Ei@GUS[y@}@u@]?IHWHU_B{@u@e@^cATaBh@mHnETbCPeBtNUnAOf@i@bAk@n@aA|@YNq@ZoD|@d@zA`AzBfD|DuB|E}@rBkAdCk@~AaE|JO\\SG_ASiCk@BoC"
+    },
+    "summary": "Dizengoff St",
+    "warnings": [],
+    "waypoint_order": []
+    }
+    ],
+    "status": "OK"
+    }
