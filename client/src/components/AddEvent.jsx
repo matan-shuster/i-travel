@@ -15,11 +15,12 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
 import StarIcon from "@mui/icons-material/Star";
+import FiberNewIcon from "@mui/icons-material/FiberNew";
 import json from "./json.json";
 
 function AddEvent() {
   const [searchInput, setSearchInput] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState(0);
+  const [selectedCategory, setSelectedCategory] = useState("all");
   const categoriesList = [
     {
       label: "All",
@@ -49,14 +50,18 @@ function AddEvent() {
 
   const handleSearchClear = () => setSearchInput("");
 
-  const renderRatingStars = (rating) => {
-    let stars = [];
+  const renderRatingView = (rating) => {
+    let ratingView = [];
+    const roundRating = Math.round(rating);
 
-    for (let i = 0; i < Math.round(rating); i++) {
-      stars.push(<StarIcon fontSize="small" />);
+    if (roundRating === 0) ratingView.push(<FiberNewIcon fontSize="small" />);
+    else {
+      for (let i = 0; i < Math.round(rating); i++) {
+        ratingView.push(<StarIcon fontSize="small" />);
+      }
     }
 
-    return stars;
+    return ratingView;
   };
 
   return (
@@ -121,7 +126,7 @@ function AddEvent() {
             <Card key={`result-${index}`} sx={{ minWidth: 275 }}>
               <CardContent>
                 <Typography color="text.secondary" gutterBottom>
-                  {renderRatingStars(result.rating)}
+                  {renderRatingView(result.rating)}
                 </Typography>
                 <Typography variant="h6" component="div">
                   {result.name}
