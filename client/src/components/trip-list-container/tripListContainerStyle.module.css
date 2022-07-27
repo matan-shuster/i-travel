@@ -1,0 +1,42 @@
+.headTitle {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #000000;
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.titleContainer {
+  padding-top: 10%;
+}
+
+.tripContainer {
+  padding: 8%;
+}
+
+.tripList {
+  overflow-y: scroll;
+  height: auto;
+  max-height: 73vh;
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1%;
+  /* makes it blurry with max-height */
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.33);
+  transition: all 0.5s ease;
+}
+
+.bottomIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  transition: all 0.5s ease;
+}
+
+.doneIcon {
+  font-size: 40px;
+}
+
+.displayNone {
+  display: none;
+}
