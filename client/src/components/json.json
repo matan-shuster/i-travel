@@ -1,0 +1,3774 @@
+{
+  "html_attributions": [],
+  "next_page_token": "AeJbb3fY8HgNN0oaH18tXGrLWnTWPTs32aEDC0TPqIwNHiYX0Nx5SVtNWMHy90qSeRLmWsw-gLY9zCJ8oCSBurCFkzZKa_u4gCAX209K04lrhnCdJ05_7SM-Quk6evgBsaVOYL_JT5lK2hiwh4K-iaCbcuRtHtmxcVxvMuhL99yAfDRK3VNdVN-feoqpN9269y7HDPLT-OqzkqRbAR9PSxDdyiGbBIMeK7qLzOt-XCxyDqf3oRsGi988UVHEIG_ofOYwDZ7R2AyRkQYUY4Q-UEmG6x2zSL-rtTWM1IAWaXwx6KYSjS_TyCrtxLdycAUgWkA7ynNkrEkXfHmHA4UgtZc_I9n5NDlcdS4k_yaC3rXjzHO7owydrkUtQkcXggX99Drym2zXmiBEjTJjCX2n3yV8TFRV8zu7AYbpllnIVy6zZ4XKSDTxeX3k6CArplo9",
+  "results": [
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Shtiebel St 7, Tel Aviv-Yafo, 6721033, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0664816,
+          "lng": 34.7883489
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06783502989272,
+            "lng": 34.78966302989272
+          },
+          "southwest": {
+            "lat": 32.06513537010728,
+            "lng": 34.78696337010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "JO Hotel",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1300,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117190897516547656025\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3e_PkmM4dMmvE3uDt2y7vuQ4bC0ifCAXvk85LKBeaEcVnKbz6Zy-xTTP7d6T_PKa5LTvGLt3WQxdOqjBYmf2MJ04jbWj--QKJXSR3fxvcvvVU1DMVcwGyy-uK-_IfKtmPsyzstltBG9-4_0tOCKNlomwlhNF_LDoQl6NYqtNBYw1hCE",
+          "width": 1800
+        }
+      ],
+      "place_id": "ChIJKXEkVnZLHRUR1RE0pD-r50M",
+      "plus_code": {
+        "compound_code": "3Q8Q+H8 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8Q+H8"
+      },
+      "rating": 4.2,
+      "reference": "ChIJKXEkVnZLHRUR1RE0pD-r50M",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 123
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Derech Menachem Begin 94, Tel Aviv-Yafo, 6713841, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.068699,
+          "lng": 34.787144
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07007742989272,
+            "lng": 34.78846122989272
+          },
+          "southwest": {
+            "lat": 32.06737777010728,
+            "lng": 34.78576157010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "HermeSpa Hotel",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2441,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118136055396799252161\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3feWDuhmH3vDeaimnCevKuKnWOvkvJltUYs69qcSnja0Bka_eLQNXQuzuyBwxCtjYUQda5M3yvUq7XWtR_9BnPJoCWJ9bTB4FgqtuQAl2-zZSbdypHmsHH0P96hONd4XH029GOHn-NcHYU9NwIUhP0GlRntHuPpYezBCH1OdVq8c0uV",
+          "width": 3662
+        }
+      ],
+      "place_id": "ChIJvwq72ndLHRURqIkD5pfk7pg",
+      "plus_code": {
+        "compound_code": "3Q9P+FV Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q9P+FV"
+      },
+      "rating": 4.2,
+      "reference": "ChIJvwq72ndLHRURqIkD5pfk7pg",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 183
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Ha'Gra St 26, Tel Aviv-Yafo, 6602444, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0596364,
+          "lng": 34.7818851
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06101182989272,
+            "lng": 34.78326367989272
+          },
+          "southwest": {
+            "lat": 32.05831217010727,
+            "lng": 34.78056402010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Residence 26",
+      "photos": [
+        {
+          "height": 3456,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103714468264802495998\">Hans Saadi</a>"
+          ],
+          "photo_reference": "AeJbb3exF4vVAwVM6KwiLLudOj29weIq-6LgoHYjo0yVbS-hSaAqYZTGVNONubeQQWeh6BD4NeinF7r5tGLU_lEzv9fimDMRCtCLF91YT_P6-BYKDLwLmXfA1y8MmCJk8CkbzEjYk9uABcc7KIQ1BZnqj7QmW7A7eDm-YAL-UZw1MP71q5qa",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJl-xx52RLHRURTXrfMUu3VJM",
+      "plus_code": {
+        "compound_code": "3Q5J+VQ Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q5J+VQ"
+      },
+      "rating": 3.9,
+      "reference": "ChIJl-xx52RLHRURTXrfMUu3VJM",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 371
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "136 Menahem Begin Rd Azrieli Center 5, Tel Aviv-Yafo, 6701104, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0742009,
+          "lng": 34.792168
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07547377989273,
+            "lng": 34.79374502989271
+          },
+          "southwest": {
+            "lat": 32.07277412010728,
+            "lng": 34.79104537010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Crowne Plaza Tel Aviv City Center, an IHG Hotel",
+      "photos": [
+        {
+          "height": 1365,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110492069857141395014\">Crowne Plaza Tel Aviv City Center</a>"
+          ],
+          "photo_reference": "AeJbb3fTVdcdXa2m2IU8-NFd0-uiKS_iNW-zfmiB2yjge8P_BceEB5w36G1imtSb2jcBlX-6tr7ydpBqEeguzSzMUG9--MNIzJzEIue_r7X_PxHpHKNKr8RNbtUjXHfc3U5gMI1xRhJ7p9XgoZJHf6MzM38xSNQZR-OiXkulpw5cdcY3q5F8",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJnco3Z5lLHRUR-xKJbFEJzHQ",
+      "plus_code": {
+        "compound_code": "3QFR+MV Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QFR+MV"
+      },
+      "rating": 4.5,
+      "reference": "ChIJnco3Z5lLHRUR-xKJbFEJzHQ",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 952
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Berdyczewski St 14, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0709568,
+          "lng": 34.7803456
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07229737989272,
+            "lng": 34.78169057989272
+          },
+          "southwest": {
+            "lat": 32.06959772010728,
+            "lng": 34.77899092010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Hotel B Berdichevsky",
+      "photos": [
+        {
+          "height": 2184,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114492153066445170486\">Mike Tsarfin</a>"
+          ],
+          "photo_reference": "AeJbb3e6alhkZey_I5BR8ciKdZZlpF5ttW2Xjc8VpWRxfu7Rah4R60QWJxWf0M0HCRHaVbft4wClHDZtP3BuIACdbIM93dY9zK9kr-urfpgSa90LJ7_coqj-comlX9F89rJIOJUOrg2BmL7YySWCnCPB9-oVJt3kivX5d_ouohawUjto1J36",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJZ77zFTZIHRURj0FqxwU5eLA",
+      "plus_code": {
+        "compound_code": "3QCJ+94 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QCJ+94"
+      },
+      "rating": 4.4,
+      "reference": "ChIJZ77zFTZIHRURj0FqxwU5eLA",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 779
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Yitzhak Sadeh St 32, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0650479,
+          "lng": 34.7874092
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06645122989271,
+            "lng": 34.78877222989271
+          },
+          "southwest": {
+            "lat": 32.06375157010727,
+            "lng": 34.78607257010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Gia Hostel Tel Aviv - ג'יה הוסטל תל אביב",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 633,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109178305657608661668\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3d9oLCzqil7o-5CtZ4V1cB5uNdJacgjRQIs6kY3dJq0rE5RQsATeC6G0gFRmvuIAZOBbOVke2DFiftw8hHNZcHJ4yDqUzEqkrj24nLfOHeThio4hrVskDoLMw3L6Q3WHcQNZAbZgp6C1X-IjKmAwBuaavaxYYlu_VTmmrCyroMxWlfS",
+          "width": 950
+        }
+      ],
+      "place_id": "ChIJJXM1QSFLHRURo6_z54LIz1k",
+      "plus_code": {
+        "compound_code": "3Q8P+2X Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8P+2X"
+      },
+      "rating": 4.6,
+      "reference": "ChIJJXM1QSFLHRURo6_z54LIz1k",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 63
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Nachmani St 23-25, Tel Aviv-Yafo, 6579441, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0659877,
+          "lng": 34.775481
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06722272989273,
+            "lng": 34.77677997989272
+          },
+          "southwest": {
+            "lat": 32.06452307010728,
+            "lng": 34.77408032010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "The Norman Tel Aviv",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1776,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101689345807226212556\">The Norman Tel Aviv</a>"
+          ],
+          "photo_reference": "AeJbb3cEnkJ_czidTPn_LH0TvMU2Jom9EcDdlCnplECbrxJyDBCm9njxOBhGkkDGv38J2YspoHa0yl7UXAxBCXpXxHhK5Yz4r_7DME0g2mW9RYgtEs0OSb2bECvnu8ttQpqn6sTBuFRxg70cVLDNeJJSOlpbawFFJEEfo5BCleGV0g7uijxz",
+          "width": 1200
+        }
+      ],
+      "place_id": "ChIJcZAGon1LHRURkBNUczROtec",
+      "plus_code": {
+        "compound_code": "3Q8G+95 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8G+95"
+      },
+      "rating": 4.5,
+      "reference": "ChIJcZAGon1LHRURkBNUczROtec",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 1420
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "HaRakevet St 29, Tel Aviv-Yafo, 6618306, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0626769,
+          "lng": 34.7806907
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06385107989271,
+            "lng": 34.78183872989272
+          },
+          "southwest": {
+            "lat": 32.06115142010727,
+            "lng": 34.77913907010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "NYX",
+      "photos": [
+        {
+          "height": 2670,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109156775109044048144\">NYX</a>"
+          ],
+          "photo_reference": "AeJbb3cohgRMv1azZ3N1Pm6l-e_lZmV01qCTwa7HXK-RLD7qALioHP0qOFxM2ZBFRHyhvJdpSgbsN7dodDM3KOojWMrVW19j8-Yu8QlHfsFqmZVZfPYXCbq6U6-N00H4A0uCUvqLfE0kFJCGPaxYvhj22iXW4p6m89B3hLkThoocmSrFpUMA",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJ13oWY3tLHRURWQVWMwSU3mg",
+      "plus_code": {
+        "compound_code": "3Q7J+37 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q7J+37"
+      },
+      "rating": 4.5,
+      "reference": "ChIJ13oWY3tLHRURWQVWMwSU3mg",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 1899
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Zevulun St 23, Tel Aviv-Yafo, 6652423, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0590136,
+          "lng": 34.7727056
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06036202989272,
+            "lng": 34.77406232989272
+          },
+          "southwest": {
+            "lat": 32.05766237010727,
+            "lng": 34.77136267010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "De' Mar Hotel",
+      "photos": [
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108867355729168906269\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3cKubUnUf8IMg8tVtzHHR9w_LglTQ3BXZWesz-3yM00r6wmBHXEMjosIm5UK07AVKZBNSfmNcIQGUd9dbgdWbnmjX9zeuFIKPMDJbCQ08g8z-f-BJDPS258X4xupxnDp8Gvk0VTBf5q9NfHQen7anZujpcaRsfVxkWLJr1sKAsHjQXD",
+          "width": 6000
+        }
+      ],
+      "place_id": "ChIJBzOd4J1MHRUR8zCfV0AJsvY",
+      "plus_code": {
+        "compound_code": "3Q5F+J3 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q5F+J3"
+      },
+      "rating": 4.8,
+      "reference": "ChIJBzOd4J1MHRUR8zCfV0AJsvY",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 40
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Maze St 56, Tel Aviv-Yafo, 6578906, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0653487,
+          "lng": 34.7793886
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06673782989272,
+            "lng": 34.78075542989271
+          },
+          "southwest": {
+            "lat": 32.06403817010727,
+            "lng": 34.77805577010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "The Diaghilev",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1295,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110172924839978295790\">The DIAGHILEV LIVE ART boutique hotel</a>"
+          ],
+          "photo_reference": "AeJbb3d8VX-a3j2u9mZykqDN5UfDYVZmAsBHKZbtHhwJyCALn5h7Rh5wIrd9SAL9rTwmeB5MUnHxlx6feB8SZahDQpWZ_BEGds_JBF13lqycsQ4YRwxdx35jj6sq3PYYhmZU5zsfpgLLlJ6UefAt6JopVyrlseOnjY1LKroANByUDysUyEex",
+          "width": 860
+        }
+      ],
+      "place_id": "ChIJ8yVNC3xLHRURxqLZomS8p9U",
+      "plus_code": {
+        "compound_code": "3Q8H+4P Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8H+4P"
+      },
+      "rating": 4.3,
+      "reference": "ChIJ8yVNC3xLHRURxqLZomS8p9U",
+      "types": [
+        "art_gallery",
+        "cafe",
+        "lodging",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "user_ratings_total": 700
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Rothschild Blvd 96, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0673079,
+          "lng": 34.7781228
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06867957989272,
+            "lng": 34.77938767989272
+          },
+          "southwest": {
+            "lat": 32.06597992010728,
+            "lng": 34.77668802010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "The Rothschild Hotel",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3686,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107442176846172714328\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3fNmOOCyeGbDEvt-WQOrxIwQjfPQVJpYq3d_zh-xLnEkpdJDvgdEBHB9jj-snqj40eW4y6bdFGe1dvaUkzpYtC-tzwJnwHA4c7cocSRSG5KRGv-ZQw-JZ3hiVGQ_GNKMXLqpTCBXNqe2A3wjIrwxTLp0YDhjKbrTDMebIEWCMRB42Sc",
+          "width": 3413
+        }
+      ],
+      "place_id": "ChIJMfnsnn5LHRURQ8EUFfgXJhI",
+      "plus_code": {
+        "compound_code": "3Q8H+W6 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8H+W6"
+      },
+      "rating": 4.4,
+      "reference": "ChIJMfnsnn5LHRURQ8EUFfgXJhI",
+      "types": [
+        "restaurant",
+        "lodging",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "user_ratings_total": 530
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Montefiore St 27, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0656087,
+          "lng": 34.7728461
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06696827989272,
+            "lng": 34.77418752989272
+          },
+          "southwest": {
+            "lat": 32.06426862010728,
+            "lng": 34.77148787010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Monochrome - by Loginn Hotels",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1262,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115879885942475316517\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3c03DsHJ2U-GjwTwNc1RBt7vXvRq-kvvpSWxgX3nINNfIVFRyMUcYsflT-AcQvHdB4rpXW77BQxf4LaJaxJI6tuuAZQrwFrr8_9btKyicmPIIgxEc4R-aOavUhwVj1xostyXRqsGmdhSa39FYZnzH-9b5zHs2JymPtf96h7QlzKp2Mu",
+          "width": 1896
+        }
+      ],
+      "place_id": "ChIJr_OLT-5NHRURHlvfHcL9hdw",
+      "plus_code": {
+        "compound_code": "3Q8F+74 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8F+74"
+      },
+      "rating": 4.5,
+      "reference": "ChIJr_OLT-5NHRURHlvfHcL9hdw",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 46
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "La Guardia St 9, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0595044,
+          "lng": 34.785304
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06079342989273,
+            "lng": 34.78665637989272
+          },
+          "southwest": {
+            "lat": 32.05809377010728,
+            "lng": 34.78395672010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Laguardia Hotel",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4608,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112006603871467789277\">Ирина Брейтерман</a>"
+          ],
+          "photo_reference": "AeJbb3ewk7KMGcHyqhqEFVhaKRuCaWnE0nogPdK6-ECzVhgHBVjB3QlXusxcP36xDYf4zpqGLyd4uBs7rKHkjnJ6jZvbnKiRHlBKQpAT5IEN5pa4dOb3pcG_L72CkcwYBvRbadeuaI0vKgopaPIxd6l9RLFIM8JIf7OtBzbVP6BtHu9C_bTI",
+          "width": 2592
+        }
+      ],
+      "place_id": "ChIJXyRl8MdLHRUR4dyu1TgdXcE",
+      "plus_code": {
+        "compound_code": "3Q5P+R4 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q5P+R4"
+      },
+      "rating": 3.2,
+      "reference": "ChIJXyRl8MdLHRUR4dyu1TgdXcE",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 217
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Brenner St 21, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0689812,
+          "lng": 34.7727263
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07024387989272,
+            "lng": 34.77404867989272
+          },
+          "southwest": {
+            "lat": 32.06754422010728,
+            "lng": 34.77134902010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "שינקין הוטל | מלון בוטיק בתל אביב | Shenkin Hotel",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1365,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109648829289427181202\">שינקין הוטל</a>"
+          ],
+          "photo_reference": "AeJbb3evfiJMfL0Zi60BlY79UAzrTdO3_6PAhFyB7wkPXB7KDocWWxG64eD3zXGlnptx-MECIHCIX4GpbLsq53T9r_frBxXIzJwc9mRvcWu5DRXQtUNp5O328917A8lvYPVArDEn7B9_s-7hAsvWEpQ97G6yi5eMchRen77oR3Ie1jOGGRU-",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJccChioFMHRURKFf8yVldVbw",
+      "plus_code": {
+        "compound_code": "3Q9F+H3 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q9F+H3"
+      },
+      "rating": 4.5,
+      "reference": "ChIJccChioFMHRURKFf8yVldVbw",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 441
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Montefiore St 36, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0655816,
+          "lng": 34.7734957
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06697567989271,
+            "lng": 34.77483727989272
+          },
+          "southwest": {
+            "lat": 32.06427602010727,
+            "lng": 34.77213762010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Hotel Montefiore",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3360,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102168036388804226422\">Hotel Montefiore</a>"
+          ],
+          "photo_reference": "AeJbb3dNuljJt0fAJVYDYI6kbukiJ_EVavaKxrExT2iP78xaF52bIUjMWGx9uJtqUKLy2WaA46ZpOBN0Aw9Up16BxH3kpkiCrGsDP4t0MezBvp-WuyK5E9nfWMSn_azH_bXoS-E6hR0PqLGpuMTFl-3hcP9NKFRVfA0HjG96iXT7ffaQ-SnV",
+          "width": 5040
+        }
+      ],
+      "place_id": "ChIJjdyuZgFNHRURYGrgiUaXgrQ",
+      "plus_code": {
+        "compound_code": "3Q8F+69 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8F+69"
+      },
+      "rating": 4.6,
+      "reference": "ChIJjdyuZgFNHRURYGrgiUaXgrQ",
+      "types": [
+        "restaurant",
+        "lodging",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "user_ratings_total": 2956
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Nahalat Binyamin St 58, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0624921,
+          "lng": 34.7719402
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06384887989272,
+            "lng": 34.77331327989272
+          },
+          "southwest": {
+            "lat": 32.06114922010727,
+            "lng": 34.77061362010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "מלון בית בכר תל אביב",
+      "photos": [
+        {
+          "height": 1066,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103670955257402483730\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3ebflY5g_HJEp96XzTmmQjeksuhkgs33ZaAkg0Fz8ywVaVsqtakWha9r-HKSjV9fBFxAlmlkuvzoFQjG_P1aMs85rU6jRcZN9VRn-8pMduHiqRZ7zy1qWnJJDmr787f7x7LFRPArlDd8YfOrOebqt9mGYtXP8lNSJYyBo_F6NSMJzwH",
+          "width": 1600
+        }
+      ],
+      "place_id": "ChIJMcP1GZ1MHRURwSKnRiu_y1o",
+      "plus_code": {
+        "compound_code": "3Q6C+XQ Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q6C+XQ"
+      },
+      "rating": 4.6,
+      "reference": "ChIJMcP1GZ1MHRURwSKnRiu_y1o",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 17
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Yavne St 42, Tel Aviv-Yafo, 6579213, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0628172,
+          "lng": 34.7741961
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06416057989272,
+            "lng": 34.77552922989272
+          },
+          "southwest": {
+            "lat": 32.06146092010727,
+            "lng": 34.77282957010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Hotel BoBo",
+      "photos": [
+        {
+          "height": 1960,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118224526723289295340\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3eRC91AHlmko85h41xfZgD4OorlW2CbGGa24mPuz9kWZaypu4haEjP37GzlUjiB0dWIDanpJvshUkMHkaJ3sHJYNNMpzdyUIDKH1Bm2b7DZ-fzzruUqb_s31xtqowbPuh3zIZW33unNgwPF9Df-dFYj0DTGv34s_0KKIGSlMwSU2_j-",
+          "width": 3000
+        }
+      ],
+      "place_id": "ChIJ25FzqGJLHRURkFojNkJAhBE",
+      "plus_code": {
+        "compound_code": "3Q7F+4M Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q7F+4M"
+      },
+      "rating": 4.1,
+      "reference": "ChIJ25FzqGJLHRURkFojNkJAhBE",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 912
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Rothschild Blvd 65, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.06524810000001,
+          "lng": 34.7763205
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06659512989273,
+            "lng": 34.77767307989272
+          },
+          "southwest": {
+            "lat": 32.06389547010728,
+            "lng": 34.77497342010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "65",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101130815899935315795\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3e_c3ncA8-A2mfBodPBwIn-5yQ9ppTqtq8tfOZ1NqNq2zM61sSU8OowLBoRU9EYRxpil8MADQ72LvwJeUT1pzZ5FdhsK-RMeoWMzIN69zKxZbF2pJxqYR9P6TCRzDm--nYuXWwWIX_6tCEuZ9PH5yfcBzKggOu7L8RyGzL0Ffc-G8TD",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJG_blq31LHRURUVeGN5_fRc0",
+      "plus_code": {
+        "compound_code": "3Q8G+4G Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8G+4G"
+      },
+      "rating": 4.7,
+      "reference": "ChIJG_blq31LHRURUVeGN5_fRc0",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 1210
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "1 Tel Aviv 6685305 IL, Y.L. Perets St, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0600987,
+          "lng": 34.7741153
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06143137989272,
+            "lng": 34.77546537989272
+          },
+          "southwest": {
+            "lat": 32.05873172010728,
+            "lng": 34.77276572010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Kalvin Boutique Hotel",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3840,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106097651623677948484\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3flegpVFGJlZiMVvBzfg9AMCoAzUtt6YNgJOM6jY5bwH515C3x-YXn98hhET6jg70jZfLf32zEJmErd-GHkzzqcdEtZcEWJTJ2riSq8mo9g49OHJPXf5LjDRP8He1mtCLwNzVmjLBSLHCS1dY1ZodVjyspCJhVuCOncAxH41Ym8mPRf",
+          "width": 5760
+        }
+      ],
+      "place_id": "ChIJHagnd2JLHRURFQ7RK8x_bcg",
+      "plus_code": {
+        "compound_code": "3Q6F+2J Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q6F+2J"
+      },
+      "rating": 4.3,
+      "reference": "ChIJHagnd2JLHRURFQ7RK8x_bcg",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 125
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Nahalat Binyamin St 28, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0657571,
+          "lng": 34.7705777
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06711982989273,
+            "lng": 34.77196957989272
+          },
+          "southwest": {
+            "lat": 32.06442017010728,
+            "lng": 34.76926992010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Fabric",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 600,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111098371127065903605\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3d6GjjAB2EWZDw90jPUrBR4EJHfEXuqhxmr0Kb79HAgss-RTH448HrKqqRTSKzlO8UChDdAA4hZRJBIFIEfUd8yJU0qkp0hK_fZDmfILof1KhHLT-14rZZNJNjUMBXFBGg8Yc19zgxbJAxuld9s6eKUPKGYI6ExQ6n5RXfQQumgLhV2",
+          "width": 900
+        }
+      ],
+      "place_id": "ChIJixPDAuBNHRURcH7iuNFZ1lw",
+      "plus_code": {
+        "compound_code": "3Q8C+86 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8C+86"
+      },
+      "rating": 4.8,
+      "reference": "ChIJixPDAuBNHRURcH7iuNFZ1lw",
+      "types": ["lodging", "point_of_interest", "establishment"],
+      "user_ratings_total": 501
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "formatted_address": "HaHashmonaim St 96, Tel Aviv-Yafo, 6713313, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0688151,
+          "lng": 34.7848368
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07012157989273,
+            "lng": 34.78623412989272
+          },
+          "southwest": {
+            "lat": 32.06742192010729,
+            "lng": 34.78353447010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Cafeteria קפיטריה",
+      "permanently_closed": true,
+      "photos": [
+        {
+          "height": 1125,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101291784891118490841\">perepaix</a>"
+          ],
+          "photo_reference": "AeJbb3ef_ibpeYeZ5GVDwMZac7OWo9o4InxUyJzt_EOAwq3UihCHpV6j2QI_DGgj5E_WbjeKxLJgGDZhQj7SpGttQwu4QmeAarpSPz3ypZRHuUGuC11Xc3xzBqemEB2T37GCFSAU_QRQEEZrgDQjoqzWwFhiIIi8MJEbxIJhqpEkRcay5OOQ",
+          "width": 1125
+        }
+      ],
+      "place_id": "ChIJIyGd5HdLHRURKEH7W3xILmA",
+      "plus_code": {
+        "compound_code": "3Q9M+GW Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q9M+GW"
+      },
+      "price_level": 2,
+      "rating": 3.6,
+      "reference": "ChIJIyGd5HdLHRURKEH7W3xILmA",
+      "types": ["cafe", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 703
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "1331 St 1, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0679306,
+          "lng": 34.7834885
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06932222989272,
+            "lng": 34.78482497989272
+          },
+          "southwest": {
+            "lat": 32.06662257010728,
+            "lng": 34.78212532010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Ilan's Coffee",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2252,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102471760390799868861\">Daniel Castro</a>"
+          ],
+          "photo_reference": "AeJbb3dRljrWurJ_qj3QmqieqpK-LLBylRqe0iZXt4WT1So4htNeaoYxIgvIXS_TpXieLkw0qekZEOLKjfeuP9GZc8DZNnKHM1G33_Xy7eRK7K7_t5bPgeb7hBoU49h65C_ClpWLQWACowylDyg83ZaNHLQ6Z3Z7bYMsGPJ_J9tBkqP9yoyD",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJQyONRJxLHRURyBhSKG9J31E",
+      "plus_code": {
+        "compound_code": "3Q9M+59 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q9M+59"
+      },
+      "rating": 4.4,
+      "reference": "ChIJQyONRJxLHRURyBhSKG9J31E",
+      "types": ["cafe", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 80
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Ahad Ha'Am St 91, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0708662,
+          "lng": 34.7779291
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07220877989272,
+            "lng": 34.77931527989272
+          },
+          "southwest": {
+            "lat": 32.06950912010728,
+            "lng": 34.77661562010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Bucke Café",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115642449286000224139\">אורלי לוי</a>"
+          ],
+          "photo_reference": "AeJbb3ckdeelbepE9hiyrEguOCxUfF-rBa5fgcvCIDXW0V8Hr6ZfOs5LO79x7wB4NgzTYyaDsrpCSDJfK3-DD0FYDdpIagffD1FCrFyUDI-UQzXq2wE8fxNKTGiII63qlPtGcGV7qFr0Vx2O6nd871TdhpjhNpwUceW9WLmZF8vGhdr63a-O",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ2bY7OXxLHRURWFzYO--2UIY",
+      "plus_code": {
+        "compound_code": "3QCH+85 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QCH+85"
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "ChIJ2bY7OXxLHRURWFzYO--2UIY",
+      "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 2040
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Balfour St 18, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0673716,
+          "lng": 34.7745768
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06878082989272,
+            "lng": 34.77594977989273
+          },
+          "southwest": {
+            "lat": 32.06608117010728,
+            "lng": 34.77325012010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Café Lucia",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105007934907113757032\">Ella Fisher</a>"
+          ],
+          "photo_reference": "AeJbb3erWdaNwW-R7TW73tkwo3GDU5dZ514iPSSebV0Eoxdw5lmJ3YsPRv_dCRM7ya_L05HEIfkJ0GsXdv_qDIbe39rf8_ID57gtSwoZyRxyhoqte7FNTDnXyjmTstCNMHjBWa00tkEGU6K9tof2Oysn_WI-42-VqsA5dVjbyKg2u8-aMXvx",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJmdYG8X1LHRURMZw0hjlhu30",
+      "plus_code": {
+        "compound_code": "3Q8F+WR Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8F+WR"
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "ChIJmdYG8X1LHRURMZw0hjlhu30",
+      "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 495
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "King George St 32, Tel Aviv-Yafo, 6326724, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0724747,
+          "lng": 34.7745074
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07387647989272,
+            "lng": 34.77578922989272
+          },
+          "southwest": {
+            "lat": 32.07117682010728,
+            "lng": 34.77308957010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Columbus Café",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 767,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101434300981198353494\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3eD8R9m_hXcJs9qkGcSvroR3xBJ5AT85k4uZyifh7vTWlrwK0AB9026zYcch9baCLlUdRtDX36EdCQTvx1Dsl1pT-OrjQue2KGr5cE5o7OrDr_WMnA0bwLfSnIxxQOErzBfZv1LqL2nTOodAK73je_gWOD57ZEdP0Pbyv5jmnbpZ6vf",
+          "width": 1150
+        }
+      ],
+      "place_id": "ChIJIUIx0FJLHRURX8HrOH3aVkE",
+      "plus_code": {
+        "compound_code": "3QCF+XR Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QCF+XR"
+      },
+      "rating": 4.5,
+      "reference": "ChIJIUIx0FJLHRURX8HrOH3aVkE",
+      "types": ["cafe", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 69
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Lincoln St 9, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0670322,
+          "lng": 34.7818244
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06830522989272,
+            "lng": 34.78311947989273
+          },
+          "southwest": {
+            "lat": 32.06560557010727,
+            "lng": 34.78041982010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Tachtit Café",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101291784891118490841\">RAVE</a>"
+          ],
+          "photo_reference": "AeJbb3ct8go7jIDI3heF9c-gsYgNSIXCK-WoHCPUlOEXZ6NpVTX6BJ0Bei5TzDWvrgOl3QfUeHIaGwZx2CwLbQnvIcFyLmgZNvHHOb6tfrHJqvmKURSim3wzIDrmCganIsplEsYtI4E61k8gNg4XfdFDy_UfiA67ZX2_tskAtWJfIDnbL1sz",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJuRWIcXlLHRURpN_OV18qGkY",
+      "plus_code": {
+        "compound_code": "3Q8J+RP Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8J+RP"
+      },
+      "price_level": 2,
+      "rating": 4.3,
+      "reference": "ChIJuRWIcXlLHRURpN_OV18qGkY",
+      "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 2085
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Merkhavya St 6, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0601551,
+          "lng": 34.7721282
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06150227989272,
+            "lng": 34.77349127989272
+          },
+          "southwest": {
+            "lat": 32.05880262010728,
+            "lng": 34.77079162010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Cafelix - Florentine - Levinsky",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103417332246972456979\">Yaniv Harpaz</a>"
+          ],
+          "photo_reference": "AeJbb3cpMWTPcOs2d-HRS0szlcL36tOLA2IWjUj3xoM0o3PyTk_tUc7Vl8TgJzt10Xp9VGBqKa_A14Dcx3WQ4A-rdhzyXe9Jr3m_l6OMQqWfqyG9OhTuXo_99LMJ20mRziO5v6NIQA74SJ6CKsiYWhAylOijL3OUtLSregIwk_jIavhjgBwa",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ2cqlx51MHRURyv3xadhA7bk",
+      "plus_code": {
+        "compound_code": "3Q6C+3V Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q6C+3V"
+      },
+      "price_level": 2,
+      "rating": 4.6,
+      "reference": "ChIJ2cqlx51MHRURyv3xadhA7bk",
+      "types": ["cafe", "food", "store", "point_of_interest", "establishment"],
+      "user_ratings_total": 683
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Shlomo Ibn Gabirol St 98, Tel Aviv-Yafo, 6404624, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0833168,
+          "lng": 34.7815848
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.08467497989272,
+            "lng": 34.78284702989272
+          },
+          "southwest": {
+            "lat": 32.08197532010728,
+            "lng": 34.78014737010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Mae Café",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103954376686579604612\">Nir Engelberg</a>"
+          ],
+          "photo_reference": "AeJbb3c66FOLJCWnbOCtXrEiZLV3KvRgNMe9h8ZtLrmcbqKRclc8E_I8Hnswtt1eW21vs32l0S_K94ZTxgTWcrAUuB6iacKkomegLHZoWTMeee-g9LxCsoJdUEyYLNnn3KeEPs0RS1vjoD0XCG_Y0_pZw-P8mha_FKX2o-vvVIxLeADTiOJ7",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJY4mxfYRMHRUR4Hx_R1ncsP8",
+      "plus_code": {
+        "compound_code": "3QMJ+8J Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QMJ+8J"
+      },
+      "price_level": 2,
+      "rating": 4.7,
+      "reference": "ChIJY4mxfYRMHRUR4Hx_R1ncsP8",
+      "types": ["cafe", "food", "store", "point_of_interest", "establishment"],
+      "user_ratings_total": 364
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Allenby St 96, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.066006,
+          "lng": 34.771794
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06737297989272,
+            "lng": 34.77319617989271
+          },
+          "southwest": {
+            "lat": 32.06467332010728,
+            "lng": 34.77049652010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Cafe Allenby 96",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3456,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117821707213157930742\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3fUtQvrQroqqVk8PGuIOJTFm6knji5kulTJDi-mUTGAnPLwSziK8mPYGinWVKx4m3CdvKRrlopIm8RDt80imai4HCh8WzwWcUbVq_qy8gDWLYA50ENcLo9321UpJjkc0ESavBuZyyQfPijqCEZPfqpk3X-iOFRZg-IIkHx_nK9FLDCu",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJmY7o-oJMHRURm9XUB262LJs",
+      "plus_code": {
+        "compound_code": "3Q8C+CP Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8C+CP"
+      },
+      "rating": 4.7,
+      "reference": "ChIJmY7o-oJMHRURm9XUB262LJs",
+      "types": [
+        "restaurant",
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 17
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Yishkon St 40, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0683607,
+          "lng": 34.7685669
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06968932989272,
+            "lng": 34.76991372989271
+          },
+          "southwest": {
+            "lat": 32.06698967010728,
+            "lng": 34.76721407010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Sonder cafe Tel aviv",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114916761993894437395\">Yaron Segev</a>"
+          ],
+          "photo_reference": "AeJbb3fDFvXgkzmvzty_3MFvhTMuVIOJ2XMA_0kb8BpK9hVG73jGWTwEBAuj0BTNID8fTr2rqQtu0LMUBK8U0tCzaQL0IJyJOMIRCli3w9PIcprGraDO4Ys2KcnkuIML_8_ZOl2AuRGiQFLcfjHX2gFycqfN7bXt5Tj0yjKGxX80cyk-BF1n",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJl2HloH5NHRUR6b3SHQcImSU",
+      "plus_code": {
+        "compound_code": "3Q99+8C Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q99+8C"
+      },
+      "rating": 4.9,
+      "reference": "ChIJl2HloH5NHRUR6b3SHQcImSU",
+      "types": ["cafe", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 108
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "48 Kfar Gilaadi, Tel Aviv-Yafo, 6609248, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0573445,
+          "lng": 34.7703167
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.05869367989273,
+            "lng": 34.77168977989272
+          },
+          "southwest": {
+            "lat": 32.05599402010728,
+            "lng": 34.76899012010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "p.o.c café",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116769450456681321728\">Tsur Eden</a>"
+          ],
+          "photo_reference": "AeJbb3cj3kD1dCLDe2RP-p_I6XSMOdmxNXsnRQH7TzufUj5JOqPRvgU9s20Hc5wWtuIaROG6s4YjzafWhGuLUtqF0nDBEMAy8mO-NkWekP7iUtPLjkxWeCdjcbWofh8RXZ27djhKV7ojPF_Vs5IgSDqikIY2d5kNF01HjHEeQdH7URsk78eN",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJKa6Y7bhNHRURh8xeuNSPP7s",
+      "plus_code": {
+        "compound_code": "3Q4C+W4 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q4C+W4"
+      },
+      "price_level": 1,
+      "rating": 4.7,
+      "reference": "ChIJKa6Y7bhNHRURh8xeuNSPP7s",
+      "types": ["cafe", "food", "store", "point_of_interest", "establishment"],
+      "user_ratings_total": 446
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Dizengoff St 190, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0858049,
+          "lng": 34.7747267
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.08715917989272,
+            "lng": 34.77605362989272
+          },
+          "southwest": {
+            "lat": 32.08445952010727,
+            "lng": 34.77335397010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Dizengoff Cafe",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110651827944071072350\">Keren Michaeli</a>"
+          ],
+          "photo_reference": "AeJbb3eHN9X1S6PqyW0655p1yZNZ81mY2TDbC_PohvwG2oBOvVme6AEf3wq3BhGzwptPBw5Ic408Bc_d9OZI_AN8JeFmEpI1GBCwgZTtpuCRbBRN4OukYPrkcBe9Xasif56_ceJ3Q8ljD-yLrnVZi1GFtUbCut4MvyA-scHkyb6_3P-9DhIr",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJm4T00olLHRURMIXHaAjtS34",
+      "plus_code": {
+        "compound_code": "3QPF+8V Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QPF+8V"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJm4T00olLHRURMIXHaAjtS34",
+      "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1950
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0729133,
+          "lng": 34.7717378
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07427892989272,
+            "lng": 34.77303517989272
+          },
+          "southwest": {
+            "lat": 32.07157927010728,
+            "lng": 34.77033552010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "טשרניחובסקי",
+      "photos": [
+        {
+          "height": 1499,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109604781693028105425\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3e5QP7vdE0KHFZawxk55GiywbpWBQOA9hg8q1ZmShd9KCP9q6PMbxiRJ2_T0-gXCny_BENKParncyMWqHpfHW3jH_e1B59gIMdWBs7lDW9CeYlgtnXAxENIpTi_nNazOZW-GUpBsXph7YctEIpJyGsDbGbaZRYjhbd8R2K3aiNVbhDr",
+          "width": 1599
+        }
+      ],
+      "place_id": "ChIJ8ZlrvxFNHRUR3Fkfvrv_lIs",
+      "plus_code": {
+        "compound_code": "3QFC+5M Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QFC+5M"
+      },
+      "rating": 4.5,
+      "reference": "ChIJ8ZlrvxFNHRUR3Fkfvrv_lIs",
+      "types": ["cafe", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 30
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Dizengoff Square 1, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0783681,
+          "lng": 34.7744406
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07965442989271,
+            "lng": 34.77575652989272
+          },
+          "southwest": {
+            "lat": 32.07695477010727,
+            "lng": 34.77305687010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Nahat Café",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114387839517813814243\">shiraz pashinsky</a>"
+          ],
+          "photo_reference": "AeJbb3dGn0FHBTEGeF6lDuHmfxl9tES4KqBvRpyQs-gRuJKjbmETFMDasqFLmsQ3pwOfX9POm2F9TA9bf0GZ5x2qZ998GCUthVEln2bwW3GN1FlTArW3xi3SJoJtA9oOJA3agpc44hdV8Q59zYh74gkNyrN2gC2fG2jpmdqUrSTWrUcSbV_b",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJK5zFUYdLHRURzLpv8RjKSwc",
+      "plus_code": {
+        "compound_code": "3QHF+8Q Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QHF+8Q"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJK5zFUYdLHRURzLpv8RjKSwc",
+      "types": ["cafe", "food", "store", "point_of_interest", "establishment"],
+      "user_ratings_total": 1631
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Arlozorov St 76, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0857811,
+          "lng": 34.7791197
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.08718957989272,
+            "lng": 34.78049142989271
+          },
+          "southwest": {
+            "lat": 32.08448992010728,
+            "lng": 34.77779177010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "איזי קפה ארלוזורוב Eazy cafe Arlozorov",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110756126822033645252\">Ali</a>"
+          ],
+          "photo_reference": "AeJbb3duAY5WfDs4TZ09X2abh_70x6V3oWHBzTlWgpZne77m1ZCOhF1jT-_CS8cwi-SoQBVrQQ0qT8tLs1qAZP4ODB4dCXSktD0QR-iBMLE9V8CXR_KYC8NsGbP89X5QNKVBG81RbJ6TI2itje52f1ohQrGgUtcqT0mWvTjUwfHTKnr53wje",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJHcHLTolLHRUR8hFMfBGi4pU",
+      "plus_code": {
+        "compound_code": "3QPH+8J Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QPH+8J"
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "ChIJHcHLTolLHRUR8hFMfBGi4pU",
+      "types": ["cafe", "food", "store", "point_of_interest", "establishment"],
+      "user_ratings_total": 1357
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Sderot Masaryk 12, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0788194,
+          "lng": 34.7790297
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.08018242989272,
+            "lng": 34.78035732989272
+          },
+          "southwest": {
+            "lat": 32.07748277010727,
+            "lng": 34.77765767010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Café Masaryk",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116282643812826979497\">Narin Carmel</a>"
+          ],
+          "photo_reference": "AeJbb3eJzsABXS7lAwzxrd5an4pck_nWEkolm28UOBxvRE8E3wwdiCQwJkURCEfYBmyzEh_fpD70UAwFYI8d7QLvJysOOIes5x3aXCbU-0zWjLC90iSESG04o2lWTcnBigSP73mnV3OGtKjIr3sN_DM9RruuhUAaGALjcibn1P0sAqQvNd2O",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJF9lnj4ZLHRURRYPqhCf7sdY",
+      "plus_code": {
+        "compound_code": "3QHH+GJ Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QHH+GJ"
+      },
+      "price_level": 2,
+      "rating": 4.2,
+      "reference": "ChIJF9lnj4ZLHRURRYPqhCf7sdY",
+      "types": ["cafe", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 426
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Montefiore St 3, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0647417,
+          "lng": 34.7692445
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06605182989272,
+            "lng": 34.77059987989273
+          },
+          "southwest": {
+            "lat": 32.06335217010728,
+            "lng": 34.76790022010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Mae",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106337299827554869699\">Moises Zack</a>"
+          ],
+          "photo_reference": "AeJbb3dnYFBLRBPzafyQ1gns7AJL4a0qMSADZIe_mOA7Dlq1aFYEVoRQdnNCX1ZSUwJ-O6GYaH6C52_uenjtFGjHG9-_crziSNdH3uewaShtJjxxtwA0RxbhYuFB9jP-WBxIxhrfUr_6pwE1laxt131oCfubnfXvE20VniE2GMJHFDdx9Iz_",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJ7QpJLoNMHRURf3nN-cIzan0",
+      "plus_code": {
+        "compound_code": "3Q79+VM Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q79+VM"
+      },
+      "rating": 4.8,
+      "reference": "ChIJ7QpJLoNMHRURf3nN-cIzan0",
+      "types": ["cafe", "food", "store", "point_of_interest", "establishment"],
+      "user_ratings_total": 518
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Pinsker St 20, Tel Aviv-Yafo, 63421, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0745105,
+          "lng": 34.7704799
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07589277989272,
+            "lng": 34.77180192989272
+          },
+          "southwest": {
+            "lat": 32.07319312010728,
+            "lng": 34.76910227010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Café Shneor",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3072,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117631223777144386079\">Dan Lahav</a>"
+          ],
+          "photo_reference": "AeJbb3c-3uMRiklUlxqF0k5m1-ercLK1hSk-O4wMGBnIqlQqSIZRqetHmYMaSA9rtaesfKj5Ua0SCyTF9P1JfM964cui-Q8jXapv5iaC08yNFvbhoYoXyR-Uzlujyf2Mwztg_Na42tRiKeMN9YhAnXH3pVSP_Qb0jxx2LIcpJtew77g9nduY",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJn7pmJ35MHRURz0lTk-FmpvY",
+      "plus_code": {
+        "compound_code": "3QFC+R5 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QFC+R5"
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "ChIJn7pmJ35MHRURz0lTk-FmpvY",
+      "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1366
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "King George St 26, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0719833,
+          "lng": 34.7737414
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07337227989272,
+            "lng": 34.77505182989272
+          },
+          "southwest": {
+            "lat": 32.07067262010727,
+            "lng": 34.77235217010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Cafe Annabelle",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105011121917077760433\">jeffry shalmoni</a>"
+          ],
+          "photo_reference": "AeJbb3enNKAOUp64BKubj1cZQmOxJN_8bNxxZUidi9WRzr9HK23Biu7iDQUcV0sRZDgMMFd3np64Uil7Ecsr7iT3I9IEpBxJjrckNRp4yrqEBHUjX3ND6juwC3phSm1jwiN9wlKqQLD8ZbLCqcv0HkvJNBAqBHP3g2Yb4x2NS1c6imy5dL-6",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJPXrV3IFMHRURoDIJFC4FWeU",
+      "plus_code": {
+        "compound_code": "3QCF+QF Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QCF+QF"
+      },
+      "price_level": 1,
+      "rating": 4.8,
+      "reference": "ChIJPXrV3IFMHRURoDIJFC4FWeU",
+      "types": ["cafe", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 332
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Yohanan HaSandlar St 23, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0704091,
+          "lng": 34.7735561
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07174852989272,
+            "lng": 34.77494897989272
+          },
+          "southwest": {
+            "lat": 32.06904887010727,
+            "lng": 34.77224932010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "WayCup Coffee TLV",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117232316348958150416\">Dany Azriel</a>"
+          ],
+          "photo_reference": "AeJbb3f7Jo-QmcWhMqkwzJMj4HOqquob6JeUEp37Pc9yCBoRWSI1eqoRCKUjvLb1deDYrdjUJI0BuwPA9tORyJscAjZiu3-6wpLTVBihxIHyZmo_QcayR0RoSvDADXlZdnvhLI9s-r1gTJ9YkQrG8MfqHRG_9P9eCADGk-gbs2wPLbICKzhj",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJNSOc0IFMHRUR5oIkAzB1CjY",
+      "plus_code": {
+        "compound_code": "3QCF+5C Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QCF+5C"
+      },
+      "price_level": 2,
+      "rating": 4.8,
+      "reference": "ChIJNSOc0IFMHRUR5oIkAzB1CjY",
+      "types": ["cafe", "food", "store", "point_of_interest", "establishment"],
+      "user_ratings_total": 701
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Lincoln St 16, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0665624,
+          "lng": 34.7820469
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06796717989272,
+            "lng": 34.78343597989272
+          },
+          "southwest": {
+            "lat": 32.06526752010728,
+            "lng": 34.78073632010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Abie",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 1824,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110332683510006433089\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3fmli5YtRGUUo2NCxWg_rrv7bhXllFznkngGX0ZI70lJlh3MYyFiOum66vZgx9tgZtu_hhhLd1wH2ek9-4hvnGoOER3SOORpavVLqs2mv87kxP2ZlCLkYYxxufaRV5iwbgkxgm20OTmZYzgb8pBHXkiDQh-xYp6tLmMbtye9bmPxmde",
+          "width": 2736
+        }
+      ],
+      "place_id": "ChIJbfq6n9xLHRURZYCf3QXABx0",
+      "plus_code": {
+        "compound_code": "3Q8J+JR Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8J+JR"
+      },
+      "price_level": 3,
+      "rating": 4.4,
+      "reference": "ChIJbfq6n9xLHRURZYCf3QXABx0",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 1192
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Derech Menachem Begin 23, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0637728,
+          "lng": 34.7799487
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06509187989272,
+            "lng": 34.78132092989272
+          },
+          "southwest": {
+            "lat": 32.06239222010728,
+            "lng": 34.77862127010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Taizu",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109736888185903541131\">Yaniv Cohen</a>"
+          ],
+          "photo_reference": "AeJbb3ff6PRNJPdR9Nx_jWyiNd0KHSPhXROFxcOFT71jdUfrPCVVtTh4dIGkxWZMvgOZl3JQ7Nxi1_qd9K01NWT0GU3AxBAvbvfR2U8qr_2FWfXy96gzlOKuGA5enbZo-ykQKUBiYvBZ6D1miyxvH7cY0aVm_jKgT9RlKPcI5G271fP0GpD4",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJa9zBe3tLHRURQHbcLSWNU1g",
+      "plus_code": {
+        "compound_code": "3Q7H+GX Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q7H+GX"
+      },
+      "price_level": 4,
+      "rating": 4.6,
+      "reference": "ChIJa9zBe3tLHRURQHbcLSWNU1g",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 6297
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Sderot Chen 51, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0784918,
+          "lng": 34.7797644
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07984327989272,
+            "lng": 34.78118002989272
+          },
+          "southwest": {
+            "lat": 32.07714362010728,
+            "lng": 34.77848037010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Etzlenu",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 768,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107970059664983490768\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3dCxHZkivKL4mioDAx6TolkApArfUHTYTftYfSoNn_Tu67GF_YsaQXwQlBCfIWgmIk1u9d2_IShcQpGDmilj6TC7O0ZcqVrbnqT9nGNEcOtPXhQXP702zvRX25yjRDpHgkmObgTD5WN-J3WJT24Cu4Lh3Vv3r2vAoUMaFirixmnR-47",
+          "width": 1024
+        }
+      ],
+      "place_id": "ChIJpUGNKIRLHRURlNcWgHlh_38",
+      "plus_code": {
+        "compound_code": "3QHH+9W Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QHH+9W"
+      },
+      "rating": 5,
+      "reference": "ChIJpUGNKIRLHRURlNcWgHlh_38",
+      "types": [
+        "meal_delivery",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 14
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Shlomo Ibn Gabirol St 14, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0728486,
+          "lng": 34.7820239
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07420042989271,
+            "lng": 34.78331512989272
+          },
+          "southwest": {
+            "lat": 32.07150077010727,
+            "lng": 34.78061547010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "The Diner by Goocha",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4896,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106733066947205520442\">Guillaume Bastien</a>"
+          ],
+          "photo_reference": "AeJbb3ekT0staOW6Dq0i4KItWl2wMhVKYSzqnwErPfZzi9uzeo-_cZRVyRNWFlECgtqqWzRXtC2g18K4wnGpa1R0622NXPqgh2L6gJIqumJ4lQkJTpHPw1gJAWj1fyOkrmeIXhEKgfm9em_FxzkSo1furMIjYaYH0FntxP9t8jmADgLapwsF",
+          "width": 3672
+        }
+      ],
+      "place_id": "ChIJaeBoWoJLHRUR3XB51tcyHNo",
+      "plus_code": {
+        "compound_code": "3QFJ+4R Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QFJ+4R"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJaeBoWoJLHRUR3XB51tcyHNo",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 4555
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Ein HaKore St 12, Tel Aviv-Yafo, 6602814, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0572965,
+          "lng": 34.7822109
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.05868402989272,
+            "lng": 34.78356587989272
+          },
+          "southwest": {
+            "lat": 32.05598437010728,
+            "lng": 34.78086622010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+      "name": "R&J Restaurant",
+      "place_id": "ChIJlfxdz7VLHRURLhoiXtrH_aI",
+      "plus_code": {
+        "compound_code": "3Q4J+WV Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q4J+WV"
+      },
+      "rating": 4,
+      "reference": "ChIJlfxdz7VLHRURLhoiXtrH_aI",
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 3
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Levontin St 28, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0629775,
+          "lng": 34.7766007
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06432327989272,
+            "lng": 34.77791937989272
+          },
+          "southwest": {
+            "lat": 32.06162362010728,
+            "lng": 34.77521972010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Taqueria",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111774776037798019125\">Raphael Salomon</a>"
+          ],
+          "photo_reference": "AeJbb3dNqjEovVSWaYc99t02_sWxuaUki0UbUTBDs4xOysHOjsYPWO3T2ObBujierhHnXAOvGBRCa7FlPCru63-Blugk46eeTD81n6AGrMXafoor4Vewio_Kq33asVEEDUP7Zb4I4lJx-psW0q2rN-ewXzXu073QFWuP_m44tOYJscXqVuwz",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJn8r3K31LHRUR2ukbvsMFT_w",
+      "plus_code": {
+        "compound_code": "3Q7G+5M Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q7G+5M"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJn8r3K31LHRUR2ukbvsMFT_w",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 5546
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Carlebach St 7, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0669511,
+          "lng": 34.7832846
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06822962989271,
+            "lng": 34.78466087989271
+          },
+          "southwest": {
+            "lat": 32.06552997010727,
+            "lng": 34.78196122010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Olympus",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 598,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107545189909599121701\">Eli Ayash</a>"
+          ],
+          "photo_reference": "AeJbb3c21hvU6zFGsuq6YJMWErq0AlXsJ5WXf3kEPMo1dv2VEiA1pjyiPXAU2nQGpE1t_yiWm6qjtbv7ncSxLuqhpe0Jpw6GgZcI5awJw9DT_Pj459PSLfr5T5BmUtGWl4dMA_vCMmq0KmmW5t0GfEa4HkKHuMl46Qrpw7HSpur6R9jL2i4p",
+          "width": 798
+        }
+      ],
+      "place_id": "ChIJVa2mvnlLHRURy_Mfngmq55k",
+      "plus_code": {
+        "compound_code": "3Q8M+P8 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8M+P8"
+      },
+      "price_level": 2,
+      "rating": 4.7,
+      "reference": "ChIJVa2mvnlLHRURy_Mfngmq55k",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 188
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Azrieli Center, Derech Menachem Begin, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0743602,
+          "lng": 34.7918323
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07582387989272,
+            "lng": 34.79293562989272
+          },
+          "southwest": {
+            "lat": 32.07312422010728,
+            "lng": 34.79023597010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Meatos",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104239113651349852827\">יחיאל אקוע</a>"
+          ],
+          "photo_reference": "AeJbb3cwJQOvH1l5439xVj7b181iX4HeUYu3KpxTQRaNDNf82brHJzmjdc7-389RHGc8EiPgYYxCeTU48rTlbJ9E6d1RUHy1ZKn19aB-NXyRdJFWozDLG019hCxfePI_ckUc7CwyHk2RotEZoPM40XCiZTV_SYkqYPIHoJZqSr9beWKeqG1L",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJjSR5bJlLHRUR-cfAXrsHyf8",
+      "plus_code": {
+        "compound_code": "3QFR+PP Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QFR+PP"
+      },
+      "rating": 3.5,
+      "reference": "ChIJjSR5bJlLHRUR-cfAXrsHyf8",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 89
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Hillel ha-Zaken St 18, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0697059,
+          "lng": 34.7701066
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07106532989272,
+            "lng": 34.77147162989272
+          },
+          "southwest": {
+            "lat": 32.06836567010728,
+            "lng": 34.76877197010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "הכרמל Ha'Carmel",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103657385021309959901\">Oren Shalmy</a>"
+          ],
+          "photo_reference": "AeJbb3dBNKsSRAL4PxA34cTwFCYJlEo7yUcAY5T9aqsw5rsYEJB70iabM4esQr3CBkAWdZVvzaDj4y6A3bRC4vkxZ4CDR1ZYG3UQC9FvoVi8F5kucwNGCWPSIaY7Pg0g6MoBBjrtaOL1IkW3NpFrCc8uOgcKnZ0yWkxs9AY1wYGFMPLbIFTz",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJ97BMYIFMHRURPh8Qz5fRkLI",
+      "plus_code": {
+        "compound_code": "3Q9C+V2 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q9C+V2"
+      },
+      "rating": 4.5,
+      "reference": "ChIJ97BMYIFMHRURPh8Qz5fRkLI",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 71
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Allenby St 99, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0644863,
+          "lng": 34.7726799
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06582297989272,
+            "lng": 34.77399127989272
+          },
+          "southwest": {
+            "lat": 32.06312332010727,
+            "lng": 34.77129162010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Jasmino",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105912563860417047247\">Oded Meir</a>"
+          ],
+          "photo_reference": "AeJbb3corORlz4-MDMvpNq5Nwk2r0iBAGZdEqLS60E81c9B0BhOuV0nKga9E-hdfmJ7v0yPdgj_wdLfOnESVfzadfTYEXqEM5UY8LvdEFnZ6RX5vTTlMn11xcfdrFVBOPJqoIz-vN2-EgW4E-lqG8mgUctB4xf3p0bNMM8RKIgXHTUbbo9U1",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJ39t7x4JMHRUR72zTYF9NX6Y",
+      "plus_code": {
+        "compound_code": "3Q7F+Q3 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q7F+Q3"
+      },
+      "price_level": 1,
+      "rating": 4.7,
+      "reference": "ChIJ39t7x4JMHRUR72zTYF9NX6Y",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 2198
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Neve Sha'anan St 21, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0575714,
+          "lng": 34.7794799
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.05889032989272,
+            "lng": 34.78085117989272
+          },
+          "southwest": {
+            "lat": 32.05619067010728,
+            "lng": 34.77815152010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Darfur restaurant in Tel Aviv",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116312913272408689725\">Yehonatan Levi</a>"
+          ],
+          "photo_reference": "AeJbb3dIMnJNIQQGMaYVJvZmCKp7zr-6ZeEgYFMolSa88tsmDiVUMgdGuw_ASaeErCMErreedLdQn5ME4CMfwA_8fnKy7wU9d-T-_-k_Q-tj4oLRqN2ljDM0kkTa6yeHvqM8Wn4Qetyd1hiGm7_QqdEv3DoBMYWmKdxRe52uNjDMkNUtnbgj",
+          "width": 2268
+        }
+      ],
+      "place_id": "ChIJp2QOeWRLHRURZLmVOZjbpZI",
+      "plus_code": {
+        "compound_code": "3Q5H+2Q Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q5H+2Q"
+      },
+      "rating": 4.4,
+      "reference": "ChIJp2QOeWRLHRURZLmVOZjbpZI",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 54
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Allenby St 13, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0733354,
+          "lng": 34.7668737
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07463347989272,
+            "lng": 34.76820252989272
+          },
+          "southwest": {
+            "lat": 32.07193382010728,
+            "lng": 34.76550287010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "תיאודורוס",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2736,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110073003091810633554\">עמית נחמיה</a>"
+          ],
+          "photo_reference": "AeJbb3fUGU_owYK0ZjOiIi5qv6pA5WEADnwFawACpvRJGUeku2ySvrhraCkllTPDKqEc7KhKGqy0xkwyOCOr59foVxFyIOvpBPTNoiFosF_OO6TU9nBYuiIjrJoUxAGdFSkleBIsXi-QP3vJPPBFKjM8JBilEdq_oWXa_qamxflM-ArbFSgD",
+          "width": 3648
+        }
+      ],
+      "place_id": "ChIJi4WXHodMHRURV8mz7kd_M7w",
+      "plus_code": {
+        "compound_code": "3QF8+8P Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QF8+8P"
+      },
+      "rating": 4.5,
+      "reference": "ChIJi4WXHodMHRURV8mz7kd_M7w",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 55
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Carmel Market, Rabbi Meir St 42, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0687653,
+          "lng": 34.7689042
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07016832989272,
+            "lng": 34.77027682989272
+          },
+          "southwest": {
+            "lat": 32.06746867010727,
+            "lng": 34.76757717010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Shmuel",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108492116599686944208\">Liu Melodie</a>"
+          ],
+          "photo_reference": "AeJbb3cPJzLC2EUTtAEAdBLkEe_K8W9g2jux2X1hvrdfHgVLhFt4use5aH6dvpZPmcQ6yvODzS_QQmiJxtFj41bnKhpXuv3L2KpwQ5Kd9eFuwJn7jh6bS5QBOPJLu54LPzb37rzQfD7gE68Q9EmIxztwLw-S7rfgMi3VNUqmu4ln7yk-y6me",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJi6xr84NMHRURL99I_lU0Cdc",
+      "plus_code": {
+        "compound_code": "3Q99+GH Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q99+GH"
+      },
+      "price_level": 1,
+      "rating": 4.6,
+      "reference": "ChIJi6xr84NMHRURL99I_lU0Cdc",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 802
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Heihal HaTalmud St 4, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0617074,
+          "lng": 34.7686517
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06306687989272,
+            "lng": 34.77008452989272
+          },
+          "southwest": {
+            "lat": 32.06036722010727,
+            "lng": 34.76738487010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Hatraklin Meat and Wine Bistro",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3456,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107789871872874736084\">Pavlov Mark</a>"
+          ],
+          "photo_reference": "AeJbb3chEl7RZBIIa9h-SvursVWxN5mTGI_tzyHh8YltjE30QCG2gI9U4bif3T1jT4xdDXyb6mcXM89Hqukv5rTbNtZMuiDSjSerUMUMd76mJYqpDa-BCUhC0sdQpyoG22-mh2ridQ6-uqVGG3wop7eHrPvWIMzOzxxA46e-QxU9r4je-a3l",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJg7CkI4NMHRURojYVVcmGdiY",
+      "plus_code": {
+        "compound_code": "3Q69+MF Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q69+MF"
+      },
+      "price_level": 3,
+      "rating": 4.4,
+      "reference": "ChIJg7CkI4NMHRURojYVVcmGdiY",
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1996
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Ha'arbaa st 23, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0708092,
+          "lng": 34.7876717
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07192587989272,
+            "lng": 34.78899757989272
+          },
+          "southwest": {
+            "lat": 32.06922622010728,
+            "lng": 34.78629792010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "claro;",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101657657715134151992\">Eddie Rozenblat</a>"
+          ],
+          "photo_reference": "AeJbb3fFFXSsUfzRolQoShYKPUYnSAg6aMsb7RfQILXNJAIkwgHQ8xa0lJEQGZMrPLdxWqUzWaRo8nHdkCGXr3OOpnJLxV6H9qLXvBZNa0W7r47qF5Hrv4MwLDEXwb7VdSqR2_1_t5Ek-JV_z4S4kqsyo4VLLqaFxRBH6mZXMysuW6aToVLM",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJR3ctqp1LHRURVjPaFraKFEc",
+      "plus_code": {
+        "compound_code": "3QCQ+83 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QCQ+83"
+      },
+      "price_level": 3,
+      "rating": 4.5,
+      "reference": "ChIJR3ctqp1LHRURVjPaFraKFEc",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 5936
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Carlebach St 15, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0674821,
+          "lng": 34.78316900000001
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06887567989272,
+            "lng": 34.78451277989273
+          },
+          "southwest": {
+            "lat": 32.06617602010728,
+            "lng": 34.78181312010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Onauma",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110102509640234245161\">110102509640234245161</a>"
+          ],
+          "photo_reference": "AeJbb3ckx_gdOei5oGDdSdFzkRxVZqOLBsPi5rFa9hynMZmG-bYrTwHdKBxhfKFWx-p6uKyj86e3rFCgSwbNxMc3I5LvaSup-CSQJ9yrVuunaOGGhImZfA4_7L7e94nXuh1mpI5GAyMVcsIBESS1g767Q9ag4iaxfGIuztKJPNaxQxM9GqDm",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ1XSyoddNHRUR21XAwcJv5tE",
+      "plus_code": {
+        "compound_code": "3Q8M+X7 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8M+X7"
+      },
+      "rating": 4.8,
+      "reference": "ChIJ1XSyoddNHRUR21XAwcJv5tE",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 313
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Derech Menachem Begin 46, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0630819,
+          "lng": 34.7804599
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06444352989272,
+            "lng": 34.78201252989273
+          },
+          "southwest": {
+            "lat": 32.06174387010728,
+            "lng": 34.77931287010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Lucy Ethiopian Restaurant",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100587514901192944478\">蘇育平</a>"
+          ],
+          "photo_reference": "AeJbb3epI9FLzfLmZ4XAaLcTpb9GHYTLOMrtQhAUzZZof-cK7ea59V52GYXGTrgkM5Dzt_rWwEPrrEuMlB3Hlg1Vl46FFHl-vTEKw0sGNazSMOqkhA6rHa9AGQ46vFUTvD-nnmf6nrwjIEA2reBfwuqly8AZZmn5PrecS3EcwnIqq61CUFtP",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ__-TZXtLHRURHrJ8jKOukK0",
+      "plus_code": {
+        "compound_code": "3Q7J+65 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q7J+65"
+      },
+      "price_level": 1,
+      "rating": 4.7,
+      "reference": "ChIJ__-TZXtLHRURHrJ8jKOukK0",
+      "types": [
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 286
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Dizengoff St 92, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.077301,
+          "lng": 34.7745073
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07864057989272,
+            "lng": 34.77578927989273
+          },
+          "southwest": {
+            "lat": 32.07594092010727,
+            "lng": 34.77308962010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "La Shuk",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2268,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106916681790324914796\">Karivo 32</a>"
+          ],
+          "photo_reference": "AeJbb3dB71tgAQ4o7RZokcOw2ewiTqewkpSp2xMhPXUh4P_FwS4pmwKnhultGCu2o2i2tYWT4ajqC4vUlnqISe69ezgkcBHq9gxN4Guvu_a9c29vqdMZRd7FQ3CNBdA_25F5Re5-SIsIvuBeTaeKmt0eFrz3-wk_AQ3sSdT3iUPBipBBlzwQ",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJt-3lqYBLHRURN_cghNWVlz0",
+      "plus_code": {
+        "compound_code": "3QGF+WQ Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QGF+WQ"
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "ChIJt-3lqYBLHRURN_cghNWVlz0",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 2603
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Nahalat Binyamin St 80, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.06007020000001,
+          "lng": 34.7724835
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06141862989272,
+            "lng": 34.77384317989272
+          },
+          "southwest": {
+            "lat": 32.05871897010728,
+            "lng": 34.77114352010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Saluf & Sons",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3464,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111567640577523722305\">Francesco Ronchi</a>"
+          ],
+          "photo_reference": "AeJbb3c9Od4j8LR7YIKGVR085n5-bofNMCK1i-ZVMMbw4mlwmigqVt8WIH2jztxhQmvss1-PZe79AWDjTPUB5FznSxoU2QV9GRAmRCZPu5IZosh8zO8-2XW7Y1Ek_UJUAmIevS5V1xTHKka0r26TKm_O5UdjWVkb_JhhKpRt5lwwZNYHbYDk",
+          "width": 4618
+        }
+      ],
+      "place_id": "ChIJDcRiwJ1MHRURQBVLE1EfuRE",
+      "plus_code": {
+        "compound_code": "3Q6C+2X Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q6C+2X"
+      },
+      "price_level": 1,
+      "rating": 4.6,
+      "reference": "ChIJDcRiwJ1MHRURQBVLE1EfuRE",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 1486
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Zevulun St 7, Tel Aviv-Yafo, 6652407, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0600548,
+          "lng": 34.7729988
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06140082989272,
+            "lng": 34.77437427989272
+          },
+          "southwest": {
+            "lat": 32.05870117010727,
+            "lng": 34.77167462010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "מסעדת דלידה | Dalida Restaurant",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2268,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117595983139147190210\">Arie Rozichner</a>"
+          ],
+          "photo_reference": "AeJbb3dRcTkJ2PB2XAXe0xQaB2zWTeB1Sz0TetLc6q3sW4BOsz50Am1JTzc4O7Nb3qzZfj8XDhHHDi3v_66gIhGGsci2vYIrvhJJdxI4ndM78WEIpUKNkTt8cLO7oCF3maX8v3r25CFc-F-AWPJWQ5PHemHdpbTujct7Ln9ptGujQP5akC2s",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJM5SElJ1MHRURGk4h5Oq9BOE",
+      "plus_code": {
+        "compound_code": "3Q6F+25 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q6F+25"
+      },
+      "price_level": 3,
+      "rating": 4.3,
+      "reference": "ChIJM5SElJ1MHRURGk4h5Oq9BOE",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 2980
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "King George St 38, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0729137,
+          "lng": 34.7748477
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07429397989272,
+            "lng": 34.77614402989273
+          },
+          "southwest": {
+            "lat": 32.07159432010727,
+            "lng": 34.77344437010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Etzel Museum",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3456,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115732124124113802194\">Orel Shema</a>"
+          ],
+          "photo_reference": "AeJbb3cmAE8eCL5WbQxre0c3DZWUT2pa92fKa4lT9NjK1Xywg15RbJ04nvyr3stP-d7MBLMfdZosDOmzsUkSJNk4-HY0lTzntC4NEpHf4v3zu8P0a8D2cj66qF-sNIpYLlfL6IE6zGMBLAt_1oL20J_b-GVvGjS2yQ7ml3WqO7d_f494rRvR",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJcRX-9n9LHRURXd9M-lSp2uY",
+      "plus_code": {
+        "compound_code": "3QFF+5W Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QFF+5W"
+      },
+      "rating": 4.3,
+      "reference": "ChIJcRX-9n9LHRURXd9M-lSp2uY",
+      "types": ["museum", "point_of_interest", "establishment"],
+      "user_ratings_total": 179
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Avraham Stern St 8, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.056552,
+          "lng": 34.7695204
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.05790692989272,
+            "lng": 34.77091782989272
+          },
+          "southwest": {
+            "lat": 32.05520727010727,
+            "lng": 34.76821817010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Lehi Museum",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 4160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105535569178471080957\">adresadecorespondenta radu</a>"
+          ],
+          "photo_reference": "AeJbb3efv6PZNa6zuaeh7ZLctWC0xMBmvQn1RLcu66zsUp2NokCUC7cvzPA_AeyOvpwLLfRgM9ITpOxevkrzHF-qP_5WNUZ8y2ZhUvyq6RsbcGFlg_kvNYlfxM_tg8Gd6eC-uBIPkiF8FsolMBg1izeXVLmKPvr3KkHJm6L6kKBjPhESk6Op",
+          "width": 3120
+        }
+      ],
+      "place_id": "ChIJq2oBO59MHRURlHFHsNCcB3A",
+      "plus_code": {
+        "compound_code": "3Q49+JR Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q49+JR"
+      },
+      "rating": 4.5,
+      "reference": "ChIJq2oBO59MHRURlHFHsNCcB3A",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 317
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Maze St 56, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0653222,
+          "lng": 34.7794759
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06672942989272,
+            "lng": 34.78085002989272
+          },
+          "southwest": {
+            "lat": 32.06402977010727,
+            "lng": 34.77815037010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Walk Talk",
+      "place_id": "ChIJZXEQdXxLHRURP1GePFYHyfI",
+      "plus_code": {
+        "compound_code": "3Q8H+4Q Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q8H+4Q"
+      },
+      "rating": 0,
+      "reference": "ChIJZXEQdXxLHRURP1GePFYHyfI",
+      "types": ["museum", "point_of_interest", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "formatted_address": "Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0627617,
+          "lng": 34.7692951
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06407947989272,
+            "lng": 34.77036742989272
+          },
+          "southwest": {
+            "lat": 32.06137982010728,
+            "lng": 34.76766777010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Democracy Pavilion",
+      "permanently_closed": true,
+      "photos": [
+        {
+          "height": 1920,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116541709163940005000\">Tzvi Sklar</a>"
+          ],
+          "photo_reference": "AeJbb3eyOi1ky76Y4Kc7AhJWnaUBul_lEefpXWxO5p2WdwY2xMOcmW0NAwFgPmxxF5crntcUsRnO5K8ii2meSdnZvsQJtHdRyKpSb9d2KRiVCfRh7Z5_zG_3s-qYUU0w4vRo0NO313eqqck_VZsya_fE6q6RFqmc0mr6AYBNOwg6AG6OstOr",
+          "width": 1080
+        }
+      ],
+      "place_id": "ChIJObztRkpNHRUROpCUQUTc0ak",
+      "plus_code": {
+        "compound_code": "3Q79+4P Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q79+4P"
+      },
+      "rating": 2.3,
+      "reference": "ChIJObztRkpNHRUROpCUQUTc0ak",
+      "types": ["museum", "point_of_interest", "establishment"],
+      "user_ratings_total": 4
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "The Golda Meir Cultural and Art Center, Sderot Sha'ul HaMelech 27, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0771761,
+          "lng": 34.7861374
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07806372989273,
+            "lng": 34.78770642989272
+          },
+          "southwest": {
+            "lat": 32.07536407010728,
+            "lng": 34.78500677010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Tel Aviv Museum of Art",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 9000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105262864786635967544\">Ester Levanon</a>"
+          ],
+          "photo_reference": "AeJbb3fnO16_lhW8yEPb0lPbHofeVI7_BvQ0drTrRwdeEcVamWPw9A3TcWJzMl5yXgXrnR1ChmA01rxZqH8c5G5Nw4qCWlTR6yJnWOPNDYEkXw7R2GxcIT1KsnhCRSy165XHETH8Db8_R50ePhioBA4e3DSbtvomzu8oxCBLyrEAKpp0bMEQ",
+          "width": 12000
+        }
+      ],
+      "place_id": "ChIJpz9FAptLHRURE7h6eDCkS_c",
+      "plus_code": {
+        "compound_code": "3QGP+VF Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QGP+VF"
+      },
+      "rating": 4.5,
+      "reference": "ChIJpz9FAptLHRURE7h6eDCkS_c",
+      "types": [
+        "tourist_attraction",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 12676
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Klausner St 12, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.1139505,
+          "lng": 34.8076376
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.11530117989272,
+            "lng": 34.80899712989272
+          },
+          "southwest": {
+            "lat": 32.11260152010728,
+            "lng": 34.80629747010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "The Steinhardt Museum of Natural History",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 4608,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100073220386286610267\">Jessica Chan</a>"
+          ],
+          "photo_reference": "AeJbb3c8bPAmPJ-sd7MjD9ezha8CLIBTl1ykNr3TPh3cyhCn3u4OzLrU-IOMSK5EQ4DP5kCabiPm-QOZNEM15yWZ1QowT9R16y_qCNECW4RGH3yL7yIKeFR9jYhPImVTiJ70Tm7Wwt6JZr2Yyz2QQTQCgFy6nGZrA1_nkwitJ9WncXB-0Kqn",
+          "width": 3456
+        }
+      ],
+      "place_id": "ChIJSw0lH3BJHRUR8YGfrH33l9c",
+      "plus_code": {
+        "compound_code": "4R75+H4 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P4R75+H4"
+      },
+      "rating": 4.7,
+      "reference": "ChIJSw0lH3BJHRUR8YGfrH33l9c",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 4203
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "7, Aluf Albert Mendler St 23, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0720888,
+          "lng": 34.7870134
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07372952989272,
+            "lng": 34.78778620000001
+          },
+          "southwest": {
+            "lat": 32.07102987010727,
+            "lng": 34.7850486
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Sarona Museum",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115562853455970494772\">Jehuda Ish-Shalom</a>"
+          ],
+          "photo_reference": "AeJbb3d9bE2uhTweQgDoOe6IMYwmacYok7rQ6iTpcVhMOBOidTsmaPjKJN7uwzitN0fHr-B63iFABO64-ptY-QORrIQrgGKjK0WYoMRpvAB3LfT7G8P-Gw0fTQltFfqNbAyakjXVKsKtcFVY8_Nc5HzHx7GxV-1CsdDEVR0TDeiFoIWubsFK",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJU7KD45xLHRURSf2afHR4-a8",
+      "plus_code": {
+        "compound_code": "3QCP+RR Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QCP+RR"
+      },
+      "rating": 4.6,
+      "reference": "ChIJU7KD45xLHRURSf2afHR4-a8",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 19
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Shim'on Rokah St 21, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0609427,
+          "lng": 34.7665267
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06224167989272,
+            "lng": 34.76790587989272
+          },
+          "southwest": {
+            "lat": 32.05954202010727,
+            "lng": 34.76520622010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Gutman Museum",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2448,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112080073441275937701\">Shai Vachter</a>"
+          ],
+          "photo_reference": "AeJbb3cTyJdRqjV2gbUOr4bc7TE7pupUH9BOffsCj1RhW0Il69qZe-rVwo3r5cAiijrGvLpGxRQOYLBX-z6EznQanmN-pHsEkQNpaLhYFA5cZk7FDQ6SQNtMobn_aJqLG-wQeu147jteAujiNfb8L_29v-rYi7NLCsmpF7xiH7mfq6xpTeGE",
+          "width": 3264
+        }
+      ],
+      "place_id": "ChIJIfpI2JtMHRURB2H9q80OmS8",
+      "plus_code": {
+        "compound_code": "3Q68+9J Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q68+9J"
+      },
+      "rating": 4.3,
+      "reference": "ChIJIfpI2JtMHRURB2H9q80OmS8",
+      "types": ["museum", "point_of_interest", "establishment"],
+      "user_ratings_total": 662
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Mifrats Shlomo 10, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0547504,
+          "lng": 34.7540749
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.05625667989272,
+            "lng": 34.75546437989272
+          },
+          "southwest": {
+            "lat": 32.05355702010727,
+            "lng": 34.75276472010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Jaffa Museum",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3120,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118150429920247069378\">יענקל&#39;ה שמעוני</a>"
+          ],
+          "photo_reference": "AeJbb3ctuw_q0idLYVpvdvvO1GXTqpJUHEtSuePqSsXy85YNhA16wIRnDePaRb8tIBAvuz4jdIeQWgMlpRUAi4lO7V4Tho398MvUZdaihca7qwFUIYBPg60AtgY9aBIKaIAdvtJusU4d_ozz9U-lxUWLrRU8McYAJg-hJ5tqNdheXKUtw8E",
+          "width": 4160
+        }
+      ],
+      "place_id": "ChIJoY_HMr9MHRUR_jhpU2RWMoI",
+      "plus_code": {
+        "compound_code": "3Q33+VJ Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q33+VJ"
+      },
+      "rating": 4.2,
+      "reference": "ChIJoY_HMr9MHRUR_jhpU2RWMoI",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 151
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "formatted_address": "Zisman Shalom St 3, Ramat Gan, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0835776,
+          "lng": 34.800506
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.08498977989272,
+            "lng": 34.80199257989272
+          },
+          "southwest": {
+            "lat": 32.08229012010727,
+            "lng": 34.79929292010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Oppenheimer Diamond Museum",
+      "permanently_closed": true,
+      "place_id": "ChIJvfOSDSVfHBURGT-e53c8wMA",
+      "plus_code": {
+        "compound_code": "3RM2+C6 Ramat Gan, Israel",
+        "global_code": "8G4P3RM2+C6"
+      },
+      "rating": 0,
+      "reference": "ChIJvfOSDSVfHBURGT-e53c8wMA",
+      "types": ["museum", "point_of_interest", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "גן צ'רלס קלור, Nahum Goldmann St 2, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0593025,
+          "lng": 34.7586369
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06060722989272,
+            "lng": 34.76037357989271
+          },
+          "southwest": {
+            "lat": 32.05790757010728,
+            "lng": 34.75767392010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Etzel Museum",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2988,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117133891205227671563\">yuval lerman</a>"
+          ],
+          "photo_reference": "AeJbb3dzM2M5t7QSjuxtmxLSvPZbPRyUCGMFuLgz9k7JZEllgzKdPwgr6XoybnxeOAtacOQUJSz-kJpmIrwJKDh8FfeSZQooervR71Ca11Hyaf6bDlFhjLYc-4LxcKGeVSQP5ZfYdJsZ0poh9idwt_7zlq-kGgl6m4RUG1CudU5SL7yguHD1",
+          "width": 5312
+        }
+      ],
+      "place_id": "ChIJWVBeFJZMHRURXjQDk2UDb0k",
+      "plus_code": {
+        "compound_code": "3Q55+PF Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q55+PF"
+      },
+      "rating": 4.4,
+      "reference": "ChIJWVBeFJZMHRURXjQDk2UDb0k",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 232
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Bialik St 14, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0720627,
+          "lng": 34.7707281
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07345272989271,
+            "lng": 34.77194312989273
+          },
+          "southwest": {
+            "lat": 32.07075307010727,
+            "lng": 34.76924347010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Rubin Museum",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 1667,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113639074541415328364\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3ejWkYEkJknna5BvHvdhmm8YAwMyLJZwzmtbyMgEXsaRezLP4QgVsoxGvp2XoYP15YcMOobo3V_lRS55gm158CCvHc0bSuqNv3t65nJqE2yOYC88K7kQwf6_cBdfkEC2Dx_zRUSDwbDBPeizGDtRHzvGu3sWxWMExG4tdXCj1oC-V_K",
+          "width": 2500
+        }
+      ],
+      "place_id": "ChIJu61h4oBMHRURQaCPbc722_4",
+      "plus_code": {
+        "compound_code": "3QCC+R7 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QCC+R7"
+      },
+      "rating": 4.4,
+      "reference": "ChIJu61h4oBMHRURQaCPbc722_4",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 229
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "formatted_address": "Auerbach St 10, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0565412,
+          "lng": 34.7627926
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.05790557989272,
+            "lng": 34.76416942989271
+          },
+          "southwest": {
+            "lat": 32.05520592010728,
+            "lng": 34.76146977010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Maine Friendship House",
+      "permanently_closed": true,
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100910730147547598475\">Tal Klein</a>"
+          ],
+          "photo_reference": "AeJbb3fAg5fFZcd3qLHBBTdXuF0iqFE5kxIkf2zlX0dJEj8AXXOqsB-yxGg8lbN-xUMbTpaLdQ-EHb1EZ3joF1rIupLW7bcBnUajYPYb-_W7g-x5ZxQoTGGD8d5SCq5g2wOGbwVEe7CuotLyDNtcnJxAZulD7f05LSwrdaiNVF4gSB6kZ2lB",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJ24d3U71MHRURmyY4fMmBnGM",
+      "plus_code": {
+        "compound_code": "3Q47+J4 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q47+J4"
+      },
+      "rating": 4.5,
+      "reference": "ChIJ24d3U71MHRURmyY4fMmBnGM",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 37
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "formatted_address": "Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0594274,
+          "lng": 34.7662146
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06076252989272,
+            "lng": 34.76753302989272
+          },
+          "southwest": {
+            "lat": 32.05806287010728,
+            "lng": 34.76483337010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Legacy Heritage Center For Jewish Culture",
+      "permanently_closed": true,
+      "photos": [
+        {
+          "height": 4608,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101666305833609445019\">Илья Розенфельд</a>"
+          ],
+          "photo_reference": "AeJbb3dGNqh7pgKrZTbZ6GbWIOzP8rSQ6zDyHXwcDhuUwA3W26QfQFDf2AEwfTWUvD4B84SIxwNsGEGe_5s3eg0RxD_kKzi_Nz25KWIx12GotjKREpK0JPppCiZI36EFrP4J2WekuI1lHt2zFqPz2bEm3c3mY0X1qr0B2PIDiqxujGB5zYxi",
+          "width": 3456
+        }
+      ],
+      "place_id": "ChIJSWCKC5lMHRURYFsNxTTH9UE",
+      "plus_code": {
+        "compound_code": "3Q58+QF Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q58+QF"
+      },
+      "rating": 5,
+      "reference": "ChIJSWCKC5lMHRURYFsNxTTH9UE",
+      "types": ["museum", "point_of_interest", "establishment"],
+      "user_ratings_total": 1
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "formatted_address": "Yehuda HeHasid St 11, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.063416,
+          "lng": 34.768055
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06476582989272,
+            "lng": 34.76940482989273
+          },
+          "southwest": {
+            "lat": 32.06206617010728,
+            "lng": 34.76670517010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "מוזיאון המטקות הישראלי",
+      "permanently_closed": true,
+      "photos": [
+        {
+          "height": 1600,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107618601566287766914\">Simcha Kogman</a>"
+          ],
+          "photo_reference": "AeJbb3ctHLtwki337TVH3jDNIokOhbbmIPengxPSgnCQtUA1GCPRzbQTCh9jMbl6A6IU4-zcunAZYvbhy_VxVVLPQ63_06pQWpWAb9rH9yu8kOJ7YxEcp7qCTU9zdj-Vb6_tCCluhT2pkQCvG1_e7u4hVMcxl70pZOROj2ULHa9eNMT73k5C",
+          "width": 1200
+        }
+      ],
+      "place_id": "ChIJWXlC-O5NHRURqP68SMUpNWU",
+      "plus_code": {
+        "compound_code": "3Q79+96 Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q79+96"
+      },
+      "rating": 4,
+      "reference": "ChIJWXlC-O5NHRURqP68SMUpNWU",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 4
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Berdyczewski St 9, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0712449,
+          "lng": 34.7798848
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07257062989273,
+            "lng": 34.78122552989272
+          },
+          "southwest": {
+            "lat": 32.06987097010728,
+            "lng": 34.77852587010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Joseph Bau House Museum",
+      "photos": [
+        {
+          "height": 820,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117100611607210377301\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3cqXUOrUYHDbEV4BG7Bn-Fj24I-qrGUlr_5jz29oCKavMQzEwzNGIzd-TFgftYZJrhELhhZ55bX6VrUMFxZgyx9_9IRTj6FVh6D0M0ueiHnLRJlyrpc6JzHzhO3HAmQbo3axacubArk4j8KHn7eW9_1E11FGc2cvDBUSucCC_9NpLp6",
+          "width": 1320
+        }
+      ],
+      "place_id": "ChIJ64cYrHhLHRURXMRz0fbKS1w",
+      "plus_code": {
+        "compound_code": "3QCH+GX Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QCH+GX"
+      },
+      "rating": 4.7,
+      "reference": "ChIJ64cYrHhLHRURXMRz0fbKS1w",
+      "types": [
+        "museum",
+        "art_gallery",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 224
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "formatted_address": "Derech Menachem Begin 25, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0637975,
+          "lng": 34.7799959
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06513087989272,
+            "lng": 34.78135772989273
+          },
+          "southwest": {
+            "lat": 32.06243122010728,
+            "lng": 34.77865807010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "The Urban Hideout",
+      "permanently_closed": true,
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103072014448443980617\">Inbar Gafni</a>"
+          ],
+          "photo_reference": "AeJbb3cLG7z-Gqr-5JKVa_1Vs10equt60CcYyBN_ytVvQD4fenpVcPVGpmGUOrS5VqsagZ5tutlszbMOz0Ts0LFWpfEsyxwHP72TSNEwaeoJ-p956jtyj1OiRmggSCEygG6RO9kORzOCQb1hQi9FuBzwI55wIiNWrHU33bMf-LxzweMpWDLa",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJXwUHTHpLHRURXhfv-_e6p24",
+      "plus_code": {
+        "compound_code": "3Q7H+HX Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q7H+HX"
+      },
+      "rating": 5,
+      "reference": "ChIJXwUHTHpLHRURXhfv-_e6p24",
+      "types": ["museum", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "formatted_address": "Bialik St 27, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0733795,
+          "lng": 34.7710266
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07462412989272,
+            "lng": 34.77226557989272
+          },
+          "southwest": {
+            "lat": 32.07192447010728,
+            "lng": 34.76956592010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Beit Ha’Ir Museum",
+      "permanently_closed": true,
+      "photos": [
+        {
+          "height": 2340,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103232940087159215177\">A Google User</a>"
+          ],
+          "photo_reference": "AeJbb3dEsI4wQ4AhzoCUrn1Q9AnTiewJQh40zSAH2uJKCuHMZvLDLx_qUM2RqtYthPeFlTZdIfJsq72vJVoKQvxiltGEL8lFYMLdcD478OvgrtByKlHXACXZWX2ppJKdoVBvmIs9DOCsCydKoehzyohTXPwTdHIwWV8JtZQcaTn_8k1W1QIQ",
+          "width": 4160
+        }
+      ],
+      "place_id": "ChIJM4t1jIBMHRUR7dmJ4AuqpfY",
+      "plus_code": {
+        "compound_code": "3QFC+9C Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QFC+9C"
+      },
+      "rating": 4.4,
+      "reference": "ChIJM4t1jIBMHRUR7dmJ4AuqpfY",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 356
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Berkovitch St 4, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0785419,
+          "lng": 34.7869996
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.07975082989272,
+            "lng": 34.78841802989272
+          },
+          "southwest": {
+            "lat": 32.07705117010727,
+            "lng": 34.78571837010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Museum Tower",
+      "opening_hours": {},
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104760778732843915663\">יפה בל</a>"
+          ],
+          "photo_reference": "AeJbb3faaI5CtpqoQkN3YJCrswzHqrdF_k8et2E2aZ0HVi2oyoVZ206jgbwThv-gGUVRL9kHxppqwhL5ptg2p3eisjDKVrFSDVteOK7x5J0gGu4njoGm5iquSoYb3WH39lGddnCQIHUg9v0sdlef4ls9hojmggRq0vqf1e-IpTZZ9V29Dl6E",
+          "width": 1960
+        }
+      ],
+      "place_id": "ChIJfU9ojppLHRURDBlGyevp6vk",
+      "plus_code": {
+        "compound_code": "3QHP+CQ Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3QHP+CQ"
+      },
+      "rating": 4.4,
+      "reference": "ChIJfU9ojppLHRURDBlGyevp6vk",
+      "types": ["museum", "point_of_interest", "establishment"],
+      "user_ratings_total": 638
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Rothschild Blvd 23, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0634046,
+          "lng": 34.7721107
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 32.06480272989272,
+            "lng": 34.77345492989271
+          },
+          "southwest": {
+            "lat": 32.06210307010727,
+            "lng": 34.77075527010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "The Hagana Museum",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 1067,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109977902974375986777\">Jeam Wong</a>"
+          ],
+          "photo_reference": "AeJbb3dVGEF-WKmdUGlrYzOOr_J27NMN_F0mc8LMLU1VFOf_iem8xrwiRPR-YnyEURh9v14yPgXI6p86dt43ikyi2BVeV134Xziy4PbE4O6XjIDrAiLEGSeqoAzoHjgYgS0WkI5rXp7XM0e41lctGBkaDKmrQ-3F47G0XiaGTK7E8wMicgqc",
+          "width": 1600
+        }
+      ],
+      "place_id": "ChIJISVJJZ1MHRUR-fUKZl3jPjY",
+      "plus_code": {
+        "compound_code": "3Q7C+CR Tel Aviv-Yafo, Israel",
+        "global_code": "8G4P3Q7C+CR"
+      },
+      "rating": 4.4,
+      "reference": "ChIJISVJJZ1MHRUR-fUKZl3jPjY",
+      "types": [
+        "tourist_attraction",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 563
+    }
+  ],
+  "status": "OK"
+}
