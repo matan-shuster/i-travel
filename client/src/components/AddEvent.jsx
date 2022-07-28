@@ -8,7 +8,7 @@ import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
+import ClearIcon from "@mui/icons-material/Clear";
 
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -18,10 +18,15 @@ import StarIcon from "@mui/icons-material/Star";
 import json from "./restaurants.json";
 
 function AddEvent() {
+  const [searchInput, setSearchInput] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(0);
   const categoriesList = ["All", "Restaurants", "Cafes", "Hotels", "Museums"];
 
+  const handleSearchInputChange = (e) => setSearchInput(e.target.value);
+
   const handleCategoryChange = (e) => setSelectedCategory(e.target.value);
+
+  const handleSearchClear = () => setSearchInput("");
 
   const renderRatingStars = (rating) => {
     let stars = [];
@@ -45,11 +50,23 @@ function AddEvent() {
         <InputBase
           sx={{ ml: 1, flex: 1 }}
           placeholder="Search"
-          inputProps={{ "aria-label": "search google maps" }}
+          value={searchInput}
+          inputProps={{ "aria-label": "search" }}
+          onChange={handleSearchInputChange}
         />
-        <IconButton type="submit" sx={{ p: "10px" }} aria-label="search">
-          <SearchIcon />
-        </IconButton>
+        {searchInput.length > 0 ? (
+          <IconButton
+            type="submit"
+            sx={{ p: "10px" }}
+            aria-label="search"
+            onClick={handleSearchClear}
+          >
+            <ClearIcon />
+          </IconButton>
+        ) : (
+          ""
+        )}
+
         <FormControl variant="filled" sx={{ m: 1, minWidth: 135 }} size="small">
           <InputLabel id="demo-simple-select-filled-label">Category</InputLabel>
           <Select
@@ -69,23 +86,29 @@ function AddEvent() {
           </Select>
         </FormControl>
       </Paper>
-      {json.results.map((result, index) => {
-        return (
-          <Card key={`result-${index}`} sx={{ minWidth: 275 }}>
-            <CardContent>
-              <Typography color="text.secondary" gutterBottom>
-                {renderRatingStars(result.rating)}
-              </Typography>
-              <Typography variant="h6" component="div">
-                {result.name}
-              </Typography>
-              <Typography sx={{ fontSize: 14 }} color="text.secondary">
-                {result.formatted_address}
-              </Typography>
-            </CardContent>
-          </Card>
-        );
-      })}
+      {json.results
+        .filter(
+          (result) =>
+            result.name.toLowerCase().includes(searchInput.toLowerCase()) ||
+            searchInput === ""
+        )
+        .map((result, index) => {
+          return (
+            <Card key={`result-${index}`} sx={{ minWidth: 275 }}>
+              <CardContent>
+                <Typography color="text.secondary" gutterBottom>
+                  {renderRatingStars(result.rating)}
+                </Typography>
+                <Typography variant="h6" component="div">
+                  {result.name}
+                </Typography>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary">
+                  {result.formatted_address}
+                </Typography>
+              </CardContent>
+            </Card>
+          );
+        })}
     </div>
   );
 }
