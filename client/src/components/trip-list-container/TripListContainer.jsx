@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import TripCard from "../trip/TripCard";
-import styles from "./tripListContainerStyle.module.css";
 import { BsPlusLg, BsFillCheckSquareFill } from "react-icons/bs";
+
+import styles from "./tripListContainerStyle.module.css";
+import TripCard from "../trip/TripCard";
 
 export default function TripListContainer({ data }) {
   const [displayInputs, setDisplayInput] = useState(false);
@@ -20,14 +21,14 @@ export default function TripListContainer({ data }) {
       />
     );
   });
+
   return (
     <div>
-      <div className={styles.tripContainer}>
-        <div className={styles.titleContainer}>
-          <div className={styles.headTitle}>Trips</div>
-        </div>
-        <div className={styles.tripList}>{trips}</div>
+      <div className={styles.titleContainer}>
+        <div className={styles.headTitle}>Trips</div>
       </div>
+      <div className={styles.tripList}>{trips}</div>
+
       <div
         className={`${styles.bottomIcon} ${
           displayInputs ? styles.displayNone : null

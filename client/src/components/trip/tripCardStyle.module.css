@@ -1,57 +1,9 @@
-.tripBox {
-  height: 10vh;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.tripBox:last-child {
-  border: none;
-}
-
-.circle {
-  height: 5.5vh;
-  width: 11vw;
-  background-color: #bbb;
-  border-radius: 50%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 8px;
-  margin-top: 20px;
-}
-.circleText {
-  padding-top: 10px;
-}
-
-.tripInfo {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-}
-
-.tripTitleText {
-  font-weight: 600;
-  padding-top: 10px;
-}
-
-.timeLeftText {
+.tripItem {
   display: flex;
   flex-direction: row;
-  font-size: 3vw;
-  margin-left: 8px;
-  line-height: 10px;
-  padding-top: 8px;
+  justify-content: center;
 }
 
-.timeLeftText div {
-  padding-right: 5px;
-}
-
-.numberOfEventsText {
-  margin-left: 10px;
-  padding-top: 10px;
+.avatar div div {
+  margin-top: 5px;
 }
