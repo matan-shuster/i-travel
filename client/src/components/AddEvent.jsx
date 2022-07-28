@@ -16,6 +16,7 @@ function AddEvent() {
         setSearchInput={setSearchInput}
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
+        setExpandedId={setExpandedId}
       />
       {json.results
         .filter(

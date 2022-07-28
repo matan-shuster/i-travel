@@ -15,6 +15,7 @@ function SearchBar({
   setSearchInput,
   selectedCategory,
   setSelectedCategory,
+  setExpandedId,
 }) {
   const categoriesList = [
     {
@@ -39,16 +40,30 @@ function SearchBar({
     },
   ];
 
-  const handleSearchInputChange = (e) => setSearchInput(e.target.value);
+  const handleSearchInputChange = (e) => {
+    setSearchInput(e.target.value);
+    setExpandedId(-1);
+  };
 
-  const handleCategoryChange = (e) => setSelectedCategory(e.target.value);
+  const handleCategoryChange = (e) => {
+    setSelectedCategory(e.target.value);
+    setExpandedId(-1);
+  };
 
-  const handleSearchClear = () => setSearchInput("");
+  const handleSearchClear = () => {
+    setSearchInput("");
+    setExpandedId(-1);
+  };
 
   return (
     <Paper
       component="form"
-      sx={{ p: "2px 4px", display: "flex", alignItems: "center", width: 400 }}
+      sx={{
+        p: "2px 4px",
+        display: "flex",
+        alignItems: "center",
+        minWidth: 275,
+      }}
     >
       <IconButton sx={{ p: "10px" }} aria-label="menu">
         <MenuIcon />

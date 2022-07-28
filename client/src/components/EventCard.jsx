@@ -6,6 +6,7 @@ import {
   Collapse,
   TextField,
   Button,
+  Stack,
 } from "@mui/material";
 import {
   Star as StarIcon,
@@ -23,7 +24,7 @@ function EventCard({ result, index, expandedId, setExpandedId }) {
 
     if (roundRating === 0) ratingView.push(<FiberNewIcon fontSize="small" />);
     else {
-      for (let i = 0; i < Math.round(rating); i++) {
+      for (let i = 0; i < roundRating; i++) {
         ratingView.push(<StarIcon fontSize="small" />);
       }
     }
@@ -46,31 +47,43 @@ function EventCard({ result, index, expandedId, setExpandedId }) {
       </CardContent>
       <Collapse in={expandedId === index} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Schedule</Typography>
+          <Typography paragraph sx={{ display: "inline-block" }}>
+            Schedule
+          </Typography>
+          <Stack
+            spacing={2}
+            direction="row"
+            sx={{
+              display: "inline-block",
+              position: "relative",
+              float: "right",
+            }}
+          >
+            <Button variant="text" onClick={() => handleExpandClick(index)}>
+              Close
+            </Button>
+            <Button variant="contained">Save</Button>
+          </Stack>
           <TextField
             id="datetime-local"
-            label="Start"
+            label="Start Time"
             type="datetime-local"
             defaultValue="2022-08-08T16:00"
-            sx={{ width: 200 }}
+            sx={{ width: 200, margin: "10px 0 10px 0" }}
             InputLabelProps={{
               shrink: true,
             }}
           />
           <TextField
             id="datetime-local"
-            label="End"
+            label="End Time"
             type="datetime-local"
             defaultValue="2022-08-08T19:00"
-            sx={{ width: 200 }}
+            sx={{ width: 200, margin: "10px 0 10px 0" }}
             InputLabelProps={{
               shrink: true,
             }}
           />
-          <Button variant="text" onClick={() => handleExpandClick(index)}>
-            Close
-          </Button>
-          <Button variant="contained">Save</Button>
         </CardContent>
       </Collapse>
     </Card>
