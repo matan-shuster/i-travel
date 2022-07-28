@@ -16,9 +16,6 @@
   justify-content: center;
 }
 
-.avatar {
-}
-
 .tripList {
   overflow-y: scroll;
   max-height: 40vh;
@@ -29,18 +26,11 @@
   transition: all 0.5s ease;
 }
 
-.bottomIcon {
+.addNewTrip {
+  margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px;
   transition: all 0.5s ease;
-}
-
-.doneIcon {
-  font-size: 40px;
-}
-
-.displayNone {
-  display: none;
 }

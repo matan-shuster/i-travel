@@ -5,9 +5,7 @@ import { DAYS, MONTHS, secendsToDays } from "../../constans";
 
 import { Avatar } from "@mui/material";
 import { Box } from "@mui/material";
-import { Button } from "@mui/material";
 import { Card, CardContent, CardActionArea, CardActions } from "@mui/material";
-import { Container } from "@mui/material";
 import { Typography } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
@@ -17,6 +15,7 @@ function TripCard({ location, start_date, end_date, number_of_events }) {
   const tripDate = new Date(
     `${splicedStartDate[0]},${splicedStartDate[1]}, ${splicedStartDate[2]}`
   );
+  //redundant? date input give text day,text month,month number day
   const tripDay = DAYS[tripDate.getDay()];
   const tripMonthAndDayOfMonth = `${splicedStartDate[1]} ${
     MONTHS[parseInt(splicedStartDate[0]) - 1]

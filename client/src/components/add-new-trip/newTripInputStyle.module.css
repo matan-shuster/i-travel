@@ -1,0 +1,8 @@
+.addDates {
+  display: flex;
+}
+
+.addNewTrip {
+  display: flex;
+  flex-direction: column;
+}
