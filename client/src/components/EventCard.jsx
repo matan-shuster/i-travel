@@ -33,7 +33,11 @@ function EventCard({ result, index, expandedId, setExpandedId }) {
   };
 
   return (
-    <Card key={`result-${index}`} sx={{ minWidth: 275 }} variant="outlined">
+    <Card
+      key={`result-${index}`}
+      sx={{ minWidth: 275, margin: "5px" }}
+      variant="outlined"
+    >
       <CardContent onClick={() => handleExpandClick(index)}>
         <Typography color="text.secondary" gutterBottom>
           {renderRatingView(result.rating)}

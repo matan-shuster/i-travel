@@ -63,6 +63,7 @@ function SearchBar({
         display: "flex",
         alignItems: "center",
         minWidth: 275,
+        margin: "5px",
       }}
     >
       <IconButton sx={{ p: "10px" }} aria-label="menu">
