@@ -15,12 +15,34 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
 import StarIcon from "@mui/icons-material/Star";
-import json from "./restaurants.json";
+import FiberNewIcon from "@mui/icons-material/FiberNew";
+import json from "./json.json";
 
 function AddEvent() {
   const [searchInput, setSearchInput] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState(0);
-  const categoriesList = ["All", "Restaurants", "Cafes", "Hotels", "Museums"];
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const categoriesList = [
+    {
+      label: "All",
+      value: "all",
+    },
+    {
+      label: "Restaurants",
+      value: "restaurant",
+    },
+    {
+      label: "Cafes",
+      value: "cafe",
+    },
+    {
+      label: "Hotels",
+      value: "lodging",
+    },
+    {
+      label: "Museums",
+      value: "museum",
+    },
+  ];
 
   const handleSearchInputChange = (e) => setSearchInput(e.target.value);
 
@@ -28,14 +50,18 @@ function AddEvent() {
 
   const handleSearchClear = () => setSearchInput("");
 
-  const renderRatingStars = (rating) => {
-    let stars = [];
+  const renderRatingView = (rating) => {
+    let ratingView = [];
+    const roundRating = Math.round(rating);
 
-    for (let i = 0; i < Math.round(rating); i++) {
-      stars.push(<StarIcon fontSize="small" />);
+    if (roundRating === 0) ratingView.push(<FiberNewIcon fontSize="small" />);
+    else {
+      for (let i = 0; i < Math.round(rating); i++) {
+        ratingView.push(<StarIcon fontSize="small" />);
+      }
     }
 
-    return stars;
+    return ratingView;
   };
 
   return (
@@ -78,8 +104,8 @@ function AddEvent() {
           >
             {categoriesList.map((category, index) => {
               return (
-                <MenuItem key={`category-${index}`} value={index}>
-                  {category}
+                <MenuItem key={`category-${index}`} value={category.value}>
+                  {category.label}
                 </MenuItem>
               );
             })}
@@ -89,15 +115,18 @@ function AddEvent() {
       {json.results
         .filter(
           (result) =>
-            result.name.toLowerCase().includes(searchInput.toLowerCase()) ||
-            searchInput === ""
+            (result.name.toLowerCase().includes(searchInput.toLowerCase()) ||
+              searchInput === "") &&
+            (result.types.includes(selectedCategory) ||
+              selectedCategory === "all")
         )
+
         .map((result, index) => {
           return (
             <Card key={`result-${index}`} sx={{ minWidth: 275 }}>
               <CardContent>
                 <Typography color="text.secondary" gutterBottom>
-                  {renderRatingStars(result.rating)}
+                  {renderRatingView(result.rating)}
                 </Typography>
                 <Typography variant="h6" component="div">
                   {result.name}
