@@ -12,18 +12,21 @@ class EventManager {
         } = await Event.create({
             ...eventObject
         });
-        this.eventList.push({...eventObject, id});
         return {eventObject, id};
     }
 
     async getEventList() {
-        return (await Event.findAll()).map((element) =>
-            element.get({plain: true})
-        );
+            const events = await Event.findAll({
+                raw: true,
+            });
+        const eventArray= events.map(event => ({
+            ...event,
+        }));
+        return eventArray;
     }
 
     async getEventsByTrip(tripID) {
-        return this.eventList.filter(event => event.tripID === tripID);
+        return Object.keys(this.eventList).filter(event => event.tripID === tripID);
     }
 
     async deleteEvent(eventId) {
