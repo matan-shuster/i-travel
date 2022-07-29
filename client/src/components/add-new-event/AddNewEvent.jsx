@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import SearchBar from "./SearchBar";
-import EventCard from "./EventCard";
-import json from "./json.json";
+import SearchBar from "../search-bar/SearchBar";
+import EventCard from "../event-card/EventCard";
+import json from "../json.json";
 
-function AddEvent() {
+function AddNewEvent() {
   const [expandedId, setExpandedId] = useState(-1);
 
   const [searchInput, setSearchInput] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   return (
-    <div>
+    <div style={{ textAlign: "left" }}>
       <SearchBar
         searchInput={searchInput}
         setSearchInput={setSearchInput}
@@ -40,4 +40,4 @@ function AddEvent() {
   );
 }
 
-export default AddEvent;
+export default AddNewEvent;
