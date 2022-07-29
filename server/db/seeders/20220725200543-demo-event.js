@@ -12,8 +12,8 @@ module.exports = {
      * }], {});
     */
     await queryInterface.bulkInsert('Events', [{
-        name: 'McDonalds',
-    address: 'HaHashmonaim St 94, Tel Aviv-Yafo, 6713311, Israel',
+      name: 'McDonalds',
+      address: 'HaHashmonaim St 94, Tel Aviv-Yafo, 6713311, Israel',
       latitude: '32.0690383',
       longitude:'34.7845191',
       type: 'restaurant',
