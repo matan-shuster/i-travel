@@ -12,8 +12,8 @@ module.exports = {
      * }], {});
     */
     await queryInterface.bulkInsert('Users', [{
-        userEmail: 'mcdonaldKing@king.com',
-        userPassword: 'king',
+        email: 'mcdonaldKing@king.com',
+        password: 'king',
         createdAt: new Date(),
         updatedAt: new Date()
     }]);
