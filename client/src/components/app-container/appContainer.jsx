@@ -14,6 +14,8 @@ function AppContainer() {
           element={<TripListContainer data={DUMMY_TRIPS_DATA} />}
         />
         <Route path={ROUTES_MAPPING.TRIP_EVENTS} element={<TripEvents />} />
+        {/* TODO: ADD EVENT PAGE COMPONENT */}
+        {/* <Route path={ROUTES_MAPPING.EVENT} element={} /> */}
         <Route path={ROUTES_MAPPING.ADD_NEW_EVENT} element={<AddNewEvent />} />
         <Route
           path="*"
