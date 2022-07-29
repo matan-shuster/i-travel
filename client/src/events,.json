@@ -1,0 +1,32 @@
+[
+    {
+        "TripID":1,
+        "eventID": 1,
+        "name":"restaurant",
+        "location":"Hayarkon Tel Aviv",
+        "distance": "10 min",
+        "start_Hour": "8:00 AM",
+        "end_Hour": "10:00 AM"
+
+    },
+    {
+        "TripID":1,
+        "eventID": 2,
+        "name":"museum",
+        "location":"Shaul Hamalach Tel Aviv",
+        "distance": "5 min",
+        "start_Hour": "10:00 AM",
+        "end_Hour": "12:00 PM"
+
+    },
+    {
+        "TripID":1,
+        "eventID": 3,
+        "name":"Beach",
+        "location":"Frisman Tel Aviv",
+        "distance": "20 min",
+        "start_Hour": "12:00 PM",
+        "end_Hour": "17:00 PM"
+
+    }
+]

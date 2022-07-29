@@ -62,7 +62,12 @@ export default function NewTripInputs({ onSubmitEvent }) {
         }}
         sx={{ width: "100%" }}
       />
-      <Button variant="contained" endIcon={<SendIcon />} onClick={startNewTrip}>
+      <Button
+        variant="contained"
+        endIcon={<SendIcon />}
+        onClick={startNewTrip}
+        sx={{ bgcolor: "green" }}
+      >
         Start New Adventure!
       </Button>
     </div>
