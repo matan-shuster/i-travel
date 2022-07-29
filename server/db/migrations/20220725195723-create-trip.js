@@ -8,13 +8,13 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      tripName: {
+      name: {
         type: Sequelize.STRING
       },
-      tripStartDate: {
+      startDate: {
         type: Sequelize.DATE
       },
-      tripEndDate: {
+      endDate: {
         type: Sequelize.DATE
       },
       createdAt: {
