@@ -12,7 +12,7 @@ module.exports = {
      * }], {});
     */
     await queryInterface.bulkInsert('Trips', [{
-        zame: 'Trip to Mcdonalds',
+        name: 'Trip to Mcdonalds',
         tripStartDate: '2020-07-25',
         tripEndDate: '2020-07-25',
         createdAt: new Date(),
