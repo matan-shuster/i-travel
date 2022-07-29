@@ -14,9 +14,9 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Trip.init({
-    tripName: DataTypes.STRING,
-    tripStartDate: DataTypes.DATE,
-    tripEndDate: DataTypes.DATE
+    name: DataTypes.STRING,
+    startDate: DataTypes.DATE,
+    endDate: DataTypes.DATE
   }, {
     sequelize,
     modelName: 'Trip',
