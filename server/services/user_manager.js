@@ -1,9 +1,6 @@
 const {User} = require('../db/models');
 
 class UserManager {
-    constructor() {
-        this.userList = this.getUserList() || [];
-    }
 
     async createUser(userObject) {
         const {
@@ -11,7 +8,6 @@ class UserManager {
         } = await User.create({
             ...userObject
         });
-        this.userList.push({...userObject, id});
         return {userObject, id};
     }
 
@@ -22,7 +18,11 @@ class UserManager {
     }
 
     async getUserByID(userID) {
-        return this.userList.find(user => user.id === userID);
+        return (await User.findAll({
+            where: {id: userID}
+        })).map((element) =>
+            element.get({plain: true})
+        );
     }
 
     async deleteUser(userID) {

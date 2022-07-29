@@ -2,9 +2,6 @@ const {Event} = require('../db/models');
 
 
 class EventManager {
-    constructor() {
-        this.eventList = this.getEventList() || [];
-    }
 
     async createEvent(eventObject) {
         const {
@@ -19,14 +16,9 @@ class EventManager {
             const events = await Event.findAll({
                 raw: true,
             });
-        const eventArray= events.map(event => ({
+        return events.map(event => ({
             ...event,
         }));
-        return eventArray;
-    }
-
-    async getEventsByTrip(tripID) {
-        return Object.keys(this.eventList).filter(event => event.tripID === tripID);
     }
 
     async deleteEvent(eventId) {

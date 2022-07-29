@@ -1,9 +1,6 @@
 const {Trip} = require('../db/models');
 
 class TripManager {
-    constructor() {
-        this.tripList = this.getTripList() || [];
-    }
 
     async createTrip(tripObject) {
         const {
@@ -11,7 +8,6 @@ class TripManager {
         } = await Trip.create({
             ...tripObject
         });
-        this.tripList.push({...tripObject, id});
         return {tripObject, id};
     }
 
@@ -21,10 +17,13 @@ class TripManager {
         );
     }
 
-    async getTripByID(tripID) {
-        return this.tripList.find(trip => trip.id === tripID);
+    async getUserTripList(userID) {
+        return (await Trip.findAll({
+            where: {userID}
+        })).map((element) =>
+            element.get({plain: true})
+        );
     }
-
     async deleteTrip(tripID) {
         await Trip.destroy({
             where: {id: tripID}

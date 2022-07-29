@@ -20,6 +20,9 @@ const userManager = require('./user_manager');
     deleteTrip(tripID) {
         return this.tripManager.deleteTrip(tripID);
     }
+    getUserTripList(userID) {
+        return this.tripManager.getUserTripList(userID);
+    }
     getUserList() {
         return this.userManager.getUserList();
     }
@@ -45,21 +48,16 @@ const userManager = require('./user_manager');
         return this.eventManager.deleteEvent(eventID);
     }
 
-    async getTripsWithEvents() {
-        const trips = await this.getTripList();
+    async getTripsWithEvents(userID) {
+        const trips = await this.getUserTripList(userID);
         const events = await this.getEventList();
-        // const tripIds = trips.map((trip) => trip.id);
-        // const eventsByTrip = events.filter((event) => tripIds.includes(event.tripID));
-        // const tripsWithEvents = trips.map((trip) => {
-        //     const eventsForTrip = eventsByTrip.filter((event) => event.tripID === trip.id);
-        //     return {
-        //         ...trip,
-        //         events: eventsForTrip,
-        //     };
-        // });
-        // console.log(tripsWithEvents);
-        // return tripsWithEvents;
-
+        return trips.map(trip => {
+              const tripEvents = events.filter(event => event.tripID === trip.id);
+              return {
+                  ...trip,
+                  events: tripEvents
+              }
+          });
     }
 }
 

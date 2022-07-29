@@ -5,8 +5,9 @@ const router = express.Router();
 
 //Event Router
 const tripdataManager = new TripdataManager();
+
 router.get('/events', async (req, res, next) => {
-    res.send(await tripdataManager.getEventList)
+    res.send(await tripdataManager.getEventList());
     next()
 });
 
@@ -26,7 +27,7 @@ router.delete('/events/:id', async (req, res) => {
 
 //Trip Router
 router.get('/trips', async (req, res, next) => {
-    res.send(await tripdataManager.getTripList(req, res))
+    res.send(await tripdataManager.getTripList())
     next()
 });
 
@@ -45,12 +46,12 @@ router.delete('/trips/:id', async (req, res) => {
 
 //User Router
 router.get('/users', async (req, res, next) => {
-    res.send(await tripdataManager.getUserList(req, res))
+    res.send(await tripdataManager.getUserList())
     next()
 });
 
 router.get('/users/:id/trips', async (req, res, next) => {
-    res.send(await tripdataManager.getTripsWithEvents())
+    res.send(await tripdataManager.getTripsWithEvents(req.params.id))
     next()
 });
 router.post('/users', async (req, res, next) => {
