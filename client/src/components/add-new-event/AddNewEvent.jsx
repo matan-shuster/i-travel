@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SearchBar from "../search-bar/SearchBar";
 import EventCard from "../event-card/EventCard";
-import placesJson from "../../places.json";
+import DUMMY_PLACES_DATA from "../../places.json";
 
 function AddNewEvent() {
   const [expandedId, setExpandedId] = useState(-1);
@@ -17,18 +17,18 @@ function AddNewEvent() {
         setSelectedCategory={setSelectedCategory}
         setExpandedId={setExpandedId}
       />
-      {placesJson.results
+      {DUMMY_PLACES_DATA.results
         .filter(
-          (result) =>
-            (result.name.toLowerCase().includes(searchInput.toLowerCase()) ||
+          (place) =>
+            (place.name.toLowerCase().includes(searchInput.toLowerCase()) ||
               searchInput === "") &&
-            (result.types.includes(selectedCategory) ||
+            (place.types.includes(selectedCategory) ||
               selectedCategory === "all")
         )
-        .map((result, index) => {
+        .map((place, index) => {
           return (
             <EventCard
-              result={result}
+              place={place}
               index={index}
               expandedId={expandedId}
               setExpandedId={setExpandedId}
