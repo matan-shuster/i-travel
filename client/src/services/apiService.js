@@ -1,24 +1,11 @@
 export default class apiService{
-    //get all trips
-
-    static async getAllTrips(){
-        const response = await fetch(`/trips`);
-        const trips = await response.json();
-        return trips;
+    //get all trips and events by User ID
+    static async getAllTripWithEvents(userID){
+        const response = await fetch(`/users/${userID}/trips`);
+        const tripsAndEvents = await response.json();
+        return tripsAndEvents;
     }
 
-    //get event by trip id
-    static async getEventsByTrip(tripID){
-        const response = await fetch(`/events/${tripID}`);
-        const events = await response.json();
-        return events;
-    }
-    //get all events
-    static async getAllEvents(){
-        const response = await fetch(`/events`);
-        const events = await response.json();
-        return events;
-    }
     //add event
     static async createEvent(event){
         const response = await fetch(`/events`, {
@@ -55,13 +42,6 @@ export default class apiService{
         });
         const deletedEvent = await response.json();
         return deletedEvent;
-    }
-
-    //get all trips
-    static async getAllTrips(){
-        const response = await fetch(`/trips`);
-        const trips = await response.json();
-        return trips;
     }
     //add trip
     static async createTrip(trip){
