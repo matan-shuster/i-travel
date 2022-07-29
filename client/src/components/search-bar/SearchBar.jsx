@@ -8,7 +8,7 @@ import {
   FormControl,
   Select,
 } from "@mui/material";
-import { Menu as MenuIcon, Clear as ClearIcon } from "@mui/icons-material";
+import { Clear as ClearIcon } from "@mui/icons-material";
 
 function SearchBar({
   searchInput,
@@ -68,9 +68,6 @@ function SearchBar({
         maxWidth: 425,
       }}
     >
-      <IconButton sx={{ p: "10px" }} aria-label="menu">
-        <MenuIcon />
-      </IconButton>
       <InputBase
         sx={{ ml: 1, flex: 1 }}
         placeholder="Search"
