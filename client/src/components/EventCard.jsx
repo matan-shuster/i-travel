@@ -35,7 +35,12 @@ function EventCard({ result, index, expandedId, setExpandedId }) {
   return (
     <Card
       key={`result-${index}`}
-      sx={{ minWidth: 275, margin: "5px" }}
+      sx={{
+        boxSizing: "border-box",
+        margin: "5px",
+        minWidth: 275,
+        maxWidth: 425,
+      }}
       variant="outlined"
     >
       <CardContent onClick={() => handleExpandClick(index)}>

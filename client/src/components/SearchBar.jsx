@@ -59,11 +59,13 @@ function SearchBar({
     <Paper
       component="form"
       sx={{
+        boxSizing: "border-box",
         p: "2px 4px",
+        margin: "5px",
         display: "flex",
         alignItems: "center",
         minWidth: 275,
-        margin: "5px",
+        maxWidth: 425,
       }}
     >
       <IconButton sx={{ p: "10px" }} aria-label="menu">
