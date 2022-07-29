@@ -1,0 +1,12 @@
+.eventItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.duration {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 10px;
+}
