@@ -19,16 +19,16 @@ function AddNewEvent() {
       />
       {placesJson.results
         .filter(
-          (result) =>
-            (result.name.toLowerCase().includes(searchInput.toLowerCase()) ||
+          (place) =>
+            (place.name.toLowerCase().includes(searchInput.toLowerCase()) ||
               searchInput === "") &&
-            (result.types.includes(selectedCategory) ||
+            (place.types.includes(selectedCategory) ||
               selectedCategory === "all")
         )
-        .map((result, index) => {
+        .map((place, index) => {
           return (
             <EventCard
-              result={result}
+              place={place}
               index={index}
               expandedId={expandedId}
               setExpandedId={setExpandedId}

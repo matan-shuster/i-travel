@@ -13,7 +13,7 @@ import {
   FiberNew as FiberNewIcon,
 } from "@mui/icons-material";
 
-function EventCard({ result, index, expandedId, setExpandedId }) {
+function EventCard({ place, index, expandedId, setExpandedId }) {
   const handleExpandClick = (index) => {
     setExpandedId(expandedId === index ? -1 : index);
   };
@@ -34,7 +34,7 @@ function EventCard({ result, index, expandedId, setExpandedId }) {
 
   return (
     <Card
-      key={`result-${index}`}
+      key={`place-${index}`}
       sx={{
         boxSizing: "border-box",
         margin: "5px",
@@ -45,13 +45,13 @@ function EventCard({ result, index, expandedId, setExpandedId }) {
     >
       <CardContent onClick={() => handleExpandClick(index)}>
         <Typography color="text.secondary" gutterBottom>
-          {renderRatingView(result.rating)}
+          {renderRatingView(place.rating)}
         </Typography>
         <Typography variant="h6" component="div">
-          {result.name}
+          {place.name}
         </Typography>
         <Typography sx={{ fontSize: 14 }} color="text.secondary">
-          {result.formatted_address}
+          {place.formatted_address}
         </Typography>
       </CardContent>
       <Collapse in={expandedId === index} timeout="auto" unmountOnExit>
