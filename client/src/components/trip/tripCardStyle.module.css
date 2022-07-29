@@ -1,0 +1,9 @@
+.tripItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.avatar div div {
+  margin-top: 5px;
+}
