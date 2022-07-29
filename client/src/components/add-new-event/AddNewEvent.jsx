@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import SearchBar from "../search-bar/SearchBar";
 import EventCard from "../event-card/EventCard";
-import json from "../json.json";
+import placesJson from "../../places.json";
 
 function AddNewEvent() {
   const [expandedId, setExpandedId] = useState(-1);
-
   const [searchInput, setSearchInput] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
 
@@ -18,7 +17,7 @@ function AddNewEvent() {
         setSelectedCategory={setSelectedCategory}
         setExpandedId={setExpandedId}
       />
-      {json.results
+      {placesJson.results
         .filter(
           (result) =>
             (result.name.toLowerCase().includes(searchInput.toLowerCase()) ||
