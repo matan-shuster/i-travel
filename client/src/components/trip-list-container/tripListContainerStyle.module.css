@@ -1,0 +1,36 @@
+.headTitle {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #000000;
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.titleContainer {
+  padding-top: 10%;
+  padding-left: 5%;
+}
+
+.tripItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tripList {
+  overflow-y: scroll;
+  max-height: 40vh;
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1%;
+  /* box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.33); */
+  transition: all 0.5s ease;
+}
+
+.addNewTrip {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  transition: all 0.5s ease;
+}

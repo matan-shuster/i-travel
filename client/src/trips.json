@@ -1,0 +1,65 @@
+[
+    {
+        "id":1,
+        "location": "Tel Aviv",
+        "start_date": "08-01-2022",
+        "end_date": "08-05-2022",
+        "number_of_events": 5
+    },
+    {
+        "id":2,
+        "location": "Jerusalem",
+        "start_date": "10-10-2022",
+        "end_date": "10-10-2022",
+        "number_of_events": 2
+    },
+    {
+        "id":3,
+        "location": "Eilat",
+        "start_date": "07-07-2023",
+        "end_date": "07-10-2023",
+        "number_of_events": 3
+    },
+    {
+        "id":4,
+        "location": "Eilat",
+        "start_date": "07-07-2023",
+        "end_date": "07-10-2023",
+        "number_of_events": 3
+    },
+    {
+        "id":5,
+        "location": "Eilat",
+        "start_date": "07-07-2023",
+        "end_date": "07-10-2023",
+        "number_of_events": 3
+    },
+    {
+        "id":6,
+        "location": "Eilat",
+        "start_date": "07-07-2023",
+        "end_date": "07-10-2023",
+        "number_of_events": 3
+    },
+    {
+        "id":7,
+        "location": "Eilat",
+        "start_date": "07-07-2023",
+        "end_date": "07-10-2023",
+        "number_of_events": 3
+    },
+    {
+        "id":8,
+        "location": "Eilat",
+        "start_date": "07-07-2023",
+        "end_date": "07-10-2023",
+        "number_of_events": 3
+    },
+    {
+        "id":9,
+        "location": "Eilat",
+        "start_date": "07-07-2023",
+        "end_date": "07-10-2023",
+        "number_of_events": 3
+    }
+]
