@@ -4,18 +4,22 @@ import styles from "./tripListContainerStyle.module.css";
 import TripCard from "../trip/TripCard";
 import AddNewTrip from "../add-new-trip/AddNewTrip";
 
-export default function TripListContainer({ data }) {
-  const trips = data.map((trip) => {
-    return (
-      <TripCard
-        key={trip.id}
-        location={trip.location}
-        start_date={trip.start_date}
-        end_date={trip.end_date}
-        number_of_events={trip.number_of_events}
-      />
-    );
-  });
+export default function TripListContainer({ data, onTripSelected }) {
+  let trips = data
+    ? data.map((trip) => {
+        return (
+          <TripCard
+            key={trip.id}
+            id={trip.id}
+            name={trip.name}
+            startDate={trip.startDate}
+            endDate={trip.endDate}
+            number_of_events={trip.events.length}
+            onTripSelected={onTripSelected}
+          />
+        );
+      })
+    : "loading...";
 
   return (
     <div>
