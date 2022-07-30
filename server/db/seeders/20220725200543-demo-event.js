@@ -17,7 +17,6 @@ module.exports = {
             latitude: '32.0690383',
             longitude: '34.7845191',
             type: 'restaurant',
-            priceLevel: 2,
             reviewRating: 3.6,
             openingHours: null,
             about: 'best mcdonalds in the HaHashmonaim',
