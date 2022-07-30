@@ -19,13 +19,12 @@ module.exports = (sequelize, DataTypes) => {
     address: DataTypes.STRING,
     latitude: DataTypes.FLOAT,
     longitude: DataTypes.FLOAT,
-    priceLevel: DataTypes.INTEGER,
     reviewRating: DataTypes.DOUBLE,
     openingHours: DataTypes.JSON,
     about: DataTypes.STRING,
     picture: DataTypes.JSON,
-    eventStart: DataTypes.TIME,
-    eventEnd: DataTypes.TIME,
+    eventStart: DataTypes.DATE,
+    eventEnd: DataTypes.DATE,
     tripID: DataTypes.INTEGER
   }, {
     sequelize,
