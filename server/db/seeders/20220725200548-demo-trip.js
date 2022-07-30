@@ -18,7 +18,15 @@ module.exports = {
         userID: 1,
         createdAt: new Date(),
         updatedAt: new Date()
-    }]);
+    },
+        {
+            name: 'Trip to Tel Aviv',
+            startDate: '2022-07-27',
+            endDate: '2022-07-27',
+            userID: 1,
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }]);
   },
 
   async down (queryInterface, Sequelize) {
