@@ -18,6 +18,8 @@ export default function TripEventsContainer({ data, tripID = 0 }) {
       <EventCard
         key={event.id}
         name={event.name}
+        latitude={event.latitude}
+        longitude={event.latitude}
         location={event.location}
         distance={event.distance}
         eventStart={event.eventStart}

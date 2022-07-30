@@ -10,19 +10,27 @@ import DUMMY_TRIPS_DATA from "../../trips.json";
 function AppContainer() {
   const [data, setData] = useState(null);
   const [trip, setTrip] = useState();
+  const [userID, setUserID] = useState(1);
 
   useEffect(() => {
     async function callData() {
-      const req = await apiService.getAllTripWithEvents(1);
+      const req = await apiService.getAllTripWithEvents(userID);
       setData(req);
     }
     callData();
-  }, []);
+  }, [userID]);
+
+  const addNewTripCallback = useCallback(
+    (newTrip) => {
+      const updatedTrips = [...data, newTrip];
+      setData(updatedTrips);
+    },
+    [data]
+  );
 
   const setTripCallback = useCallback((tripID) => {
     setTrip(tripID);
   }, []);
-
   return (
     <div>
       <Routes>
@@ -30,9 +38,10 @@ function AppContainer() {
           path={ROUTES_MAPPING.TRIP_LIST_CONTAINER}
           element={
             <TripListContainer
-              /* data={DUMMY_TRIPS_DATA} */
               onTripSelected={setTripCallback}
               data={data}
+              userID={userID}
+              onNewTripPressed={addNewTripCallback}
             />
           }
         />

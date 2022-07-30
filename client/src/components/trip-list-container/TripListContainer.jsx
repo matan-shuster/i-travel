@@ -4,7 +4,12 @@ import styles from "./tripListContainerStyle.module.css";
 import TripCard from "../trip/TripCard";
 import AddNewTrip from "../add-new-trip/AddNewTrip";
 
-export default function TripListContainer({ data, onTripSelected }) {
+export default function TripListContainer({
+  data,
+  onTripSelected,
+  onNewTripPressed,
+  userID,
+}) {
   let trips = data
     ? data.map((trip) => {
         return (
@@ -29,7 +34,11 @@ export default function TripListContainer({ data, onTripSelected }) {
       <div className={styles.tripList}>{trips}</div>
 
       <div className={`${styles.addNewTrip} `}>
-        <AddNewTrip />
+        <AddNewTrip
+          onNewTripPressed={onNewTripPressed}
+          userID={userID}
+          newTripId={data?.length}
+        />
       </div>
     </div>
   );

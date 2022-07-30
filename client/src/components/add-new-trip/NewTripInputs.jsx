@@ -10,20 +10,33 @@ import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
-export default function NewTripInputs({ onSubmitEvent }) {
+export default function NewTripInputs({
+  onSubmitEvent,
+  onNewTripPressed,
+  userID,
+  newTripId,
+}) {
   const [startDateValue, setStartDateValue] = useState(new Date());
   const [endDateValue, setEndDateValue] = useState(new Date());
-  const [whereInput, setWhereInput] = useState("");
-
+  const [tripName, setTripName] = useState("");
   const startNewTrip = () => {
     //validation check
     //send to backend
     //update app (callback/redux)
     setStartDateValue(new Date());
     setEndDateValue(new Date());
-    setWhereInput("");
+    setTripName("");
+    onNewTripPressed({
+      userID: userID,
+      id: newTripId,
+      startDate: startDateValue,
+      endDate: endDateValue,
+      name: tripName,
+      events: [],
+    });
     onSubmitEvent();
   };
+
   return (
     <div className={styles.addNewTrip}>
       <div className={styles.addDates}>
@@ -50,15 +63,15 @@ export default function NewTripInputs({ onSubmitEvent }) {
         </LocalizationProvider>
       </div>
       <TextField
-        value={whereInput}
+        value={tripName}
         margin="normal"
         id="standard-search"
-        label="Location"
+        label="Trip Name"
         type="search"
         variant="standard"
         required
         onChange={(e) => {
-          setWhereInput(e.target.value);
+          setTripName(e.target.value);
         }}
         sx={{ width: "100%" }}
       />
