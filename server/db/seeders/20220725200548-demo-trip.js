@@ -13,8 +13,8 @@ module.exports = {
     */
     await queryInterface.bulkInsert('Trips', [{
         name: 'Trip to Mcdonalds',
-        startDate: '2020-07-25',
-        endDate: '2020-07-25',
+        startDate: '2022-07-25',
+        endDate: '2022-07-25',
         userID: 1,
         createdAt: new Date(),
         updatedAt: new Date()
