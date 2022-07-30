@@ -39,10 +39,10 @@ module.exports = {
         type: Sequelize.JSON
       },
       eventStart: {
-        type: Sequelize.TIME
+        type: Sequelize.DATE
       },
       eventEnd: {
-        type: Sequelize.TIME
+        type: Sequelize.DATE
       },
       tripID: {
         type: Sequelize.INTEGER

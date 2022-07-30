@@ -24,8 +24,8 @@ module.exports = (sequelize, DataTypes) => {
     openingHours: DataTypes.JSON,
     about: DataTypes.STRING,
     picture: DataTypes.JSON,
-    eventStart: DataTypes.TIME,
-    eventEnd: DataTypes.TIME,
+    eventStart: DataTypes.DATE,
+    eventEnd: DataTypes.DATE,
     tripID: DataTypes.INTEGER
   }, {
     sequelize,
