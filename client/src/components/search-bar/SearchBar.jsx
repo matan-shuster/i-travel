@@ -8,12 +8,13 @@ import {
   FormControl,
   Select,
 } from "@mui/material";
-import { Clear as ClearIcon } from "@mui/icons-material";
+import { Clear as ClearIcon, Search as SearchIcon } from "@mui/icons-material";
 
 function SearchBar({
   searchInput,
   selectedCategory,
   handleSearchInputChange,
+  handleSearchClick,
   handleSearchClear,
   handleCategoryChange,
 }) {
@@ -72,6 +73,14 @@ function SearchBar({
       ) : (
         ""
       )}
+      <IconButton
+        type="button"
+        sx={{ p: "10px" }}
+        aria-label="search"
+        onClick={handleSearchClick}
+      >
+        <SearchIcon />
+      </IconButton>
 
       <FormControl variant="filled" sx={{ m: 1, minWidth: 135 }} size="small">
         <InputLabel id="demo-simple-select-filled-label">Category</InputLabel>

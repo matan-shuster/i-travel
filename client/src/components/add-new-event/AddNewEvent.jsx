@@ -13,10 +13,13 @@ function AddNewEvent() {
   const handleSearchInputChange = async (e) => {
     setSearchInput(e.target.value);
     setExpandedId(-1);
-    if (e.target.value === "") {
+  };
+
+  const handleSearchClick = async () => {
+    if (searchInput === "") {
       setPlaces([]);
     } else {
-      const placesList = await apiService.getPlaces(e.target.value);
+      const placesList = await apiService.getPlaces(searchInput);
       setPlaces(placesList.results);
     }
   };
@@ -38,6 +41,7 @@ function AddNewEvent() {
         searchInput={searchInput}
         selectedCategory={selectedCategory}
         handleSearchInputChange={handleSearchInputChange}
+        handleSearchClick={handleSearchClick}
         handleSearchClear={handleSearchClear}
         handleCategoryChange={handleCategoryChange}
       />
