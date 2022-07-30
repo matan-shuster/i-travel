@@ -29,9 +29,6 @@ module.exports = {
       openingHours: {
         type: Sequelize.JSON
       },
-      about: {
-        type: Sequelize.STRING
-      },
       picture: {
         type: Sequelize.JSON
       },
