@@ -26,6 +26,8 @@ function EventCard({ place, index, expandedId, setExpandedId }) {
   const handleEndDateTime = async (e) => setEndDateTime(e.target.value);
 
   const handleSaveButtonClick = async () => {
+    const placeDetails = await apiService.getPlaceDetails(place.place_id);
+
     const event = {
       name: place.name,
       type: place.types[0], // TODO: not always 0, consider other methods for type
@@ -33,8 +35,8 @@ function EventCard({ place, index, expandedId, setExpandedId }) {
       latitude: place.geometry.location.lat,
       longitude: place.geometry.location.lng,
       reviewRating: place.rating,
-      openingHours: null, // TODO: implement using Google Place Details API
-      picture: null, // TODO: implement using Google Place Details API
+      openingHours: placeDetails.result.opening_hours,
+      picture: null, // TODO: implement using Google Place Photos API
       eventStart: startDateTime,
       eventEnd: endDateTime,
       tripID: 1, // TODO: add tripID support

@@ -9,7 +9,7 @@ class GoogleApiClient {
   async getPlaces(query) {
     try {
       const response = await axios.get(
-        `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${query}&key=${this.GOOGLE_API_KEY}`
+        `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${query}&language=en&key=${this.GOOGLE_API_KEY}`
       );
       const places = response.data;
 
@@ -17,6 +17,20 @@ class GoogleApiClient {
     } catch (error) {
       console.error(error);
       throw new Error("Failed to fetch places from Google API");
+    }
+  }
+
+  async getPlaceDetails(placeId) {
+    try {
+      const response = await axios.get(
+        `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&language=en&key=${this.GOOGLE_API_KEY}`
+      );
+      const placeDetails = response.data;
+
+      return placeDetails;
+    } catch (error) {
+      console.error(error);
+      throw new Error("Failed to fetch place details from Google API");
     }
   }
 }
