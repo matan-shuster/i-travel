@@ -23,9 +23,6 @@ module.exports = {
       longitude: {
         type: Sequelize.FLOAT
       },
-      priceLevel: {
-        type: Sequelize.INTEGER
-      },
       reviewRating: {
         type: Sequelize.DOUBLE
       },
