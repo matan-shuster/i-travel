@@ -12,10 +12,10 @@ import { Clear as ClearIcon } from "@mui/icons-material";
 
 function SearchBar({
   searchInput,
-  setSearchInput,
   selectedCategory,
-  setSelectedCategory,
-  setExpandedId,
+  handleSearchInputChange,
+  handleSearchClear,
+  handleCategoryChange,
 }) {
   const categoriesList = [
     {
@@ -39,21 +39,6 @@ function SearchBar({
       value: "museum",
     },
   ];
-
-  const handleSearchInputChange = (e) => {
-    setSearchInput(e.target.value);
-    setExpandedId(-1);
-  };
-
-  const handleCategoryChange = (e) => {
-    setSelectedCategory(e.target.value);
-    setExpandedId(-1);
-  };
-
-  const handleSearchClear = () => {
-    setSearchInput("");
-    setExpandedId(-1);
-  };
 
   return (
     <Paper
