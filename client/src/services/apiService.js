@@ -10,7 +10,7 @@ export default class apiService {
   static async createEvent(event) {
     const response = await fetch(`/events`, {
       method: "POST",
-      body: JSON.stringify(event),
+      body: JSON.stringify({ event }),
       headers: {
         "Content-Type": "application/json",
       },
