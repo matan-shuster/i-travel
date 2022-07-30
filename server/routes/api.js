@@ -80,4 +80,9 @@ router.get("/places/:query", async (req, res, next) => {
   next();
 });
 
+router.get("/place-details/:placeId", async (req, res, next) => {
+  res.send(await placesManager.getPlaceDetails(req.params.placeId));
+  next();
+});
+
 module.exports = router;

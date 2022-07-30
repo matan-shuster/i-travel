@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import apiService from "../../services/apiService";
 import {
   Card,
   CardContent,
@@ -14,8 +15,36 @@ import {
 } from "@mui/icons-material";
 
 function EventCard({ place, index, expandedId, setExpandedId }) {
+  const [startDateTime, setStartDateTime] = useState("2022-08-08T16:00");
+  const [endDateTime, setEndDateTime] = useState("2022-08-08T19:00");
+
   const handleExpandClick = (index) => {
     setExpandedId(expandedId === index ? -1 : index);
+  };
+
+  const handleStartDateTime = async (e) => setStartDateTime(e.target.value);
+  const handleEndDateTime = async (e) => setEndDateTime(e.target.value);
+
+  const handleSaveButtonClick = async () => {
+    const placeDetails = await apiService.getPlaceDetails(place.place_id);
+
+    const event = {
+      name: place.name,
+      type: place.types[0], // TODO: not always 0, consider other methods for type
+      address: place.formatted_address,
+      latitude: place.geometry.location.lat,
+      longitude: place.geometry.location.lng,
+      reviewRating: place.rating,
+      openingHours: placeDetails.result.opening_hours,
+      picture: null, // TODO: implement using Google Place Photos API
+      eventStart: startDateTime,
+      eventEnd: endDateTime,
+      tripID: 1, // TODO: add tripID support
+    };
+
+    if (endDateTime < startDateTime)
+      alert("End Time could not be before Start Time");
+    else await apiService.createEvent(event);
   };
 
   const renderRatingView = (rating) => {
@@ -71,27 +100,31 @@ function EventCard({ place, index, expandedId, setExpandedId }) {
             <Button variant="text" onClick={() => handleExpandClick(index)}>
               Close
             </Button>
-            <Button variant="contained">Save</Button>
+            <Button variant="contained" onClick={handleSaveButtonClick}>
+              Save
+            </Button>
           </Stack>
           <TextField
             id="datetime-local"
-            label="Start Time"
+            label="Start"
             type="datetime-local"
-            defaultValue="2022-08-08T16:00"
+            defaultValue={startDateTime}
             sx={{ width: 200, margin: "10px 0 10px 0" }}
             InputLabelProps={{
               shrink: true,
             }}
+            onChange={handleStartDateTime}
           />
           <TextField
             id="datetime-local"
-            label="End Time"
+            label="End"
             type="datetime-local"
-            defaultValue="2022-08-08T19:00"
+            defaultValue={endDateTime}
             sx={{ width: 200, margin: "10px 0 10px 0" }}
             InputLabelProps={{
               shrink: true,
             }}
+            onChange={handleEndDateTime}
           />
         </CardContent>
       </Collapse>

@@ -10,7 +10,7 @@ export default class apiService {
   static async createEvent(event) {
     const response = await fetch(`/events`, {
       method: "POST",
-      body: JSON.stringify(event),
+      body: JSON.stringify({ event }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -129,6 +129,12 @@ export default class apiService {
   //get places from google api by query
   static async getPlaces(query) {
     const response = await fetch(`/places/${query}`);
+    const places = await response.json();
+    return places;
+  }
+
+  static async getPlaceDetails(placeId) {
+    const response = await fetch(`/place-details/${placeId}`);
     const places = await response.json();
     return places;
   }

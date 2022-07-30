@@ -9,6 +9,11 @@ class PlacesManager {
     const places = await this.googleApiClient.getPlaces(query);
     return places;
   };
+
+  getPlaceDetails = async (placeId) => {
+    const placeDetails = await this.googleApiClient.getPlaceDetails(placeId);
+    return placeDetails;
+  };
 }
 
 module.exports = PlacesManager;
