@@ -132,4 +132,10 @@ export default class apiService {
     const places = await response.json();
     return places;
   }
+
+  static async getPlaceDetails(placeId) {
+    const response = await fetch(`/place-details/${placeId}`);
+    const places = await response.json();
+    return places;
+  }
 }
