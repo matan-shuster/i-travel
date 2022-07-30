@@ -8,14 +8,15 @@ import {
   FormControl,
   Select,
 } from "@mui/material";
-import { Clear as ClearIcon } from "@mui/icons-material";
+import { Clear as ClearIcon, Search as SearchIcon } from "@mui/icons-material";
 
 function SearchBar({
   searchInput,
-  setSearchInput,
   selectedCategory,
-  setSelectedCategory,
-  setExpandedId,
+  handleSearchInputChange,
+  handleSearchClick,
+  handleSearchClear,
+  handleCategoryChange,
 }) {
   const categoriesList = [
     {
@@ -39,21 +40,6 @@ function SearchBar({
       value: "museum",
     },
   ];
-
-  const handleSearchInputChange = (e) => {
-    setSearchInput(e.target.value);
-    setExpandedId(-1);
-  };
-
-  const handleCategoryChange = (e) => {
-    setSelectedCategory(e.target.value);
-    setExpandedId(-1);
-  };
-
-  const handleSearchClear = () => {
-    setSearchInput("");
-    setExpandedId(-1);
-  };
 
   return (
     <Paper
@@ -87,6 +73,14 @@ function SearchBar({
       ) : (
         ""
       )}
+      <IconButton
+        type="button"
+        sx={{ p: "10px" }}
+        aria-label="search"
+        onClick={handleSearchClick}
+      >
+        <SearchIcon />
+      </IconButton>
 
       <FormControl variant="filled" sx={{ m: 1, minWidth: 135 }} size="small">
         <InputLabel id="demo-simple-select-filled-label">Category</InputLabel>
