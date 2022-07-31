@@ -4,6 +4,9 @@ import styles from "./tripListContainerStyle.module.css";
 import TripCard from "../trip/TripCard";
 import AddNewTrip from "../add-new-trip/AddNewTrip";
 
+import emptyListImg from "../../assets/emptyListImg.png";
+import LinearProgress from "@mui/material/LinearProgress";
+
 export default function TripListContainer({
   data,
   onTripSelected,
@@ -29,10 +32,22 @@ export default function TripListContainer({
   return (
     <div>
       <div className={styles.titleContainer}>
-        <div className={styles.headTitle}>Trips</div>
+        <div className={styles.headTitle}>
+          {trips.length > 0 ? "My Trips" : null}
+        </div>
       </div>
-      <div className={styles.tripList}>{trips}</div>
-
+      {trips.length > 0 ? (
+        <div className={styles.tripList}>{trips}</div>
+      ) : (
+        <div>
+          <img
+            alt="emptyListPic"
+            src={emptyListImg}
+            style={{ width: "100%", height: "500px" }}
+          ></img>
+        </div>
+      )}
+      {/* <div className={styles.tripList}>{trips}</div> */}
       <div className={`${styles.addNewTrip} `}>
         <AddNewTrip
           onNewTripPressed={onNewTripPressed}

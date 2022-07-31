@@ -8,7 +8,7 @@ import apiService from "../../services/apiService";
 import DUMMY_TRIPS_DATA from "../../trips.json";
 
 function AppContainer() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   const [trip, setTrip] = useState();
   const [userID, setUserID] = useState(1);
 

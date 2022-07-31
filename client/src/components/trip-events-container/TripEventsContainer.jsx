@@ -8,6 +8,8 @@ import Fab from "@mui/material/Fab";
 import { useNavigate } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 
+import globeWithMarkers from "../../assets/globeWithMarkers.png";
+
 export default function TripEventsContainer({ data, tripID = 0 }) {
   let navigate = useNavigate();
 
@@ -34,7 +36,17 @@ export default function TripEventsContainer({ data, tripID = 0 }) {
       <div className={styles.titleContainer}>
         <div className={styles.headTitle}>{trip.name}</div>
       </div>
-      <div className={styles.eventList}>{events}</div>
+      {events.length > 0 ? (
+        <div className={styles.eventList}>{events}</div>
+      ) : (
+        <div>
+          <img
+            alt="emptyEventsList"
+            src={globeWithMarkers}
+            style={{ width: "100%", height: "350px" }}
+          ></img>
+        </div>
+      )}
 
       <div className={`${styles.addNewEvent} `}>
         <Fab
