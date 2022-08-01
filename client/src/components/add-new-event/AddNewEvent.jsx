@@ -44,6 +44,7 @@ function AddNewEvent() {
         handleSearchClick={handleSearchClick}
         handleSearchClear={handleSearchClear}
         handleCategoryChange={handleCategoryChange}
+        key={1}
       />
       {Array.isArray(places) && places.length
         ? places.map((place, index) => {
@@ -53,6 +54,7 @@ function AddNewEvent() {
                 index={index}
                 expandedId={expandedId}
                 setExpandedId={setExpandedId}
+                key={`event-${index}`}
               />
             );
           })
