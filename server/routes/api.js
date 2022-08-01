@@ -16,12 +16,12 @@ router.post("/events", async (req, res, next) => {
   res.status(200).json(renderedEvents);
 });
 router.put("/events/:id", async (req, res) => {
-  await tripdataManager.updateEvent(req.body.id, req.body.event);
+  await tripdataManager.updateEvent(req.params.id, req.body.event);
   res.status(200).json(req.body.event);
 });
 router.delete("/events/:id", async (req, res) => {
-  await tripdataManager.deleteEvent(req.body.id);
-  res.status(200).json(req.body.id);
+  await tripdataManager.deleteEvent(req.params.id);
+  res.status(200).json(req.params.id);
 });
 
 //Trip Router
@@ -35,12 +35,12 @@ router.post("/trips", async (req, res, next) => {
   res.status(200).json(renderedTrips);
 });
 router.put("/trips/:id", async (req, res) => {
-  await tripdataManager.updateTrip(req.body.id, req.body.trip);
+  await tripdataManager.updateTrip(req.params.id, req.body.trip);
   res.status(200).json(req.body.trip);
 });
 router.delete("/trips/:id", async (req, res) => {
-  await tripdataManager.deleteTrip(req.body.id);
-  res.status(200).json(req.body.id);
+  await tripdataManager.deleteTrip(req.params.id);
+  res.status(200).json(req.params.id);
 });
 
 //User Router
@@ -58,12 +58,12 @@ router.post("/users", async (req, res, next) => {
   res.status(200).json(renderedUsers);
 });
 router.put("/users/:id", async (req, res) => {
-  await tripdataManager.updateUser(req.body.id, req.body.user);
-  res.status(200).json(req.body.user);
+  await tripdataManager.updateUser(req.params.id, req.body.user);
+  res.status(200).json(req.params.user);
 });
 router.delete("/users/:id", async (req, res) => {
-  await tripdataManager.deleteUser(req.body.id);
-  res.status(200).json(req.body.id);
+  await tripdataManager.deleteUser(req.params.id);
+  res.status(200).json(req.params.id);
 });
 
 router.get("/", (req, res) => {
