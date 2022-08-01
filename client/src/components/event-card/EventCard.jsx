@@ -39,7 +39,7 @@ function EventCard({ place, index, expandedId, setExpandedId }) {
       picture: null, // TODO: implement using Google Place Photos API
       eventStart: startDateTime,
       eventEnd: endDateTime,
-      tripID: 1, // TODO: add tripID support
+      tripID: window.location.pathname.split("/")[2],
     };
 
     if (endDateTime < startDateTime)
