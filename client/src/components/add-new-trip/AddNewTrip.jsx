@@ -12,7 +12,7 @@ export default function AddNewTrip({ onNewTripPressed, userID, newTripId }) {
 
   const addButtom = (
     <Fab
-      sx={{ bgcolor: "red", color: "white" }}
+      sx={{ bgcolor: "darkblue", color: "gray" }}
       aria-label="add"
       onClick={() => {
         setDisplayBtn(false);
