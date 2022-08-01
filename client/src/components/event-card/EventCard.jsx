@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import apiService from "../../services/apiService";
 import {
   Card,
@@ -8,6 +8,7 @@ import {
   TextField,
   Button,
   Stack,
+  Box,
 } from "@mui/material";
 import {
   Star as StarIcon,
@@ -17,6 +18,11 @@ import {
 function EventCard({ place, index, expandedId, setExpandedId }) {
   const [startDateTime, setStartDateTime] = useState("2022-08-08T16:00");
   const [endDateTime, setEndDateTime] = useState("2022-08-08T19:00");
+  const [photoReference, setPhotoReference] = useState("");
+
+  useEffect(() => {
+    setPhotoReference(place.photos ? place.photos[0]?.photo_reference : "");
+  }, []);
 
   const handleExpandClick = (index) => {
     setExpandedId(expandedId === index ? -1 : index);
@@ -36,7 +42,9 @@ function EventCard({ place, index, expandedId, setExpandedId }) {
       longitude: place.geometry.location.lng,
       reviewRating: place.rating,
       openingHours: placeDetails.result.opening_hours,
-      picture: null, // TODO: implement using Google Place Photos API
+      picture: {
+        uri: `https://maps.googleapis.com/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=400&key=${process.env.REACT_APP_GOOGLE_API_KEY}`,
+      },
       eventStart: startDateTime,
       eventEnd: endDateTime,
       tripID: 1, // TODO: add tripID support
@@ -72,6 +80,17 @@ function EventCard({ place, index, expandedId, setExpandedId }) {
       }}
       variant="outlined"
     >
+      <Box
+        component="img"
+        sx={{
+          display: "block",
+          marginLeft: "26px",
+          width: "350px",
+          objectFit: "none",
+          height: "350px",
+        }}
+        src={`https://maps.googleapis.com/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=450&key=${process.env.REACT_APP_GOOGLE_API_KEY}`}
+      />
       <CardContent onClick={() => handleExpandClick(index)}>
         <Typography color="text.secondary" gutterBottom>
           {renderRatingView(place.rating)}
