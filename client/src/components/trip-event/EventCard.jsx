@@ -18,6 +18,7 @@ function EventCard({
   eventEnd,
   address,
 }) {
+
   let splitedStartHour = eventStart.split("-");
   let splitedEndHour = eventEnd.split("-");
 
