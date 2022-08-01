@@ -53,7 +53,7 @@ export default function TripEventsContainer({ data, tripID = 0 }) {
           sx={{ bgcolor: "red", color: "white" }}
           aria-label="add"
           onClick={() => {
-            navigate(`/trip/:${trip.id}/add_new_event`);
+            navigate(`/trip/${trip.id}/add_new_event`);
           }}
         >
           <AddIcon />
