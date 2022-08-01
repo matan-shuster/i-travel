@@ -58,6 +58,7 @@ function TripCard({ id, name, startDate, number_of_events, onTripSelected }) {
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
+            alignItems: "flex-start",
           }}
           onClick={() => {
             onTripSelected(id);
