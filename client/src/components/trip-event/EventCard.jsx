@@ -11,26 +11,22 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 function EventCard({
   name,
-  cordinates,
+  latitude,
+  longitude,
   distance,
   eventStart,
   eventEnd,
   address,
 }) {
-  const start = eventStart.split("-");
-  const end = eventEnd.split("-");
 
-  let splitedStartHour = start[2].split("T");
-  let splitedEndHour = end[2].split("T");
+  let splitedStartHour = eventStart.split("-");
+  let splitedEndHour = eventEnd.split("-");
+
+  splitedStartHour = splitedStartHour[2].split("T");
+  splitedEndHour = splitedEndHour[2].split("T");
 
   splitedStartHour = splitedStartHour[1].split(":");
   splitedEndHour = splitedEndHour[1].split(":");
-
-  console.log(splitedStartHour);
-
-  // splitedStartHour = splitedStartHour.split("T");
-  // splitedEndHour = splitedEndHour.split("T");
-  // console.log(splitedStartHour);
 
   let splitedAdress = address.split(",");
   return (
@@ -68,15 +64,20 @@ function EventCard({
         <CardActionArea
           sx={{
             display: "flex",
-            justifyContent: "center",
             flexDirection: "column",
+            justifyContent: "flex-start",
+            alignItems: "flex-start",
           }}
         >
           <CardContent>
             <Typography variant="h6" component="div">
               {name}
             </Typography>
-            <Typography color="text.secondary" gutterBottom>
+            <Typography
+              color="text.secondary"
+              gutterBottom
+              sx={{ fontSize: 12 }}
+            >
               {splitedAdress[0]} {splitedAdress[1]}
             </Typography>
             <Typography

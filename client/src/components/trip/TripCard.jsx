@@ -23,7 +23,7 @@ function TripCard({ id, name, startDate, number_of_events, onTripSelected }) {
     daysLeftMessage = "Today!";
   }
   if (daysLeft < 0) {
-    daysLeftMessage = `${Math.abs(daysLeft)} ago!`;
+    daysLeftMessage = `${Math.abs(daysLeft)} days ago!`;
   }
 
   let navigate = useNavigate();
