@@ -47,7 +47,7 @@ function EventCard({ place, index, expandedId, setExpandedId }) {
       },
       eventStart: startDateTime,
       eventEnd: endDateTime,
-      tripID: 1, // TODO: add tripID support
+      tripID: window.location.pathname.split("/")[2],
     };
 
     if (endDateTime < startDateTime)
