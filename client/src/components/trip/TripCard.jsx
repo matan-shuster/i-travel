@@ -1,26 +1,32 @@
 import React from "react";
 import styles from "./tripCardStyle.module.css";
 
-import { DAYS, MONTHS, secendsToDays } from "../../constans";
+import { secendsToDays } from "../../constans";
 
 import { Avatar } from "@mui/material";
 import { Box } from "@mui/material";
 import { Card, CardContent, CardActionArea, CardActions } from "@mui/material";
 import { Typography } from "@mui/material";
+
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
-function TripCard({ location, start_date, end_date, number_of_events }) {
-  const splicedStartDate = start_date.split("-");
+import { useNavigate } from "react-router-dom";
 
-  const tripDate = new Date(
-    `${splicedStartDate[0]},${splicedStartDate[1]}, ${splicedStartDate[2]}`
-  );
-  //redundant? date input give text day,text month,month number day
-  const tripDay = DAYS[tripDate.getDay()];
-  const tripMonthAndDayOfMonth = `${splicedStartDate[1]} ${
-    MONTHS[parseInt(splicedStartDate[0]) - 1]
-  }`;
+function TripCard({ id, name, startDate, number_of_events, onTripSelected }) {
+  const tripDate = new Date(startDate);
+  const splitDate = String(tripDate).split(" ");
+  const tripDay = splitDate[0];
+  const tripMonthAndDayOfMonth = `${splitDate[1]} ${splitDate[2]}`;
   const daysLeft = Math.ceil(secendsToDays(tripDate - new Date()));
+  let daysLeftMessage = `in ${daysLeft} days`;
+  if (daysLeft === 0) {
+    daysLeftMessage = "Today!";
+  }
+  if (daysLeft < 0) {
+    daysLeftMessage = `${Math.abs(daysLeft)} ago!`;
+  }
+
+  let navigate = useNavigate();
 
   return (
     <div className={styles.tripItem}>
@@ -53,10 +59,14 @@ function TripCard({ location, start_date, end_date, number_of_events }) {
             justifyContent: "center",
             flexDirection: "column",
           }}
+          onClick={() => {
+            onTripSelected(id);
+            navigate(`/trip/${id}`);
+          }}
         >
           <CardContent>
             <Typography variant="h6" component="div">
-              {location}
+              {name}
             </Typography>
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <AccessTimeIcon
@@ -64,7 +74,7 @@ function TripCard({ location, start_date, end_date, number_of_events }) {
                 sx={{ color: "gray", paddingBottom: "8px" }}
               />
               <Typography color="text.secondary" gutterBottom>
-                In {daysLeft} days
+                {daysLeftMessage}
               </Typography>
             </Box>
             <Typography

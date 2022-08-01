@@ -11,19 +11,34 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 function EventCard({
   name,
-  location,
   cordinates,
   distance,
-  startHour,
-  endHour,
+  eventStart,
+  eventEnd,
+  address,
 }) {
-  const start = startHour.split(" ");
-  const end = endHour.split(" ");
+  const start = eventStart.split("-");
+  const end = eventEnd.split("-");
 
+  let splitedStartHour = start[2].split("T");
+  let splitedEndHour = end[2].split("T");
+
+  splitedStartHour = splitedStartHour[1].split(":");
+  splitedEndHour = splitedEndHour[1].split(":");
+
+  console.log(splitedStartHour);
+
+  // splitedStartHour = splitedStartHour.split("T");
+  // splitedEndHour = splitedEndHour.split("T");
+  // console.log(splitedStartHour);
+
+  let splitedAdress = address.split(",");
   return (
     <div className={styles.eventItem}>
       <div className={styles.duration}>
-        <div>{start[0]}</div>
+        <div>
+          {splitedStartHour[0]}:{splitedStartHour[1]}
+        </div>
         {/* <div>
           <Avatar
             sx={{
@@ -40,7 +55,9 @@ function EventCard({
             <div>EVENT DURATION</div>
           </Avatar>
         </div> */}
-        <div>{end[0]} </div>
+        <div>
+          {splitedEndHour[0]}:{splitedEndHour[1]}
+        </div>
       </div>
 
       <Card
@@ -60,13 +77,13 @@ function EventCard({
               {name}
             </Typography>
             <Typography color="text.secondary" gutterBottom>
-              {location}
+              {splitedAdress[0]} {splitedAdress[1]}
             </Typography>
             <Typography
               sx={{ fontSize: 14, linHheight: "10px" }}
               color="text.secondary"
             >
-              {distance}
+              {distance} time to travel
             </Typography>
             <Typography
               sx={{ fontSize: 14, linHheight: "10px" }}
