@@ -33,7 +33,6 @@ export default function NewTripInputs({
 
     const newTripRes = await apiService.createTrip(newTrip);
     newTrip.id = newTripRes.id;
-    console.log(newTripRes);
     //update app (callback/redux)
     setStartDateValue(new Date());
     setEndDateValue(new Date());
