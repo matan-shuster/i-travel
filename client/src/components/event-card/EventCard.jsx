@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import apiService from "../../services/apiService";
 import {
   Card,
@@ -17,6 +18,8 @@ import {
 function EventCard({ place, index, expandedId, setExpandedId }) {
   const [startDateTime, setStartDateTime] = useState("2022-08-08T16:00");
   const [endDateTime, setEndDateTime] = useState("2022-08-08T19:00");
+  const navigate = useNavigate();
+  const tripId = window.location.pathname.split("/")[2];
 
   const handleExpandClick = (index) => {
     setExpandedId(expandedId === index ? -1 : index);
@@ -39,22 +42,25 @@ function EventCard({ place, index, expandedId, setExpandedId }) {
       picture: null, // TODO: implement using Google Place Photos API
       eventStart: startDateTime,
       eventEnd: endDateTime,
-      tripID: window.location.pathname.split("/")[2],
+      tripID: tripId,
     };
 
     if (endDateTime < startDateTime)
       alert("End Time could not be before Start Time");
     else await apiService.createEvent(event);
+
+    navigate(`/trip/${tripId}`);
   };
 
   const renderRatingView = (rating) => {
     let ratingView = [];
     const roundRating = Math.round(rating);
 
-    if (roundRating === 0) ratingView.push(<FiberNewIcon fontSize="small" />);
+    if (roundRating === 0)
+      ratingView.push(<FiberNewIcon fontSize="small" key="fiber-new" />);
     else {
       for (let i = 0; i < roundRating; i++) {
-        ratingView.push(<StarIcon fontSize="small" />);
+        ratingView.push(<StarIcon fontSize="small" key={`star-${i}`} />);
       }
     }
 
