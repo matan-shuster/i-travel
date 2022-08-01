@@ -12,10 +12,10 @@ import globeWithMarkers from "../../assets/globeWithMarkers.png";
 
 export default function TripEventsContainer({ data, tripID = 0 }) {
   let navigate = useNavigate();
-
-  const trip = data[tripID - 1];
-
-  const events = trip.events.map((event) => {
+  const trip = data.filter((trip) => {
+    if (trip.id === tripID) return trip;
+  });
+  const events = trip[0].events.map((event) => {
     return (
       <EventCard
         key={event.id}
