@@ -47,7 +47,7 @@ export default class apiService {
   static async createTrip(trip) {
     const response = await fetch(`/trips`, {
       method: "POST",
-      body: JSON.stringify(trip),
+      body: JSON.stringify({ trip }),
       headers: {
         "Content-Type": "application/json",
       },

@@ -9,6 +9,7 @@ import TextField from "@mui/material/TextField";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import apiService from "../../services/apiService";
 
 export default function NewTripInputs({
   onSubmitEvent,
@@ -19,21 +20,25 @@ export default function NewTripInputs({
   const [startDateValue, setStartDateValue] = useState(new Date());
   const [endDateValue, setEndDateValue] = useState(new Date());
   const [tripName, setTripName] = useState("");
-  const startNewTrip = () => {
-    //validation check
-    //send to backend
-    //update app (callback/redux)
-    setStartDateValue(new Date());
-    setEndDateValue(new Date());
-    setTripName("");
-    onNewTripPressed({
+  const startNewTrip = async () => {
+    const newTrip = {
       userID: userID,
-      id: newTripId,
       startDate: startDateValue,
       endDate: endDateValue,
       name: tripName,
       events: [],
-    });
+    };
+
+    //validation check
+
+    const newTripRes = await apiService.createTrip(newTrip);
+    newTrip.id = newTripRes.id;
+    console.log(newTripRes);
+    //update app (callback/redux)
+    setStartDateValue(new Date());
+    setEndDateValue(new Date());
+    setTripName("");
+    onNewTripPressed(newTrip);
     onSubmitEvent();
   };
 
