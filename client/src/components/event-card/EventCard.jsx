@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import apiService from "../../services/apiService";
 import {
   Card,
@@ -19,6 +20,8 @@ function EventCard({ place, index, expandedId, setExpandedId }) {
   const [startDateTime, setStartDateTime] = useState("2022-08-08T16:00");
   const [endDateTime, setEndDateTime] = useState("2022-08-08T19:00");
   const [photoReference, setPhotoReference] = useState("");
+  const navigate = useNavigate();
+  const tripId = window.location.pathname.split("/")[2];
 
   useEffect(() => {
     setPhotoReference(place.photos ? place.photos[0]?.photo_reference : "");
@@ -47,22 +50,25 @@ function EventCard({ place, index, expandedId, setExpandedId }) {
       },
       eventStart: startDateTime,
       eventEnd: endDateTime,
-      tripID: window.location.pathname.split("/")[2],
+      tripID: tripId,
     };
 
     if (endDateTime < startDateTime)
       alert("End Time could not be before Start Time");
     else await apiService.createEvent(event);
+
+    navigate(`/trip/${tripId}`);
   };
 
   const renderRatingView = (rating) => {
     let ratingView = [];
     const roundRating = Math.round(rating);
 
-    if (roundRating === 0) ratingView.push(<FiberNewIcon fontSize="small" />);
+    if (roundRating === 0)
+      ratingView.push(<FiberNewIcon fontSize="small" key="fiber-new" />);
     else {
       for (let i = 0; i < roundRating; i++) {
-        ratingView.push(<StarIcon fontSize="small" />);
+        ratingView.push(<StarIcon fontSize="small" key={`star-${i}`} />);
       }
     }
 

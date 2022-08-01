@@ -41,9 +41,12 @@ function AppContainer() {
           path={ROUTES_MAPPING.TRIP_LIST_CONTAINER}
           element={
             <TripListContainer
+              onNewTripPressed={addNewTripCallback}
               /* data={DUMMY_TRIPS_DATA} */
               onTripSelected={setTripCallback}
               data={data}
+              userID={userID}
+
             />
           }
         />
