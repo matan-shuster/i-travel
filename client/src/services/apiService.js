@@ -22,7 +22,7 @@ export default class apiService {
   static async updateEvent(event) {
     const response = await fetch(`/events/${event.id}`, {
       method: "PUT",
-      body: JSON.stringify({event}),
+      body: JSON.stringify({ event }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -46,7 +46,7 @@ export default class apiService {
   static async createTrip(trip) {
     const response = await fetch(`/trips`, {
       method: "POST",
-      body: JSON.stringify({trip}),
+      body: JSON.stringify({ trip }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -59,7 +59,7 @@ export default class apiService {
   static async updateTrip(trip) {
     const response = await fetch(`/trips/${trip.id}`, {
       method: "PUT",
-      body: JSON.stringify({trip}),
+      body: JSON.stringify({ trip }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -89,7 +89,7 @@ export default class apiService {
   static async createUser(user) {
     const response = await fetch(`/users`, {
       method: "POST",
-      body: JSON.stringify({user}),
+      body: JSON.stringify({ user }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -102,7 +102,7 @@ export default class apiService {
   static async updateUser(user) {
     const response = await fetch(`/users/${user.id}`, {
       method: "PUT",
-      body: JSON.stringify({user}),
+      body: JSON.stringify({ user }),
       headers: {
         "Content-Type": "application/json",
       },

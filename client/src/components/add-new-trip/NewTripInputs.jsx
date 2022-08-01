@@ -10,6 +10,7 @@ import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import apiService from "../../services/apiService";
+import deLocale from "date-fns/locale/de";
 
 export default function NewTripInputs({
   onSubmitEvent,
@@ -44,10 +45,15 @@ export default function NewTripInputs({
   return (
     <div className={styles.addNewTrip}>
       <div className={styles.addDates}>
-        <LocalizationProvider dateAdapter={AdapterDateFns}>
+        <LocalizationProvider
+          dateAdapter={AdapterDateFns}
+          adapterLocale={deLocale}
+        >
           <DatePicker
+            format="local"
             label="Start Date"
             disablePast
+            type="date-local"
             value={startDateValue}
             onChange={(newValue) => {
               setStartDateValue(newValue);
@@ -57,6 +63,7 @@ export default function NewTripInputs({
           />
           <DatePicker
             label="End Date"
+            type="local"
             minDate={startDateValue}
             value={endDateValue}
             onChange={(newValue) => {
