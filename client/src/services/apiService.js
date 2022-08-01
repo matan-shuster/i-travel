@@ -35,7 +35,6 @@ export default class apiService {
   static async deleteEvent(eventID) {
     const response = await fetch(`/events/${eventID}`, {
       method: "DELETE",
-      body: JSON.stringify({eventID}),
       headers: {
         "Content-Type": "application/json",
       },
@@ -72,7 +71,6 @@ export default class apiService {
   static async deleteTrip(tripID) {
     const response = await fetch(`/trips/${tripID}`, {
       method: "DELETE",
-      body: JSON.stringify({tripID}),
       headers: {
         "Content-Type": "application/json",
       },
@@ -117,7 +115,6 @@ export default class apiService {
   static async deleteUser(userID) {
     const response = await fetch(`/users/${userID}`, {
       method: "DELETE",
-      body: JSON.stringify({userID}),
       headers: {
         "Content-Type": "application/json",
       },
