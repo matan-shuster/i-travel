@@ -16,7 +16,15 @@ import {
   FiberNew as FiberNewIcon,
 } from "@mui/icons-material";
 
-function EventCard({ place, index, expandedId, setExpandedId, tripId }) {
+function EventCard({
+  place,
+  index,
+  expandedId,
+  setExpandedId,
+  tripId,
+  data,
+  setData,
+}) {
   const [startDateTime, setStartDateTime] = useState("2022-08-08T16:00");
   const [endDateTime, setEndDateTime] = useState("2022-08-08T19:00");
   const [photoReference, setPhotoReference] = useState("");
@@ -57,14 +65,20 @@ function EventCard({ place, index, expandedId, setExpandedId, tripId }) {
   const handleEndDateTime = async (e) => setEndDateTime(e.target.value);
 
   const handleSaveButtonClick = async () => {
+    const eventWithDateTimes = {
+      ...event,
+      eventStart: startDateTime,
+      eventEnd: endDateTime,
+    };
     if (endDateTime < startDateTime)
       alert("End Time could not be before Start Time");
-    else
-      await apiService.createEvent({
-        ...event,
-        eventStart: startDateTime,
-        eventEnd: endDateTime,
-      });
+    else await apiService.createEvent(eventWithDateTimes);
+
+    setData(
+      data.forEach((item) => {
+        if (item.id.toString() === tripId) item.events.push(eventWithDateTimes);
+      })
+    );
 
     navigate(`/trip/${tripId}`);
   };

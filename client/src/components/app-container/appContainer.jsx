@@ -55,7 +55,7 @@ function AppContainer() {
         {/* <Route path={ROUTES_MAPPING.EVENT} element={} /> */}
         <Route
           path={ROUTES_MAPPING.ADD_NEW_EVENT}
-          element={<AddNewEvent data={data} />}
+          element={<AddNewEvent data={data} setData={setData} />}
         />
         <Route
           path="*"

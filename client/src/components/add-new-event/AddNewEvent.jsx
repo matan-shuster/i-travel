@@ -3,7 +3,7 @@ import SearchBar from "../search-bar/SearchBar";
 import EventCard from "../event-card/EventCard";
 import apiService from "../../services/apiService";
 
-function AddNewEvent({ data }) {
+function AddNewEvent({ data, setData }) {
   const [expandedId, setExpandedId] = useState(-1);
   const [searchInput, setSearchInput] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -14,9 +14,7 @@ function AddNewEvent({ data }) {
   useEffect(() => {
     const fetchData = async () => {
       if (data.length > 0) {
-        const tripData = await data.filter(
-          (item) => item.id.toString() === tripId
-        );
+        const tripData = data.filter((item) => item.id.toString() === tripId);
         const tripLocationData = await apiService.getPlacesByQuery(
           tripData[0].name.slice(8)
         );
@@ -82,6 +80,8 @@ function AddNewEvent({ data }) {
                   expandedId={expandedId}
                   setExpandedId={setExpandedId}
                   tripId={tripId}
+                  data={data}
+                  setData={setData}
                 />
               );
             })
