@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import SearchBar from "../search-bar/SearchBar";
 import EventCard from "../event-card/EventCard";
 import apiService from "../../services/apiService";
-import DUMMY_PLACES_DATA from "../../places.json";
 
 function AddNewEvent() {
   const [expandedId, setExpandedId] = useState(-1);
@@ -44,37 +43,27 @@ function AddNewEvent() {
         handleSearchClick={handleSearchClick}
         handleSearchClear={handleSearchClear}
         handleCategoryChange={handleCategoryChange}
+        key={1}
       />
       {Array.isArray(places) && places.length
-        ? places.map((place, index) => {
-            return (
-              <EventCard
-                place={place}
-                index={index}
-                expandedId={expandedId}
-                setExpandedId={setExpandedId}
-              />
-            );
-          })
+        ? places
+            .filter(
+              (place) =>
+                place.types.includes(selectedCategory) ||
+                selectedCategory === "all"
+            )
+            .map((place, index) => {
+              return (
+                <EventCard
+                  place={place}
+                  index={index}
+                  expandedId={expandedId}
+                  setExpandedId={setExpandedId}
+                  key={`event-${index}`}
+                />
+              );
+            })
         : ""}
-      {/* {DUMMY_PLACES_DATA.results
-        .filter(
-          (place) =>
-            (place.name.toLowerCase().includes(searchInput.toLowerCase()) ||
-              searchInput === "") &&
-            (place.types.includes(selectedCategory) ||
-              selectedCategory === "all")
-        )
-        .map((place, index) => {
-          return (
-            <EventCard
-              place={place}
-              index={index}
-              expandedId={expandedId}
-              setExpandedId={setExpandedId}
-            />
-          );
-        })} */}
     </div>
   );
 }

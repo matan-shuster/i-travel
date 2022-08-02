@@ -4,9 +4,8 @@ import NewTripInputs from "./NewTripInputs";
 import AddIcon from "@mui/icons-material/Add";
 import Fab from "@mui/material/Fab";
 
-export default function AddNewTrip() {
+export default function AddNewTrip({ onNewTripPressed, userID, newTripId }) {
   const [displayBtn, setDisplayBtn] = useState(true);
-
   const setDisplayBtnOn = useCallback(() => {
     setDisplayBtn(true);
   }, []);
@@ -28,7 +27,12 @@ export default function AddNewTrip() {
       {displayBtn ? (
         addButtom
       ) : (
-        <NewTripInputs onSubmitEvent={setDisplayBtnOn} />
+        <NewTripInputs
+          onSubmitEvent={setDisplayBtnOn}
+          onNewTripPressed={onNewTripPressed}
+          userID={userID}
+          newTripId={++newTripId}
+        />
       )}
     </div>
   );

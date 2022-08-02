@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "name": "Trip to Mcdonalds",
+        "startDate": "2020-07-25T00:00:00.000Z",
+        "endDate": "2020-07-25T00:00:00.000Z",
+        "userID": 1,
+        "createdAt": "2022-07-29T16:13:48.000Z",
+        "updatedAt": "2022-07-29T16:13:48.000Z",
+        "events": [
+            {
+                "id": 1,
+                "name": "McDonalds",
+                "type": "restaurant",
+                "address": "HaHashmonaim St 94, Tel Aviv-Yafo, 6713311, Israel",
+                "latitude": 32.069,
+                "longitude": 34.7845,
+                "priceLevel": 2,
+                "reviewRating": 3.6,
+                "openingHours": null,
+                "about": "best mcdonalds in the HaHashmonaim",
+                "picture": null,
+                "eventStart": "09:00:00",
+                "eventEnd": "12:00:00",
+                "tripID": 1,
+                "createdAt": "2022-07-29T16:13:48.000Z",
+                "updatedAt": "2022-07-29T16:13:48.000Z"
+            }
+        ]
+    }
+]

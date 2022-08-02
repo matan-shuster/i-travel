@@ -21,7 +21,6 @@ module.exports = (sequelize, DataTypes) => {
     longitude: DataTypes.FLOAT,
     reviewRating: DataTypes.DOUBLE,
     openingHours: DataTypes.JSON,
-    about: DataTypes.STRING,
     picture: DataTypes.JSON,
     eventStart: DataTypes.DATE,
     eventEnd: DataTypes.DATE,
