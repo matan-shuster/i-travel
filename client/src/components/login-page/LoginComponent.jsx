@@ -3,13 +3,13 @@ import jwtDecode from "jwt-decode";
 import apiService from "../../services/apiService";
 import {useNavigate} from "react-router-dom";
 
+
 function LoginComponent({setUserID}) {
     const [user, setUser] = useState({});
     let navigate = useNavigate();
     function handleCallbackResponse(response) {
         const decodedToken = jwtDecode(response.credential);
         setUser(decodedToken);
-        console.log(decodedToken);
         checkIfUserExists(decodedToken);
     }
     async function checkIfUserExists(user) {
@@ -31,7 +31,7 @@ function LoginComponent({setUserID}) {
     useEffect(() => {
         /* global google */
         google.accounts.id.initialize({
-            client_id: "570192573492-run0on81mimoi73ecd64483knliduo3o.apps.googleusercontent.com",
+            client_id: process.env.REACT_APP_GOOGLE_AUTH_CLIENT_ID,
             callback: handleCallbackResponse
         })
 
