@@ -6,6 +6,7 @@ import TripEventsContainer from "../trip-events-container/TripEventsContainer";
 import AddNewEvent from "../add-new-event/AddNewEvent";
 import apiService from "../../services/apiService";
 import DUMMY_TRIPS_DATA from "../../trips.json";
+import LoginComponent from "../login-page/LoginComponent";
 
 function AppContainer() {
 
@@ -37,6 +38,7 @@ function AppContainer() {
   return (
     <div>
       <Routes>
+          <Route path={ROUTES_MAPPING.LOGIN} element={<LoginComponent setUserID={setUserID}/>} />
         <Route
           path={ROUTES_MAPPING.TRIP_LIST_CONTAINER}
           element={

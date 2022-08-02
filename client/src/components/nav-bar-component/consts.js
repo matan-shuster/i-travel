@@ -1,8 +1,9 @@
 export const ROUTES_MAPPING = {
-  TRIP_LIST_CONTAINER: "/",
+  TRIP_LIST_CONTAINER: "/trips/list",
   TRIP_EVENTS: "/trip/:id",
   EVENT: "/trip/:id/event/:id",
   ADD_NEW_EVENT: "/trip/:id/add_new_event",
+  LOGIN: "/",
 };
 
 export const ROUTES = [
@@ -10,4 +11,5 @@ export const ROUTES = [
   { name: "TripEvents", route: ROUTES_MAPPING.TRIP_EVENTS, key: 2 },
   { name: "Event", route: ROUTES_MAPPING.EVENT, key: 3 },
   { name: "AddNewEvent", route: ROUTES_MAPPING.ADD_NEW_EVENT, key: 4 },
+  {name: "Login", route: "/", key: 5},
 ];
