@@ -16,16 +16,38 @@ import {
   FiberNew as FiberNewIcon,
 } from "@mui/icons-material";
 
-function EventCard({ place, index, expandedId, setExpandedId }) {
+function EventCard({ place, index, expandedId, setExpandedId, tripId }) {
   const [startDateTime, setStartDateTime] = useState("2022-08-08T16:00");
   const [endDateTime, setEndDateTime] = useState("2022-08-08T19:00");
   const [photoReference, setPhotoReference] = useState("");
+  const [event, setEvent] = useState({});
   const navigate = useNavigate();
-  const tripId = window.location.pathname.split("/")[2];
 
   useEffect(() => {
     setPhotoReference(place.photos ? place.photos[0]?.photo_reference : "");
-  }, []);
+
+    const fetchData = async () => {
+      const placeDetails = await apiService.getPlaceDetails(place.place_id);
+
+      const eventJson = {
+        name: placeDetails.result.name,
+        type: placeDetails.result.types[0], // TODO: not always 0, consider other methods for type
+        address: placeDetails.result.formatted_address,
+        latitude: placeDetails.result.geometry.location.lat,
+        longitude: placeDetails.result.geometry.location.lng,
+        reviewRating: placeDetails.result.rating,
+        openingHours: placeDetails.result.opening_hours,
+        picture: {
+          uri: `https://maps.googleapis.com/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=400&key=${process.env.REACT_APP_GOOGLE_API_KEY}`,
+        },
+        tripID: tripId,
+      };
+
+      setEvent(eventJson);
+    };
+
+    fetchData().catch(console.error);
+  }, [photoReference, place, tripId]);
 
   const handleExpandClick = (index) => {
     setExpandedId(expandedId === index ? -1 : index);
@@ -35,27 +57,14 @@ function EventCard({ place, index, expandedId, setExpandedId }) {
   const handleEndDateTime = async (e) => setEndDateTime(e.target.value);
 
   const handleSaveButtonClick = async () => {
-    const placeDetails = await apiService.getPlaceDetails(place.place_id);
-
-    const event = {
-      name: place.name,
-      type: place.types[0], // TODO: not always 0, consider other methods for type
-      address: place.formatted_address,
-      latitude: place.geometry.location.lat,
-      longitude: place.geometry.location.lng,
-      reviewRating: place.rating,
-      openingHours: placeDetails.result.opening_hours,
-      picture: {
-        uri: `https://maps.googleapis.com/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=400&key=${process.env.REACT_APP_GOOGLE_API_KEY}`,
-      },
-      eventStart: startDateTime,
-      eventEnd: endDateTime,
-      tripID: tripId,
-    };
-
     if (endDateTime < startDateTime)
       alert("End Time could not be before Start Time");
-    else await apiService.createEvent(event);
+    else
+      await apiService.createEvent({
+        ...event,
+        eventStart: startDateTime,
+        eventEnd: endDateTime,
+      });
 
     navigate(`/trip/${tripId}`);
   };
@@ -99,13 +108,13 @@ function EventCard({ place, index, expandedId, setExpandedId }) {
       />
       <CardContent onClick={() => handleExpandClick(index)}>
         <Typography color="text.secondary" gutterBottom>
-          {renderRatingView(place.rating)}
+          {renderRatingView(event.reviewRating)}
         </Typography>
         <Typography variant="h6" component="div">
-          {place.name}
+          {event.name}
         </Typography>
         <Typography sx={{ fontSize: 14 }} color="text.secondary">
-          {place.formatted_address}
+          {event.address}
         </Typography>
       </CardContent>
       <Collapse in={expandedId === index} timeout="auto" unmountOnExit>
