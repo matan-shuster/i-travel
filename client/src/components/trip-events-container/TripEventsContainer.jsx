@@ -30,11 +30,10 @@ export default function TripEventsContainer({ data, tripID = 0 }) {
       />
     );
   });
-
   return (
     <div>
       <div className={styles.titleContainer}>
-        <div className={styles.headTitle}>{trip.name}</div>
+        <div className={styles.headTitle}>{trip[0].name}</div>
       </div>
       {events.length > 0 ? (
         <div className={styles.eventList}>{events}</div>
