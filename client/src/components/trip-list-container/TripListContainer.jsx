@@ -48,7 +48,6 @@ export default function TripListContainer({
           ></img>
         </div>
       )}
-       {/*<div className={styles.tripList}>{trips}</div> */}
         <div className={`${styles.addNewTrip} `}>
             <AddNewTrip
           onNewTripPressed={onNewTripPressed}
