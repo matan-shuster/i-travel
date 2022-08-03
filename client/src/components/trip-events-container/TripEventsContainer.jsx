@@ -12,10 +12,10 @@ import globeWithMarkers from "../../assets/globeWithMarkers.png";
 
 export default function TripEventsContainer({ data, tripID = 0 }) {
   let navigate = useNavigate();
-
-  const trip = data[tripID - 1];
-
-  const events = trip.events.map((event) => {
+  const trip = data.filter((trip) => {
+    if (trip.id === tripID) return trip;
+  });
+  const events = trip[0].events.map((event) => {
     return (
       <EventCard
         key={event.id}
@@ -30,11 +30,10 @@ export default function TripEventsContainer({ data, tripID = 0 }) {
       />
     );
   });
-
   return (
     <div>
       <div className={styles.titleContainer}>
-        <div className={styles.headTitle}>{trip.name}</div>
+        <div className={styles.headTitle}>{trip[0].name}</div>
       </div>
       {events.length > 0 ? (
         <div className={styles.eventList}>{events}</div>
@@ -50,7 +49,7 @@ export default function TripEventsContainer({ data, tripID = 0 }) {
 
       <div className={`${styles.addNewEvent} `}>
         <Fab
-          sx={{ bgcolor: "red", color: "white" }}
+          sx={{ bgcolor: "darkblue", color: "white" }}
           aria-label="add"
           onClick={() => {
             navigate(`/trip/${trip.id}/add_new_event`);

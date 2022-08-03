@@ -30,42 +30,44 @@ function TripCard({ id, name, startDate, number_of_events, onTripSelected }) {
 
   return (
     <div className={styles.tripItem}>
-      <div className={styles.avatar}>
-        <Avatar
-          sx={{
-            bgcolor: "black",
-            fontSize: "10px",
-            width: 50,
-            height: 50,
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            textAlign: "center",
-            marginTop: "50%",
-          }}
-        >
-          <div>{tripDay}</div> <div>{tripMonthAndDayOfMonth}</div>
-        </Avatar>
-      </div>
-
-      <Card
-        sx={{
-          minWidth: 275,
+      <CardActionArea
+        onClick={() => {
+          onTripSelected(id);
+          navigate(`/trip/${id}`);
         }}
       >
-        <CardActionArea
+        <Card
           sx={{
+            boxSizing: "border-box",
+            margin: "5px",
+            minWidth: 275,
+            maxWidth: 425,
             display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
+            flexDirection: "row",
+            justifyContent: "flex-start",
             alignItems: "flex-start",
           }}
-          onClick={() => {
-            onTripSelected(id);
-            navigate(`/trip/${id}`);
-          }}
+          variant="outlined"
         >
           <CardContent>
+            <Avatar
+              sx={{
+                bgcolor: "black",
+                fontSize: "10px",
+                width: 50,
+                height: 50,
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                textAlign: "center",
+                marginTop: "50%",
+              }}
+            >
+              <div>{tripDay}</div> <div>{tripMonthAndDayOfMonth}</div>
+            </Avatar>
+          </CardContent>
+
+          <CardContent sx={{ paddingLeft: "25px" }}>
             <Typography variant="h6" component="div">
               {name}
             </Typography>
@@ -85,8 +87,8 @@ function TripCard({ id, name, startDate, number_of_events, onTripSelected }) {
               {number_of_events} events
             </Typography>
           </CardContent>
-        </CardActionArea>
-      </Card>
+        </Card>
+      </CardActionArea>
     </div>
   );
 }
