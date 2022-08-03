@@ -26,6 +26,8 @@ const logger = winston.createLogger({
 logger.stream = {
     write: function (message, encoding) {
         logger.info(message)
+        logger.error(message)
+        logger.warn(message)
     }
 }
 
