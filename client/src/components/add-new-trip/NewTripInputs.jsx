@@ -77,7 +77,7 @@ export default function NewTripInputs({
         value={tripName}
         margin="normal"
         id="standard-search"
-        label="Trip Name"
+        label="Trip Location"
         type="search"
         variant="standard"
         required
