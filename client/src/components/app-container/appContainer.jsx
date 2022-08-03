@@ -53,7 +53,10 @@ function AppContainer() {
         />
         {/* TODO: ADD EVENT PAGE COMPONENT */}
         {/* <Route path={ROUTES_MAPPING.EVENT} element={} /> */}
-        <Route path={ROUTES_MAPPING.ADD_NEW_EVENT} element={<AddNewEvent />} />
+        <Route
+          path={ROUTES_MAPPING.ADD_NEW_EVENT}
+          element={<AddNewEvent data={data} setData={setData} />}
+        />
         <Route
           path="*"
           element={

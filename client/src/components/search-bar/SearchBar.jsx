@@ -39,6 +39,30 @@ function SearchBar({
       label: "Museums",
       value: "museum",
     },
+    {
+      label: "Bakeries",
+      value: "bakery",
+    },
+    {
+      label: "Bars",
+      value: "bar",
+    },
+    {
+      label: "Night Clubs",
+      value: "night_club",
+    },
+    {
+      label: "Spa",
+      value: "spa",
+    },
+    {
+      label: "Aquariums",
+      value: "aquarium",
+    },
+    {
+      label: "Zoo",
+      value: "zoo",
+    },
   ];
 
   return (

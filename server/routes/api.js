@@ -75,8 +75,13 @@ router.get("/", (req, res) => {
 //Places Router
 const placesManager = new PlacesManager();
 
-router.get("/places/:query", async (req, res, next) => {
-  res.send(await placesManager.getPlaces(req.params.query));
+router.get("/places/query/:query", async (req, res, next) => {
+  res.send(await placesManager.getPlacesByQuery(req.params.query));
+  next();
+});
+
+router.get("/places/location/:location", async (req, res, next) => {
+  res.send(await placesManager.getPlacesByLocation(req.params.location));
   next();
 });
 
