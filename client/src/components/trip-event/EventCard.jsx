@@ -22,7 +22,6 @@ function EventCard({
 }) {
   const splitedStartYearMonthDay = eventStart.split("-");
   const splitedEndYearMonthDay = eventEnd.split("-");
-  console.log(splitedStartYearMonthDay);
 
   const splitedStartDayHour = splitedStartYearMonthDay[2].split("T");
   const splitedEndDayHour = splitedEndYearMonthDay[2].split("T");
