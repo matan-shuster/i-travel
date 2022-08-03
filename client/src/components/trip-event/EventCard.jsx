@@ -7,7 +7,9 @@ import { Avatar } from "@mui/material";
 import { Box } from "@mui/material";
 import { Card, CardContent, CardActionArea, CardActions } from "@mui/material";
 import { Typography } from "@mui/material";
+import { Button } from "@mui/material/";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import DirectionsIcon from "@mui/icons-material/Directions";
 
 function EventCard({
   name,
@@ -18,39 +20,32 @@ function EventCard({
   eventEnd,
   address,
 }) {
+  const splitedStartYearMonthDay = eventStart.split("-");
+  const splitedEndYearMonthDay = eventEnd.split("-");
+  console.log(splitedStartYearMonthDay);
 
-  let splitedStartHour = eventStart.split("-");
-  let splitedEndHour = eventEnd.split("-");
+  const splitedStartDayHour = splitedStartYearMonthDay[2].split("T");
+  const splitedEndDayHour = splitedEndYearMonthDay[2].split("T");
 
-  splitedStartHour = splitedStartHour[2].split("T");
-  splitedEndHour = splitedEndHour[2].split("T");
-
-  splitedStartHour = splitedStartHour[1].split(":");
-  splitedEndHour = splitedEndHour[1].split(":");
+  const splitedStartHour = splitedStartDayHour[1].split(":");
+  const splitedEndHour = splitedEndDayHour[1].split(":");
 
   let splitedAdress = address.split(",");
   return (
     <div className={styles.eventItem}>
       <div className={styles.duration}>
         <div>
+          <Typography
+            sx={{ fontSize: 14, linHheight: "10px" }}
+            color="text.secondary"
+          >
+            {splitedStartDayHour[0]}/{splitedStartYearMonthDay[1]}
+          </Typography>
+        </div>
+        <div>
           {splitedStartHour[0]}:{splitedStartHour[1]}
         </div>
-        {/* <div>
-          <Avatar
-            sx={{
-              bgcolor: "green",
-              fontSize: "10px",
-              width: 50,
-              height: 50,
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              textAlign: "center",
-            }}
-          >
-            <div>EVENT DURATION</div>
-          </Avatar>
-        </div> */}
+
         <div>
           {splitedEndHour[0]}:{splitedEndHour[1]}
         </div>
@@ -58,42 +53,31 @@ function EventCard({
 
       <Card
         sx={{
+          boxSizing: "border-box",
+          margin: "5px",
           minWidth: 275,
+          maxWidth: 425,
         }}
+        variant="outlined"
       >
-        <CardActionArea
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-start",
-            alignItems: "flex-start",
-          }}
-        >
-          <CardContent>
-            <Typography variant="h6" component="div">
-              {name}
-            </Typography>
-            <Typography
-              color="text.secondary"
-              gutterBottom
-              sx={{ fontSize: 12 }}
-            >
-              {splitedAdress[0]} {splitedAdress[1]}
-            </Typography>
-            <Typography
-              sx={{ fontSize: 14, linHheight: "10px" }}
-              color="text.secondary"
-            >
-              {distance} time to travel
-            </Typography>
-            <Typography
-              sx={{ fontSize: 14, linHheight: "10px" }}
-              color="text.secondary"
-            >
-              NAV_BUTTON
-            </Typography>
-          </CardContent>
-        </CardActionArea>
+        <CardContent sx={{}}>
+          <Typography variant="h6" component="div">
+            {name}
+          </Typography>
+          <Typography color="text.secondary" gutterBottom sx={{ fontSize: 14 }}>
+            {splitedAdress[0]} {splitedAdress[1]}
+          </Typography>
+
+          {/* <Typography
+            sx={{ fontSize: 14, linHheight: "10px" }}
+            color="text.secondary"
+          >
+            {distance} time to travel
+          </Typography> */}
+          <Button variant="contained" sx={{ marginLeft: "20px" }}>
+            Get Directions &nbsp; <DirectionsIcon />
+          </Button>
+        </CardContent>
       </Card>
     </div>
   );

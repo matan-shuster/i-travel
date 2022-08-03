@@ -49,7 +49,7 @@ export default function TripEventsContainer({ data, tripID = 0 }) {
 
       <div className={`${styles.addNewEvent} `}>
         <Fab
-          sx={{ bgcolor: "red", color: "white" }}
+          sx={{ bgcolor: "darkblue", color: "white" }}
           aria-label="add"
           onClick={() => {
             navigate(`/trip/${trip.id}/add_new_event`);
