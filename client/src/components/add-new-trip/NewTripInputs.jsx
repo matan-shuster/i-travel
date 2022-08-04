@@ -26,7 +26,7 @@ export default function NewTripInputs({
       userID: userID,
       startDate: startDateValue,
       endDate: endDateValue,
-      name: tripName,
+      name: `Trip to ${tripName}`,
       events: [],
     };
 

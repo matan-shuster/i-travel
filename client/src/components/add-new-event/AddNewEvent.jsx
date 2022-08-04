@@ -15,13 +15,15 @@ function AddNewEvent({ data, setData }) {
     const fetchData = async () => {
       if (data.length > 0) {
         const tripData = data.filter((item) => item.id.toString() === tripId);
-        const tripLocationData = await apiService.getPlacesByQuery(
-          tripData[0].name.slice(8)
-        );
-        const placesList = await apiService.getPlacesByLocation(
-          `${tripLocationData.results[0].geometry.location.lat},${tripLocationData.results[0].geometry.location.lng}`
-        );
-        setPlaces(placesList.results);
+        if (tripData.length > 0) {
+          const tripLocationData = await apiService.getPlacesByQuery(
+            tripData[0].name.slice(8)
+          );
+          const placesList = await apiService.getPlacesByLocation(
+            `${tripLocationData.results[0].geometry.location.lat},${tripLocationData.results[0].geometry.location.lng}`
+          );
+          setPlaces(placesList.results);
+        }
       }
     };
 

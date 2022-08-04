@@ -36,7 +36,10 @@ function AppContainer() {
   return (
     <div>
       <Routes>
-          <Route path={ROUTES_MAPPING.LOGIN} element={<LoginComponent setUserID={setUserID}/>} />
+        <Route
+          path={ROUTES_MAPPING.LOGIN}
+          element={<LoginComponent setUserID={setUserID} />}
+        />
         <Route
           path={ROUTES_MAPPING.TRIP_LIST_CONTAINER}
           element={

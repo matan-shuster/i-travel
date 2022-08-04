@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     /**
      * Add seed commands here.
      *
@@ -10,21 +10,23 @@ module.exports = {
      *   name: 'John Doe',
      *   isBetaMember: false
      * }], {});
-    */
-    await queryInterface.bulkInsert('Users', [{
-        email: 'mcdonaldKing@king.com',
-        sub: '109077753432959216912',
+     */
+    await queryInterface.bulkInsert("Users", [
+      {
+        email: "mcdonaldKing@king.com",
+        sub: "109077753432959216912",
         createdAt: new Date(),
-        updatedAt: new Date()
-    }]);
+        updatedAt: new Date(),
+      },
+    ]);
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     /**
      * Add commands to revert seed here.
      *
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-  }
+  },
 };
