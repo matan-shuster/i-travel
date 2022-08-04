@@ -21,12 +21,13 @@ export default function TripEventsContainer({ data, tripID = 0 }) {
         key={event.id}
         name={event.name}
         latitude={event.latitude}
-        longitude={event.latitude}
+        longitude={event.longitude}
         location={event.location}
         distance={event.distance}
         eventStart={event.eventStart}
         eventEnd={event.eventEnd}
         address={event.address}
+        tripName={trip[0].name}
       />
     );
   });

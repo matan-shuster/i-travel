@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./EventCardStyle.module.css";
 
 import { DAYS, MONTHS, secendsToDays } from "../../constans";
@@ -19,10 +19,21 @@ function EventCard({
   eventStart,
   eventEnd,
   address,
+  tripName,
 }) {
+  const [currectLocation, setCurrectLocation] = useState(
+    tripName.substring(8, tripName.length)
+  );
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+      setCurrectLocation(`${lat},${lon}`);
+    });
+  }, []);
   function getDirectionInNewTav() {
     window.open(
-      `https://www.google.com/maps/dir/${32.069},${32.069}/'32.0703,34.7846'/`,
+      `https://www.google.com/maps/dir/'${currectLocation}'/'${latitude},${longitude}'/`,
       "_blank"
     );
   }
