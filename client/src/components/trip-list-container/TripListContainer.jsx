@@ -48,8 +48,10 @@ export default function TripListContainer({
           ></img>
         </div>
       )}
-        <div className={`${styles.addNewTrip} `}>
-            <AddNewTrip
+
+      <div className={`${styles.addNewTrip} `}>
+        <AddNewTrip
+
           onNewTripPressed={onNewTripPressed}
           userID={userID}
           newTripId={data?.length}
