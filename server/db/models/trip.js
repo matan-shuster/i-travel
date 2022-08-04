@@ -13,10 +13,22 @@ module.exports = (sequelize, DataTypes) => {
   }
   Trip.init(
     {
-      name: DataTypes.STRING,
-      startDate: DataTypes.DATE,
-      endDate: DataTypes.DATE,
-      userID: DataTypes.INTEGER,
+      name: {
+          type:DataTypes.STRING,
+          allowNull:false,
+      },
+      startDate: {
+          type:DataTypes.DATE,
+            allowNull:false,
+      },
+      endDate: {
+          type:DataTypes.DATE,
+            allowNull:false,
+      },
+      userID: {
+          type:DataTypes.INTEGER,
+            allowNull:false,
+      },
     },
     {
       sequelize,
