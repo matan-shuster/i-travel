@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./tripCardStyle.module.css";
 
 import { secendsToDays } from "../../constans";
 
@@ -29,7 +28,7 @@ function TripCard({ id, name, startDate, number_of_events, onTripSelected }) {
   let navigate = useNavigate();
 
   return (
-    <div className={styles.tripItem}>
+    <div>
       <CardActionArea
         onClick={() => {
           onTripSelected(id);

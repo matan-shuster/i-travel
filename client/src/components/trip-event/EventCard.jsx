@@ -20,6 +20,13 @@ function EventCard({
   eventEnd,
   address,
 }) {
+  function getDirectionInNewTav() {
+    window.open(
+      `https://www.google.com/maps/dir/${32.069},${32.069}/'32.0703,34.7846'/`,
+      "_blank"
+    );
+  }
+
   const splitedStartYearMonthDay = eventStart.split("-");
   const splitedEndYearMonthDay = eventEnd.split("-");
 
@@ -73,7 +80,11 @@ function EventCard({
           >
             {distance} time to travel
           </Typography> */}
-          <Button variant="contained" sx={{ marginLeft: "20px" }}>
+          <Button
+            variant="contained"
+            sx={{ marginLeft: "20px" }}
+            onClick={() => getDirectionInNewTav()}
+          >
             Get Directions &nbsp; <DirectionsIcon />
           </Button>
         </CardContent>
