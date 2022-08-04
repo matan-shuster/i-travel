@@ -124,12 +124,20 @@ export default class apiService {
   }
 
   //get places from google api by query
-  static async getPlaces(query) {
-    const response = await fetch(`/places/${query}`);
+  static async getPlacesByQuery(query) {
+    const response = await fetch(`/places/query/${query}`);
     const places = await response.json();
     return places;
   }
 
+  //get places from google api by location
+  static async getPlacesByLocation(location) {
+    const response = await fetch(`/places/location/${location}`);
+    const places = await response.json();
+    return places;
+  }
+
+  //get place details from google api by placeId
   static async getPlaceDetails(placeId) {
     const response = await fetch(`/place-details/${placeId}`);
     const places = await response.json();

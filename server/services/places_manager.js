@@ -5,8 +5,13 @@ class PlacesManager {
     this.googleApiClient = new GoogleApiClient();
   }
 
-  getPlaces = async (query) => {
-    const places = await this.googleApiClient.getPlaces(query);
+  getPlacesByQuery = async (query) => {
+    const places = await this.googleApiClient.getPlacesByQuery(query);
+    return places;
+  };
+
+  getPlacesByLocation = async (location) => {
+    const places = await this.googleApiClient.getPlacesByLocation(location);
     return places;
   };
 

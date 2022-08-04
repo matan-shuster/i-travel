@@ -1,13 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SearchBar from "../search-bar/SearchBar";
 import EventCard from "../event-card/EventCard";
 import apiService from "../../services/apiService";
 
-function AddNewEvent() {
+function AddNewEvent({ data, setData }) {
   const [expandedId, setExpandedId] = useState(-1);
   const [searchInput, setSearchInput] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [places, setPlaces] = useState([]);
+  const tripId = window.location.pathname.split("/")[2];
+
+  const isSearchInputEmpty = searchInput === "";
+  useEffect(() => {
+    const fetchData = async () => {
+      if (data.length > 0) {
+        const tripData = data.filter((item) => item.id.toString() === tripId);
+        const tripLocationData = await apiService.getPlacesByQuery(
+          tripData[0].name.slice(8)
+        );
+        const placesList = await apiService.getPlacesByLocation(
+          `${tripLocationData.results[0].geometry.location.lat},${tripLocationData.results[0].geometry.location.lng}`
+        );
+        setPlaces(placesList.results);
+      }
+    };
+
+    fetchData().catch(console.error);
+  }, [isSearchInputEmpty, data, tripId]);
 
   const handleSearchInputChange = async (e) => {
     setSearchInput(e.target.value);
@@ -18,7 +37,7 @@ function AddNewEvent() {
     if (searchInput === "") {
       setPlaces([]);
     } else {
-      const placesList = await apiService.getPlaces(searchInput);
+      const placesList = await apiService.getPlacesByQuery(searchInput);
       setPlaces(placesList.results);
     }
   };
@@ -55,11 +74,14 @@ function AddNewEvent() {
             .map((place, index) => {
               return (
                 <EventCard
+                  key={`event-${index}`}
                   place={place}
                   index={index}
                   expandedId={expandedId}
                   setExpandedId={setExpandedId}
-                  key={`event-${index}`}
+                  tripId={tripId}
+                  data={data}
+                  setData={setData}
                 />
               );
             })
