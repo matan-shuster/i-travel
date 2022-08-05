@@ -6,7 +6,11 @@ import {
   AddLocation as AddLocationIcon,
 } from "@mui/icons-material";
 
+import { useNavigate } from "react-router-dom";
+
 function NavBarComponent({ currentPage, tripId, tripName }) {
+  let navigate = useNavigate();
+
   if (currentPage === "tripListContainer") {
     return (
       <div role="presentation">
@@ -29,7 +33,9 @@ function NavBarComponent({ currentPage, tripId, tripName }) {
             underline="hover"
             sx={{ display: "flex", alignItems: "center" }}
             color="inherit"
-            href="/trips/list"
+            onClick={() => {
+              navigate("/");
+            }}
           >
             <PublicIcon sx={{ mr: 0.5 }} fontSize="inherit" />
             Trips
@@ -52,7 +58,9 @@ function NavBarComponent({ currentPage, tripId, tripName }) {
             underline="hover"
             sx={{ display: "flex", alignItems: "center" }}
             color="inherit"
-            href="/trips/list"
+            onClick={() => {
+              navigate("/");
+            }}
           >
             <PublicIcon sx={{ mr: 0.5 }} fontSize="inherit" />
             Trips
@@ -67,7 +75,9 @@ function NavBarComponent({ currentPage, tripId, tripName }) {
               maxWidth: "160px",
             }}
             color="inherit"
-            href={`/trip/${tripId}`}
+            onClick={() => {
+              navigate(`/trip/${tripId}`);
+            }}
           >
             <ListAltIcon sx={{ mr: 0.5 }} fontSize="inherit" />
             {tripName}
