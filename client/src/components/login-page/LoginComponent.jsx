@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import jwtDecode from "jwt-decode";
 import apiService from "../../services/apiService";
 import { useNavigate } from "react-router-dom";
+import {GoogleOAuthProvider, GoogleLogin} from "@react-oauth/google";
+import Cookies from "js-cookie";
 
 function LoginComponent({ setUserID }) {
   const [user, setUser] = useState({});
@@ -11,11 +13,24 @@ function LoginComponent({ setUserID }) {
     setUser(decodedToken);
     checkIfUserExists(decodedToken);
   }
+
+  useEffect(() => {
+    if(Cookies.get("userID")){
+        setUserID(Cookies.get("userID"));
+        navigate("/trips/list");
+    }
+
+  },[]);
+
+  function setCookie(userID) {
+    Cookies.set("userID", userID, { expires: 1 });
+  }
   async function checkIfUserExists(user) {
     const allUsers = await apiService.getAllUsers();
     const userExists = allUsers.filter((dbUser) => dbUser.sub === user.sub);
     if (userExists.length !== 0) {
       setUserID(userExists[0].id);
+      setCookie(userExists[0].id);
     } else {
       await createUser(user);
     }
@@ -24,23 +39,22 @@ function LoginComponent({ setUserID }) {
   async function createUser(user) {
     const newUser = await apiService.createUser(user);
     setUserID(newUser.id);
+    setCookie("userID", newUser.id, { expires: 1 });
   }
-  useEffect(() => {
-    /* global google */
-    google.accounts.id.initialize({
-      client_id: process.env.REACT_APP_GOOGLE_AUTH_KEY,
-      callback: handleCallbackResponse,
-    });
-
-    google.accounts.id.renderButton(document.getElementById("signInDiv"), {
-      theme: "outline",
-      size: "large",
-    });
-  }, []);
 
   return (
     <div>
-      <div id="signInDiv" />
+      <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_AUTH_KEY}>
+        <GoogleLogin
+            onSuccess={credentialResponse => {
+                handleCallbackResponse(credentialResponse);
+            }}
+            onError={() => {
+              console.log('Login Failed');
+            }}
+            useOneTap
+        />;
+      </GoogleOAuthProvider>;
     </div>
   );
 }
