@@ -15,14 +15,14 @@ function LoginComponent({ setUserID }) {
     const allUsers = await apiService.getAllUsers();
     const userExists = allUsers.filter((dbUser) => dbUser.sub === user.sub);
     if (userExists.length !== 0) {
-      setUserID(userExists.id);
+      setUserID(userExists[0].id);
     } else {
-      createUser(user);
+      await createUser(user);
     }
     navigate("/trips/list");
   }
-  function createUser(user) {
-    const newUser = apiService.createUser(user);
+  async function createUser(user) {
+    const newUser = await apiService.createUser(user);
     setUserID(newUser.id);
   }
   useEffect(() => {
