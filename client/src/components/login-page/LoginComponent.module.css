@@ -1,0 +1,28 @@
+.loginPage{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.googleLogin{
+    position: absolute;
+    bottom: 10px;
+}
+
+.logo{
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+    margin-top: 50%;
+}
+
+.loginText{
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 100px;
+    line-height: 100%;
+    text-align: center;
+    color: #4A53A7;
+}
