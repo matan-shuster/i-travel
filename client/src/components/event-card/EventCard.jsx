@@ -169,6 +169,9 @@ function EventCard({
                   label="Start Time"
                   renderInput={(params) => <TextField {...params} />}
                   value={new Date(startDateTime)}
+                  inputFormat="dd/MM/yyyy HH:mm"
+                  ampm={false}
+                  ampmInClock={false}
                   onChange={(newValue) => {
                     setStartDateTime(newValue.toISOString());
                     setEndDateTime(newValue.toISOString());
@@ -180,10 +183,13 @@ function EventCard({
                   label="End Time"
                   renderInput={(params) => <TextField {...params} />}
                   value={new Date(endDateTime)}
+                  minDate={new Date(startDateTime)}
+                  inputFormat="dd/MM/yyyy HH:mm"
+                  ampm={false}
+                  ampmInClock={false}
                   onChange={(newValue) => {
                     setEndDateTime(newValue.toISOString());
                   }}
-                  minDate={startDateTime}
                 />
               </div>
             </LocalizationProvider>
