@@ -53,7 +53,7 @@ function LoginComponent({ setUserID }) {
               console.log('Login Failed');
             }}
             useOneTap
-        />;
+        />
       </GoogleOAuthProvider>;
     </div>
   );
