@@ -2,10 +2,10 @@ const express = require("express");
 const TripdataManager = require("../services/tripdata_manager");
 const PlacesManager = require("../services/places_manager");
 const router = express.Router();
-const morgan = require('morgan')
-const winston = require('../logger/winston.js')
+const morgan = require("morgan");
+const winston = require("../logger/winston.js");
 
-router.use(morgan('combined', { stream: winston.stream }))
+router.use(morgan("combined", { stream: winston.stream }));
 //Event Router
 const tripdataManager = new TripdataManager();
 
@@ -78,8 +78,10 @@ router.get("/", (req, res) => {
 //Places Router
 const placesManager = new PlacesManager();
 
-router.get("/places/query/:query", async (req, res, next) => {
-  res.send(await placesManager.getPlacesByQuery(req.params.query));
+router.get("/places/query/:query/:location", async (req, res, next) => {
+  res.send(
+    await placesManager.getPlacesByQuery(req.params.query, req.params.location)
+  );
   next();
 });
 

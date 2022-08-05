@@ -6,10 +6,10 @@ class GoogleApiClient {
     this.GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
   }
 
-  async getPlacesByQuery(query) {
+  async getPlacesByQuery(query, location) {
     try {
       const response = await axios.get(
-        `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${query}&language=en&key=${this.GOOGLE_API_KEY}`
+        `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${query}&location=${location}&radius=5000&language=en&key=${this.GOOGLE_API_KEY}`
       );
       const places = response.data;
 
@@ -23,7 +23,7 @@ class GoogleApiClient {
   async getPlacesByLocation(location) {
     try {
       const response = await axios.get(
-        `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location}&radius=1500&language=en&key=${this.GOOGLE_API_KEY}`
+        `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location}&radius=5000&language=en&key=${this.GOOGLE_API_KEY}`
       );
       const places = response.data;
 
