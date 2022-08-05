@@ -15,9 +15,9 @@ import {
   Star as StarIcon,
   FiberNew as FiberNewIcon,
 } from "@mui/icons-material";
-import {DateTimePicker} from "@mui/x-date-pickers";
-import {AdapterDateFns} from "@mui/x-date-pickers/AdapterDateFns";
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DateTimePicker } from "@mui/x-date-pickers";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 
 function EventCard({
   place,
@@ -62,13 +62,11 @@ function EventCard({
 
   useEffect(() => {
     const trip = data.find((trip) => trip.id.toString() === tripId);
-    const tripStartDate= new Date(trip.startDate);
-    const tripEndDate= new Date(trip.endDate);
+    const tripStartDate = new Date(trip.startDate);
+    const tripEndDate = new Date(trip.endDate);
     setStartDateTime(tripStartDate);
     setEndDateTime(tripEndDate);
-  },[]);
-
-
+  }, []);
 
   const handleExpandClick = (index) => {
     setExpandedId(expandedId === index ? -1 : index);
@@ -129,6 +127,7 @@ function EventCard({
           height: "350px",
         }}
         src={`https://maps.googleapis.com/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=450&key=${process.env.REACT_APP_GOOGLE_API_KEY}`}
+        onClick={() => handleExpandClick(index)}
       />
       <CardContent onClick={() => handleExpandClick(index)}>
         <Typography color="text.secondary" gutterBottom>
@@ -163,27 +162,29 @@ function EventCard({
             </Button>
           </Stack>
           <Stack spacing={1}>
-          <LocalizationProvider dateAdapter={AdapterDateFns}>
-          <DateTimePicker
-              label="Start Time"
-              renderInput={(params) => <TextField {...params} />}
-              value={startDateTime}
-              onChange={(newValue) => {
-                setStartDateTime(newValue);
-              }}
-          />
-            <DateTimePicker
-
-                label="End Time"
-                renderInput={(params) => <TextField {...params} />}
-                value={endDateTime}
-                onChange={(newValue) => {
-                  setEndDateTime(newValue);
-                }}
-                minDate={startDateTime}
-            />
-
-          </LocalizationProvider>
+            <LocalizationProvider dateAdapter={AdapterDateFns}>
+              <div style={{ marginTop: "10px" }}>
+                <DateTimePicker
+                  label="Start Time"
+                  renderInput={(params) => <TextField {...params} />}
+                  value={startDateTime}
+                  onChange={(newValue) => {
+                    setStartDateTime(newValue);
+                  }}
+                />
+              </div>
+              <div style={{ marginTop: "10px" }}>
+                <DateTimePicker
+                  label="End Time"
+                  renderInput={(params) => <TextField {...params} />}
+                  value={endDateTime}
+                  onChange={(newValue) => {
+                    setEndDateTime(newValue);
+                  }}
+                  minDate={startDateTime}
+                />
+              </div>
+            </LocalizationProvider>
           </Stack>
         </CardContent>
       </Collapse>
