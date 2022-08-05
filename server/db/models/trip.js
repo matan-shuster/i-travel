@@ -11,17 +11,28 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  Trip.init(
-    {
-      name: DataTypes.STRING,
-      startDate: DataTypes.DATE,
-      endDate: DataTypes.DATE,
-      userID: DataTypes.INTEGER,
+
+  Trip.init({
+    name: {
+      type:DataTypes.STRING,
+        allowNull:false
     },
-    {
-      sequelize,
-      modelName: "Trip",
+    startDate: {
+      type:DataTypes.DATE,
+      allowNull: false
+    },
+    endDate: {
+      type:DataTypes.DATE,
+      allowNull: false
+    },
+    userID: {
+      type:DataTypes.INTEGER,
+      allowNull: false
     }
-  );
+  }, {
+    sequelize,
+    modelName: 'Trip',
+  });
+
   return Trip;
 };
