@@ -54,6 +54,7 @@ export default function NewTripInputs({
             label="Start Date"
             disablePast
             type="date-local"
+            inputFormat="dd/MM/yyyy HH:mm"
             value={startDateValue}
             onChange={(newValue) => {
               setStartDateValue(newValue);
@@ -64,6 +65,7 @@ export default function NewTripInputs({
           <DatePicker
             label="End Date"
             type="local"
+            inputFormat="dd/MM/yyyy HH:mm"
             minDate={startDateValue}
             value={endDateValue}
             onChange={(newValue) => {

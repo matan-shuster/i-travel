@@ -62,10 +62,14 @@ function EventCard({
 
   useEffect(() => {
     const trip = data.find((trip) => trip.id.toString() === tripId);
+
+    const currentTime = new Date();
     const tripStartDate = new Date(trip.startDate);
-    const tripEndDate = new Date(trip.endDate);
-    setStartDateTime(tripStartDate);
-    setEndDateTime(tripEndDate);
+    tripStartDate.setHours(currentTime.getHours());
+    tripStartDate.setMinutes(currentTime.getMinutes());
+
+    setStartDateTime(tripStartDate.toISOString());
+    setEndDateTime(tripStartDate.toISOString());
   }, []);
 
   const handleExpandClick = (index) => {
@@ -168,9 +172,13 @@ function EventCard({
                 <DateTimePicker
                   label="Start Time"
                   renderInput={(params) => <TextField {...params} />}
-                  value={startDateTime}
+                  value={new Date(startDateTime)}
+                  inputFormat="dd/MM/yyyy HH:mm"
+                  ampm={false}
+                  ampmInClock={false}
                   onChange={(newValue) => {
-                    setStartDateTime(newValue);
+                    setStartDateTime(newValue.toISOString());
+                    setEndDateTime(newValue.toISOString());
                   }}
                 />
               </div>
@@ -178,11 +186,14 @@ function EventCard({
                 <DateTimePicker
                   label="End Time"
                   renderInput={(params) => <TextField {...params} />}
-                  value={endDateTime}
+                  value={new Date(endDateTime)}
+                  minDate={new Date(startDateTime)}
+                  inputFormat="dd/MM/yyyy HH:mm"
+                  ampm={false}
+                  ampmInClock={false}
                   onChange={(newValue) => {
-                    setEndDateTime(newValue);
+                    setEndDateTime(newValue.toISOString());
                   }}
-                  minDate={startDateTime}
                 />
               </div>
             </LocalizationProvider>
