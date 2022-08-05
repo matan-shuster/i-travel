@@ -38,7 +38,8 @@ function AddNewEvent({ data, setData }) {
     setExpandedId(-1);
   };
 
-  const handleSearchClick = async () => {
+  const handleSearchClick = async (e) => {
+    e.preventDefault();
     if (searchInput === "") {
       setPlaces([]);
     } else {
