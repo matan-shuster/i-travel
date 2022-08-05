@@ -62,10 +62,14 @@ function EventCard({
 
   useEffect(() => {
     const trip = data.find((trip) => trip.id.toString() === tripId);
-    const tripStartDate = trip.startDate;
-    const tripEndDate = trip.endDate;
-    setStartDateTime(tripStartDate);
-    setEndDateTime(tripEndDate);
+
+    const currentTime = new Date();
+    const tripStartDate = new Date(trip.startDate);
+    tripStartDate.setHours(currentTime.getHours());
+    tripStartDate.setMinutes(currentTime.getMinutes());
+
+    setStartDateTime(tripStartDate.toISOString());
+    setEndDateTime(tripStartDate.toISOString());
   }, []);
 
   const handleExpandClick = (index) => {
