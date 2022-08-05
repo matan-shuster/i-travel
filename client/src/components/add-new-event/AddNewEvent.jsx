@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import SearchBar from "../search-bar/SearchBar";
 import EventCard from "../event-card/EventCard";
 import apiService from "../../services/apiService";
 import NavBarComponent from "../nav-bar-component/NavBarComponent";
 import styles from "./addNewEventStyle.module.css";
+import spinningGlobe from "../../assets/spinningGlobe.png";
 
 function AddNewEvent({ data, setData }) {
   const [expandedId, setExpandedId] = useState(-1);
@@ -111,9 +113,29 @@ function AddNewEvent({ data, setData }) {
               );
             })
         ) : (
-          <div style={{ textAlign: "center" }}>
-            {`Couldn't find results matching "${searchInput}"`}
-          </div>
+          <Card
+            elevation={0}
+            sx={{
+              maxWidth: 425,
+              textAlign: "center",
+              backgroundColor: "#F6F7FB",
+            }}
+          >
+            <CardMedia
+              component="img"
+              height="350"
+              image={spinningGlobe}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                No Results Found
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Maybe try a different keyword?
+              </Typography>
+            </CardContent>
+          </Card>
         )}
       </div>
     </div>
