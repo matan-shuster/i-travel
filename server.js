@@ -8,6 +8,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/", express.static(__dirname + "/client/build/"));
 app.use("/", router);
+app.use("*", (req, res) => {
+  res.redirect("/");
+});
 
 const port = process.env.PORT || 8000;
 
