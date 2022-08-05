@@ -10,6 +10,8 @@ function AddNewEvent({ data, setData }) {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [places, setPlaces] = useState([]);
   const [tripName, setTripName] = useState("");
+  const [tripLatCoordinate, setTripLatCoordinate] = useState(0.0);
+  const [tripLngCoordinate, setTripLngCoordinate] = useState(0.0);
   const tripId = window.location.pathname?.split("/")[2];
 
   const isSearchInputEmpty = searchInput === "";
@@ -21,6 +23,13 @@ function AddNewEvent({ data, setData }) {
           setTripName(tripData[0].name.slice(8));
           const tripLocationData = await apiService.getPlacesByQuery(
             tripData[0].name.slice(8)
+          );
+
+          setTripLatCoordinate(
+            tripLocationData.results[0].geometry.location.lat
+          );
+          setTripLngCoordinate(
+            tripLocationData.results[0].geometry.location.lng
           );
           const placesList = await apiService.getPlacesByLocation(
             `${tripLocationData.results[0].geometry.location.lat},${tripLocationData.results[0].geometry.location.lng}`
@@ -43,7 +52,10 @@ function AddNewEvent({ data, setData }) {
     if (searchInput === "") {
       setPlaces([]);
     } else {
-      const placesList = await apiService.getPlacesByQuery(searchInput);
+      const placesList = await apiService.getPlacesByQuery(
+        searchInput,
+        `${tripLatCoordinate},${tripLngCoordinate}`
+      );
       setPlaces(placesList.results);
     }
   };
