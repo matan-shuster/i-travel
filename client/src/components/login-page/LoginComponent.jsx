@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import jwtDecode from "jwt-decode";
 import apiService from "../../services/apiService";
 import { useNavigate } from "react-router-dom";
+import Cookies from "js-cookie";
 
-function LoginComponent({ setUserID }) {
+function LoginComponent({ setUserID}) {
   const [user, setUser] = useState({});
   let navigate = useNavigate();
   function handleCallbackResponse(response) {
@@ -11,11 +12,19 @@ function LoginComponent({ setUserID }) {
     setUser(decodedToken);
     checkIfUserExists(decodedToken);
   }
+
+  useEffect(() => {
+    if(Cookies.get("userID")) {
+      setUserID(Cookies.get("userID"));
+      navigate("/trips/list");
+    }
+  },[]);
   async function checkIfUserExists(user) {
     const allUsers = await apiService.getAllUsers();
     const userExists = allUsers.filter((dbUser) => dbUser.sub === user.sub);
     if (userExists.length !== 0) {
       setUserID(userExists[0].id);
+      Cookies.set("userID", userExists[0].id, { expires: 1 });
     } else {
       await createUser(user);
     }
@@ -24,6 +33,7 @@ function LoginComponent({ setUserID }) {
   async function createUser(user) {
     const newUser = await apiService.createUser(user);
     setUserID(newUser.id);
+    Cookies.set("userID", newUser.id, { expires: 1 });
   }
   useEffect(() => {
     /* global google */
