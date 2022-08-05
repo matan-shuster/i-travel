@@ -65,6 +65,7 @@ function AddNewEvent({ data, setData }) {
 
   const handleSearchClear = () => {
     setSearchInput("");
+    setSelectedCategory("all");
     setExpandedId(-1);
     setPlaces([]);
   };
@@ -73,6 +74,11 @@ function AddNewEvent({ data, setData }) {
     setSelectedCategory(e.target.value);
     setExpandedId(-1);
   };
+
+  const filteredPlaces = places.filter(
+    (place) =>
+      place.types.includes(selectedCategory) || selectedCategory === "all"
+  );
 
   return (
     <div style={{ textAlign: "left" }}>
@@ -91,27 +97,21 @@ function AddNewEvent({ data, setData }) {
         key={1}
       />
       <div className={styles.placesList}>
-        {Array.isArray(places) && places.length ? (
-          places
-            .filter(
-              (place) =>
-                place.types.includes(selectedCategory) ||
-                selectedCategory === "all"
-            )
-            .map((place, index) => {
-              return (
-                <EventCard
-                  key={`event-${index}`}
-                  place={place}
-                  index={index}
-                  expandedId={expandedId}
-                  setExpandedId={setExpandedId}
-                  tripId={tripId}
-                  data={data}
-                  setData={setData}
-                />
-              );
-            })
+        {Array.isArray(filteredPlaces) && filteredPlaces.length ? (
+          filteredPlaces.map((place, index) => {
+            return (
+              <EventCard
+                key={`event-${index}`}
+                place={place}
+                index={index}
+                expandedId={expandedId}
+                setExpandedId={setExpandedId}
+                tripId={tripId}
+                data={data}
+                setData={setData}
+              />
+            );
+          })
         ) : (
           <Card
             elevation={0}
