@@ -74,12 +74,12 @@ function EventCard({
           boxSizing: "border-box",
           margin: "5px",
           minWidth: 275,
-          maxWidth: 425,
+          maxWidth: 240,
         }}
         variant="outlined"
       >
         <CardContent sx={{}}>
-          <Typography variant="h6" component="div">
+          <Typography variant="h6" component="div" noWrap={true}>
             {name}
           </Typography>
           <Typography color="text.secondary" gutterBottom sx={{ fontSize: 14 }}>
