@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 
 function TripCard({ id, name, startDate, number_of_events, onTripSelected }) {
   const tripDate = new Date(startDate);
-  const splitDate = String(tripDate).split(" ");
+  const splitDate = String(tripDate)?.split(" ");
   const tripDay = splitDate[0];
   const tripMonthAndDayOfMonth = `${splitDate[1]} ${splitDate[2]}`;
   const daysLeft = Math.ceil(secendsToDays(tripDate - new Date()));

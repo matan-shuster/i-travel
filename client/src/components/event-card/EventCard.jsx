@@ -62,8 +62,8 @@ function EventCard({
 
   useEffect(() => {
     const trip = data.find((trip) => trip.id.toString() === tripId);
-    const tripStartDate = new Date(trip.startDate);
-    const tripEndDate = new Date(trip.endDate);
+    const tripStartDate = trip.startDate;
+    const tripEndDate = trip.endDate;
     setStartDateTime(tripStartDate);
     setEndDateTime(tripEndDate);
   }, []);
@@ -168,9 +168,10 @@ function EventCard({
                 <DateTimePicker
                   label="Start Time"
                   renderInput={(params) => <TextField {...params} />}
-                  value={startDateTime}
+                  value={new Date(startDateTime)}
                   onChange={(newValue) => {
-                    setStartDateTime(newValue);
+                    setStartDateTime(newValue.toISOString());
+                    setEndDateTime(newValue.toISOString());
                   }}
                 />
               </div>
@@ -178,9 +179,9 @@ function EventCard({
                 <DateTimePicker
                   label="End Time"
                   renderInput={(params) => <TextField {...params} />}
-                  value={endDateTime}
+                  value={new Date(endDateTime)}
                   onChange={(newValue) => {
-                    setEndDateTime(newValue);
+                    setEndDateTime(newValue.toISOString());
                   }}
                   minDate={startDateTime}
                 />

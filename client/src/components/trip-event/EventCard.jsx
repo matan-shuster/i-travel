@@ -38,16 +38,17 @@ function EventCard({
     );
   }
 
-  const splitedStartYearMonthDay = eventStart.split("-");
-  const splitedEndYearMonthDay = eventEnd.split("-");
+  const splitedStartYearMonthDay = eventStart?.split("-");
+  const splitedEndYearMonthDay = eventEnd?.split("-");
 
-  const splitedStartDayHour = splitedStartYearMonthDay[2].split("T");
-  const splitedEndDayHour = splitedEndYearMonthDay[2].split("T");
+  const splitedStartDayHour = splitedStartYearMonthDay[2]?.split("T");
+  const splitedEndDayHour = splitedEndYearMonthDay[2]?.split("T");
 
-  const splitedStartHour = splitedStartDayHour[1].split(":");
-  const splitedEndHour = splitedEndDayHour[1].split(":");
+  const splitedStartHour = splitedStartDayHour[1]?.split(":");
+  const splitedEndHour = splitedEndDayHour[1]?.split(":");
 
-  let splitedAdress = address.split(",");
+  let splitedAdress = address?.split(",");
+
   return (
     <div className={styles.eventItem}>
       <div className={styles.duration}>

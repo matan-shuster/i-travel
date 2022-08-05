@@ -10,7 +10,7 @@ function AddNewEvent({ data, setData }) {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [places, setPlaces] = useState([]);
   const [tripName, setTripName] = useState("");
-  const tripId = window.location.pathname.split("/")[2];
+  const tripId = window.location.pathname?.split("/")[2];
 
   const isSearchInputEmpty = searchInput === "";
   useEffect(() => {
