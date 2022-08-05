@@ -187,7 +187,8 @@ function EventCard({
                   label="End Time"
                   renderInput={(params) => <TextField {...params} />}
                   value={new Date(endDateTime)}
-                  minDate={new Date(startDateTime)}
+                  // minDate={new Date(startDateTime)}
+                  minDateTime={new Date(startDateTime)}
                   inputFormat="dd/MM/yyyy HH:mm"
                   ampm={false}
                   ampmInClock={false}
