@@ -89,28 +89,32 @@ function AddNewEvent({ data, setData }) {
         key={1}
       />
       <div className={styles.placesList}>
-        {Array.isArray(places) && places.length
-          ? places
-              .filter(
-                (place) =>
-                  place.types.includes(selectedCategory) ||
-                  selectedCategory === "all"
-              )
-              .map((place, index) => {
-                return (
-                  <EventCard
-                    key={`event-${index}`}
-                    place={place}
-                    index={index}
-                    expandedId={expandedId}
-                    setExpandedId={setExpandedId}
-                    tripId={tripId}
-                    data={data}
-                    setData={setData}
-                  />
-                );
-              })
-          : ""}
+        {Array.isArray(places) && places.length ? (
+          places
+            .filter(
+              (place) =>
+                place.types.includes(selectedCategory) ||
+                selectedCategory === "all"
+            )
+            .map((place, index) => {
+              return (
+                <EventCard
+                  key={`event-${index}`}
+                  place={place}
+                  index={index}
+                  expandedId={expandedId}
+                  setExpandedId={setExpandedId}
+                  tripId={tripId}
+                  data={data}
+                  setData={setData}
+                />
+              );
+            })
+        ) : (
+          <div style={{ textAlign: "center" }}>
+            {`Couldn't find results matching "${searchInput}"`}
+          </div>
+        )}
       </div>
     </div>
   );
