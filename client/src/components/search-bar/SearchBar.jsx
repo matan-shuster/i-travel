@@ -98,7 +98,7 @@ function SearchBar({
         ""
       )}
       <IconButton
-        type="button"
+        type="submit"
         sx={{ p: "10px" }}
         aria-label="search"
         onClick={handleSearchClick}
