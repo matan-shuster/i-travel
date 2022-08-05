@@ -74,11 +74,19 @@ function EventCard({
       alert("End Time could not be before Start Time");
     else await apiService.createEvent(eventWithDateTimes);
 
-    setData(
+    const newData = [...data];
+    newData.forEach((item) => {
+      if (item.id.toString() === tripId) {
+        item.events.push(eventWithDateTimes);
+      }
+      setData(newData);
+    });
+
+    /*  setData(
       data.forEach((item) => {
         if (item.id.toString() === tripId) item.events.push(eventWithDateTimes);
       })
-    );
+    ); */
 
     navigate(`/trip/${tripId}`);
   };
