@@ -11,7 +11,7 @@ import LoginComponent from "../login-page/LoginComponent";
 function AppContainer() {
   const [data, setData] = useState([]);
   const [trip, setTrip] = useState();
-  const [userID, setUserID] = useState(1);
+  const [userID, setUserID] = useState();
 
   useEffect(() => {
     async function callData() {
@@ -34,9 +34,12 @@ function AppContainer() {
   }, []);
 
   const setUserIDCallback = useCallback((userID) => {
-      setUserID(userID);
-  },[]);
+    setUserID(userID);
+  }, []);
 
+  const setDataCallback = useCallback((newData) => {
+    setData(newData);
+  }, []);
   return (
     <div>
       <Routes>
@@ -64,7 +67,7 @@ function AppContainer() {
         {/* <Route path={ROUTES_MAPPING.EVENT} element={} /> */}
         <Route
           path={ROUTES_MAPPING.ADD_NEW_EVENT}
-          element={<AddNewEvent data={data} setData={setData} />}
+          element={<AddNewEvent data={data} setData={setDataCallback} />}
         />
         <Route
           path="*"
