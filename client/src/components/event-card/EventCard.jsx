@@ -81,13 +81,6 @@ function EventCard({
       }
       setData(newData);
     });
-
-    /*  setData(
-      data.forEach((item) => {
-        if (item.id.toString() === tripId) item.events.push(eventWithDateTimes);
-      })
-    ); */
-
     navigate(`/trip/${tripId}`);
   };
 
