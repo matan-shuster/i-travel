@@ -3,6 +3,7 @@ import SearchBar from "../search-bar/SearchBar";
 import EventCard from "../event-card/EventCard";
 import apiService from "../../services/apiService";
 import NavBarComponent from "../nav-bar-component/NavBarComponent";
+import styles from "./addNewEventStyle.module.css";
 
 function AddNewEvent({ data, setData }) {
   const [expandedId, setExpandedId] = useState(-1);
@@ -87,28 +88,30 @@ function AddNewEvent({ data, setData }) {
         handleCategoryChange={handleCategoryChange}
         key={1}
       />
-      {Array.isArray(places) && places.length
-        ? places
-            .filter(
-              (place) =>
-                place.types.includes(selectedCategory) ||
-                selectedCategory === "all"
-            )
-            .map((place, index) => {
-              return (
-                <EventCard
-                  key={`event-${index}`}
-                  place={place}
-                  index={index}
-                  expandedId={expandedId}
-                  setExpandedId={setExpandedId}
-                  tripId={tripId}
-                  data={data}
-                  setData={setData}
-                />
-              );
-            })
-        : ""}
+      <div className={styles.placesList}>
+        {Array.isArray(places) && places.length
+          ? places
+              .filter(
+                (place) =>
+                  place.types.includes(selectedCategory) ||
+                  selectedCategory === "all"
+              )
+              .map((place, index) => {
+                return (
+                  <EventCard
+                    key={`event-${index}`}
+                    place={place}
+                    index={index}
+                    expandedId={expandedId}
+                    setExpandedId={setExpandedId}
+                    tripId={tripId}
+                    data={data}
+                    setData={setData}
+                  />
+                );
+              })
+          : ""}
+      </div>
     </div>
   );
 }

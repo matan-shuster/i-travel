@@ -116,7 +116,7 @@ function EventCard({
       key={`place-${index}`}
       sx={{
         boxSizing: "border-box",
-        margin: "5px",
+        margin: "10px 5px 10px 5px",
         minWidth: 275,
         maxWidth: 425,
       }}

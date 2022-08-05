@@ -1,0 +1,6 @@
+.placesList {
+  overflow-y: scroll;
+  max-height: 85vh;
+  border-radius: 1%;
+  transition: all 0.5s ease;
+}
