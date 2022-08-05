@@ -7,6 +7,7 @@ import AddNewTrip from "../add-new-trip/AddNewTrip";
 import emptyListImg from "../../assets/emptyListImg.png";
 import LinearProgress from "@mui/material/LinearProgress";
 import LoginComponent from "../login-page/LoginComponent";
+import NavBarComponent from "../nav-bar-component/NavBarComponent";
 
 export default function TripListContainer({
   data,
@@ -32,11 +33,7 @@ export default function TripListContainer({
 
   return (
     <div>
-      <div className={styles.titleContainer}>
-        <div className={styles.headTitle}>
-          {trips.length > 0 ? "My Trips" : null}
-        </div>
-      </div>
+      <NavBarComponent currentPage="tripListContainer" />
       {trips.length > 0 ? (
         <div className={styles.tripList}>{trips}</div>
       ) : (

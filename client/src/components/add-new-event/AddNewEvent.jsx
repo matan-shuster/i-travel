@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import SearchBar from "../search-bar/SearchBar";
 import EventCard from "../event-card/EventCard";
 import apiService from "../../services/apiService";
+import NavBarComponent from "../nav-bar-component/NavBarComponent";
 
 function AddNewEvent({ data, setData }) {
   const [expandedId, setExpandedId] = useState(-1);
   const [searchInput, setSearchInput] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [places, setPlaces] = useState([]);
+  const [tripName, setTripName] = useState("");
   const tripId = window.location.pathname.split("/")[2];
 
   const isSearchInputEmpty = searchInput === "";
@@ -16,6 +18,7 @@ function AddNewEvent({ data, setData }) {
       if (data.length > 0) {
         const tripData = data.filter((item) => item.id.toString() === tripId);
         if (tripData.length > 0) {
+          setTripName(tripData[0].name.slice(8));
           const tripLocationData = await apiService.getPlacesByQuery(
             tripData[0].name.slice(8)
           );
@@ -57,6 +60,11 @@ function AddNewEvent({ data, setData }) {
 
   return (
     <div style={{ textAlign: "left" }}>
+      <NavBarComponent
+        currentPage="addNewEvent"
+        tripId={tripId}
+        tripName={tripName}
+      />
       <SearchBar
         searchInput={searchInput}
         selectedCategory={selectedCategory}

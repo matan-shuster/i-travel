@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 
 import globeWithMarkers from "../../assets/globeWithMarkers.png";
+import NavBarComponent from "../nav-bar-component/NavBarComponent";
 
 export default function TripEventsContainer({ data, tripID = 0 }) {
   let navigate = useNavigate();
@@ -33,9 +34,10 @@ export default function TripEventsContainer({ data, tripID = 0 }) {
   });
   return (
     <div>
-      <div className={styles.titleContainer}>
-        <div className={styles.headTitle}>{trip[0].name}</div>
-      </div>
+      <NavBarComponent
+        currentPage="tripEventsConatiner"
+        tripName={trip[0].name.slice(8)}
+      />
       {events.length > 0 ? (
         <div className={styles.eventList}>{events}</div>
       ) : (
