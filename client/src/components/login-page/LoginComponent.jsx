@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import jwtDecode from "jwt-decode";
 import apiService from "../../services/apiService";
 import { useNavigate } from "react-router-dom";
-import {GoogleOAuthProvider, GoogleLogin} from "@react-oauth/google";
+import {GoogleOAuthProvider, GoogleLogin, useGoogleOneTapLogin} from "@react-oauth/google";
 import Cookies from "js-cookie";
+import styles from "./LoginComponent.module.css"
+import logo from "../../assets/logo.png";
 
 function LoginComponent({ setUserID }) {
   const [user, setUser] = useState({});
@@ -43,7 +45,12 @@ function LoginComponent({ setUserID }) {
   }
 
   return (
-    <div>
+    <div className={styles.loginPage}>
+      <img src={logo} className={styles.logo}/>
+          <div className={styles.loginText}>
+            I Travel
+        </div>
+      <div className={styles.googleLogin}>
       <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_AUTH_KEY}>
         <GoogleLogin
             onSuccess={credentialResponse => {
@@ -54,7 +61,8 @@ function LoginComponent({ setUserID }) {
             }}
             useOneTap
         />
-      </GoogleOAuthProvider>;
+      </GoogleOAuthProvider>
+      </div>
     </div>
   );
 }
