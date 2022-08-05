@@ -10,7 +10,7 @@ function NavBarComponent({ currentPage, tripId, tripName }) {
   if (currentPage === "tripListContainer") {
     return (
       <div role="presentation">
-        <Breadcrumbs aria-label="breadcrumb" sx={{ margin: "5px" }}>
+        <Breadcrumbs aria-label="breadcrumb" sx={{ margin: "10px" }}>
           <Typography
             sx={{ display: "flex", alignItems: "center" }}
             color="text.primary"
@@ -24,7 +24,7 @@ function NavBarComponent({ currentPage, tripId, tripName }) {
   } else if (currentPage === "tripEventsConatiner") {
     return (
       <div role="presentation">
-        <Breadcrumbs aria-label="breadcrumb" sx={{ margin: "5px" }}>
+        <Breadcrumbs aria-label="breadcrumb" sx={{ margin: "10px" }}>
           <Link
             underline="hover"
             sx={{ display: "flex", alignItems: "center" }}
@@ -47,7 +47,7 @@ function NavBarComponent({ currentPage, tripId, tripName }) {
   } else {
     return (
       <div role="presentation">
-        <Breadcrumbs aria-label="breadcrumb" sx={{ margin: "5px" }}>
+        <Breadcrumbs aria-label="breadcrumb" sx={{ margin: "10px" }}>
           <Link
             underline="hover"
             sx={{ display: "flex", alignItems: "center" }}
