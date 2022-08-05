@@ -11,6 +11,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import apiService from "../../services/apiService";
 import deLocale from "date-fns/locale/de";
+import { startCase } from "lodash";
 
 export default function NewTripInputs({
   onSubmitEvent,
@@ -26,7 +27,7 @@ export default function NewTripInputs({
       userID: userID,
       startDate: startDateValue,
       endDate: endDateValue,
-      name: `Trip to ${tripName}`,
+      name: `Trip to ${startCase(tripName)}`,
       events: [],
     };
 
@@ -54,7 +55,7 @@ export default function NewTripInputs({
             label="Start Date"
             disablePast
             type="date-local"
-            inputFormat="dd/MM/yyyy HH:mm"
+            inputFormat="dd/MM/yyyy"
             value={startDateValue}
             onChange={(newValue) => {
               setStartDateValue(newValue);
@@ -65,7 +66,7 @@ export default function NewTripInputs({
           <DatePicker
             label="End Date"
             type="local"
-            inputFormat="dd/MM/yyyy HH:mm"
+            inputFormat="dd/MM/yyyy"
             minDate={startDateValue}
             value={endDateValue}
             onChange={(newValue) => {
