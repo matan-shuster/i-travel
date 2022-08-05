@@ -15,6 +15,9 @@ import {
   Star as StarIcon,
   FiberNew as FiberNewIcon,
 } from "@mui/icons-material";
+import {DateTimePicker} from "@mui/x-date-pickers";
+import {AdapterDateFns} from "@mui/x-date-pickers/AdapterDateFns";
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 
 function EventCard({
   place,
@@ -25,8 +28,8 @@ function EventCard({
   data,
   setData,
 }) {
-  const [startDateTime, setStartDateTime] = useState("2022-08-08T16:00");
-  const [endDateTime, setEndDateTime] = useState("2022-08-08T19:00");
+  const [startDateTime, setStartDateTime] = useState(new Date());
+  const [endDateTime, setEndDateTime] = useState(new Date());
   const [photoReference, setPhotoReference] = useState("");
   const [event, setEvent] = useState({});
   const navigate = useNavigate();
@@ -57,18 +60,25 @@ function EventCard({
     fetchData().catch(console.error);
   }, [photoReference, place, tripId]);
 
+  useEffect(() => {
+    const trip = data.find((trip) => trip.id.toString() === tripId);
+    const tripStartDate= new Date(trip.startDate);
+    const tripEndDate= new Date(trip.endDate);
+    setStartDateTime(tripStartDate);
+    setEndDateTime(tripEndDate);
+  },[]);
+
+
+
   const handleExpandClick = (index) => {
     setExpandedId(expandedId === index ? -1 : index);
   };
 
-  const handleStartDateTime = async (e) => setStartDateTime(e.target.value);
-  const handleEndDateTime = async (e) => setEndDateTime(e.target.value);
-
   const handleSaveButtonClick = async () => {
     const eventWithDateTimes = {
       ...event,
-      eventStart: startDateTime,
-      eventEnd: endDateTime,
+      eventStart: startDateTime.toString(),
+      eventEnd: endDateTime.toString(),
     };
     if (endDateTime < startDateTime)
       alert("End Time could not be before Start Time");
@@ -152,28 +162,29 @@ function EventCard({
               Save
             </Button>
           </Stack>
-          <TextField
-            id="datetime-local"
-            label="Start"
-            type="datetime-local"
-            defaultValue={startDateTime}
-            sx={{ width: 200, margin: "10px 0 10px 0" }}
-            InputLabelProps={{
-              shrink: true,
-            }}
-            onChange={handleStartDateTime}
+          <Stack spacing={1}>
+          <LocalizationProvider dateAdapter={AdapterDateFns}>
+          <DateTimePicker
+              label="Start Time"
+              renderInput={(params) => <TextField {...params} />}
+              value={startDateTime}
+              onChange={(newValue) => {
+                setStartDateTime(newValue);
+              }}
           />
-          <TextField
-            id="datetime-local"
-            label="End"
-            type="datetime-local"
-            defaultValue={endDateTime}
-            sx={{ width: 200, margin: "10px 0 10px 0" }}
-            InputLabelProps={{
-              shrink: true,
-            }}
-            onChange={handleEndDateTime}
-          />
+            <DateTimePicker
+
+                label="End Time"
+                renderInput={(params) => <TextField {...params} />}
+                value={endDateTime}
+                onChange={(newValue) => {
+                  setEndDateTime(newValue);
+                }}
+                minDate={startDateTime}
+            />
+
+          </LocalizationProvider>
+          </Stack>
         </CardContent>
       </Collapse>
     </Card>
