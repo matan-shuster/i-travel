@@ -11,5 +11,5 @@ export const ROUTES = [
   { name: "TripEvents", route: ROUTES_MAPPING.TRIP_EVENTS, key: 2 },
   { name: "Event", route: ROUTES_MAPPING.EVENT, key: 3 },
   { name: "AddNewEvent", route: ROUTES_MAPPING.ADD_NEW_EVENT, key: 4 },
-  {name: "Login", route: "/", key: 5},
+  { name: "Login", route: "/", key: 5 },
 ];

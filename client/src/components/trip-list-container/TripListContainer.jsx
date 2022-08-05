@@ -32,7 +32,7 @@ export default function TripListContainer({
 
   return (
     <div>
-        <div className={styles.titleContainer}>
+      <div className={styles.titleContainer}>
         <div className={styles.headTitle}>
           {trips.length > 0 ? "My Trips" : null}
         </div>
@@ -48,8 +48,8 @@ export default function TripListContainer({
           ></img>
         </div>
       )}
-        <div className={`${styles.addNewTrip} `}>
-            <AddNewTrip
+      <div className={`${styles.addNewTrip} `}>
+        <AddNewTrip
           onNewTripPressed={onNewTripPressed}
           userID={userID}
           newTripId={data?.length}

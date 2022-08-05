@@ -33,10 +33,17 @@ function AppContainer() {
     setTrip(tripID);
   }, []);
 
+  const setUserIDCallback = useCallback((userID) => {
+      setUserID(userID);
+  },[]);
+
   return (
     <div>
       <Routes>
-          <Route path={ROUTES_MAPPING.LOGIN} element={<LoginComponent setUserID={setUserID}/>} />
+        <Route
+          path={ROUTES_MAPPING.LOGIN}
+          element={<LoginComponent setUserID={setUserIDCallback} />}
+        />
         <Route
           path={ROUTES_MAPPING.TRIP_LIST_CONTAINER}
           element={

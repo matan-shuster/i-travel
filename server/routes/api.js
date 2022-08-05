@@ -2,7 +2,10 @@ const express = require("express");
 const TripdataManager = require("../services/tripdata_manager");
 const PlacesManager = require("../services/places_manager");
 const router = express.Router();
+const morgan = require('morgan')
+const winston = require('../logger/winston.js')
 
+router.use(morgan('combined', { stream: winston.stream }))
 //Event Router
 const tripdataManager = new TripdataManager();
 
