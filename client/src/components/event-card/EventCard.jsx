@@ -29,12 +29,13 @@ function EventCard({
   tripId,
   data,
   setData,
+  loading,
+  setLoading,
 }) {
   const [startDateTime, setStartDateTime] = useState(new Date());
   const [endDateTime, setEndDateTime] = useState(new Date());
   const [photoReference, setPhotoReference] = useState("");
   const [event, setEvent] = useState({});
-  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
