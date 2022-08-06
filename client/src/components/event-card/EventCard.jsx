@@ -89,7 +89,7 @@ function EventCard({
       eventEnd: endDateTime.toString(),
     };
     if (endDateTime < startDateTime)
-      alert("End Time could not be before Start Time");
+      alert("You can not set the end time before the start time");
     else {
       await apiService.createEvent(eventWithDateTimes);
 
