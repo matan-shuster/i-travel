@@ -2,9 +2,13 @@ import { useEffect, useState } from "react";
 import jwtDecode from "jwt-decode";
 import apiService from "../../services/apiService";
 import { useNavigate } from "react-router-dom";
-import {GoogleOAuthProvider, GoogleLogin, useGoogleOneTapLogin} from "@react-oauth/google";
+import {
+  GoogleOAuthProvider,
+  GoogleLogin,
+  useGoogleOneTapLogin,
+} from "@react-oauth/google";
 import Cookies from "js-cookie";
-import styles from "./LoginComponent.module.css"
+import styles from "./LoginComponent.module.css";
 import logo from "../../assets/logo.png";
 
 function LoginComponent({ setUserID }) {
@@ -17,12 +21,11 @@ function LoginComponent({ setUserID }) {
   }
 
   useEffect(() => {
-    if(Cookies.get("userID")){
-        setUserID(Cookies.get("userID"));
-        navigate("/trips/list");
+    if (Cookies.get("userID")) {
+      setUserID(Cookies.get("userID"));
+      // navigate("/trips/list");
     }
-
-  },[]);
+  }, [setUserID, navigate]);
 
   function setCookie(userID) {
     Cookies.set("userID", userID, { expires: 1 });
@@ -36,7 +39,7 @@ function LoginComponent({ setUserID }) {
     } else {
       await createUser(user);
     }
-    navigate("/trips/list");
+    // navigate("/trips/list");
   }
   async function createUser(user) {
     const newUser = await apiService.createUser(user);
@@ -46,22 +49,20 @@ function LoginComponent({ setUserID }) {
 
   return (
     <div className={styles.loginPage}>
-      <img src={logo} className={styles.logo}/>
-          <div className={styles.loginText}>
-            I Travel
-        </div>
+      <img src={logo} className={styles.logo} alt={"logo"} />
+      <div className={styles.loginText}>I Travel</div>
       <div className={styles.googleLogin}>
-      <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_AUTH_KEY}>
-        <GoogleLogin
-            onSuccess={credentialResponse => {
-                handleCallbackResponse(credentialResponse);
+        <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_AUTH_KEY}>
+          <GoogleLogin
+            onSuccess={(credentialResponse) => {
+              handleCallbackResponse(credentialResponse);
             }}
             onError={() => {
-              console.log('Login Failed');
+              console.log("Login Failed");
             }}
             useOneTap
-        />
-      </GoogleOAuthProvider>
+          />
+        </GoogleOAuthProvider>
       </div>
     </div>
   );
