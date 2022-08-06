@@ -15,10 +15,12 @@ function AddNewEvent({ data, setData }) {
   const [tripName, setTripName] = useState("");
   const [tripLatCoordinate, setTripLatCoordinate] = useState(0.0);
   const [tripLngCoordinate, setTripLngCoordinate] = useState(0.0);
+  const [loading, setLoading] = useState(true);
   const tripId = window.location.pathname?.split("/")[2];
 
   const isSearchInputEmpty = searchInput === "";
   useEffect(() => {
+    setLoading(true);
     const fetchData = async () => {
       if (data.length > 0) {
         const tripData = data.filter((item) => item.id.toString() === tripId);
@@ -97,7 +99,7 @@ function AddNewEvent({ data, setData }) {
         key={1}
       />
       <div className={styles.placesList}>
-        {Array.isArray(filteredPlaces) && filteredPlaces.length ? (
+        {(Array.isArray(filteredPlaces) && filteredPlaces.length) || loading ? (
           filteredPlaces.map((place, index) => {
             return (
               <EventCard
@@ -109,6 +111,8 @@ function AddNewEvent({ data, setData }) {
                 tripId={tripId}
                 data={data}
                 setData={setData}
+                loading={loading}
+                setLoading={setLoading}
               />
             );
           })
