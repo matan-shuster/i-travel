@@ -45,7 +45,9 @@ function EventCard({
   const splitedEndDayHour = splitedEndYearMonthDay[2]?.split("T");
 
   const splitedStartHour = splitedStartDayHour[1]?.split(":");
+  const correctedStartHour = parseInt(splitedStartHour[0])+3;
   const splitedEndHour = splitedEndDayHour[1]?.split(":");
+  const correctedEndHour = parseInt(splitedEndHour[0])+3;
 
   let splitedAdress = address?.split(",");
 
@@ -61,11 +63,11 @@ function EventCard({
           </Typography>
         </div>
         <div>
-          {splitedStartHour[0]}:{splitedStartHour[1]}
+          {correctedStartHour}:{splitedStartHour[1]}
         </div>
 
         <div>
-          {splitedEndHour[0]}:{splitedEndHour[1]}
+          {correctedEndHour}:{splitedEndHour[1]}
         </div>
       </div>
 
