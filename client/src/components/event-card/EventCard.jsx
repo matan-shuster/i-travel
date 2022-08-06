@@ -11,6 +11,7 @@ import {
   Button,
   Stack,
   Box,
+  Skeleton,
 } from "@mui/material";
 import {
   Star as StarIcon,
@@ -33,12 +34,14 @@ function EventCard({
   const [endDateTime, setEndDateTime] = useState(new Date());
   const [photoReference, setPhotoReference] = useState("");
   const [event, setEvent] = useState({});
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
     setPhotoReference(place.photos ? place.photos[0]?.photo_reference : "");
 
     const fetchData = async () => {
+      setLoading(true);
       const placeDetails = await apiService.getPlaceDetails(place.place_id);
 
       const eventJson = {
@@ -56,6 +59,7 @@ function EventCard({
       };
 
       setEvent(eventJson);
+      setLoading(false);
     };
 
     fetchData().catch(console.error);
@@ -113,117 +117,134 @@ function EventCard({
   };
 
   return (
-    <Card
-      key={`place-${index}`}
-      sx={{
-        boxSizing: "border-box",
-        margin: "10px 5px 10px 5px",
-        minWidth: 275,
-        maxWidth: 425,
-      }}
-      variant="outlined"
-    >
-      <Box
-        onClick={() => handleExpandClick(index)}
-        sx={{ position: "relative" }}
-      >
-        <CardMedia
-          component="img"
-          height="250"
-          image={`https://maps.googleapis.com/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=450&key=${process.env.REACT_APP_GOOGLE_API_KEY}`}
-        />
-        {event.reviewRating !== undefined ? (
-          <Box
-            sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100px",
-              height: "20px",
-              bgcolor: "rgba(0, 0, 0, 0.54)",
-              color: "white",
-              padding: "2px",
-              borderRadius: "0 0 4px 0",
-            }}
-          >
-            <Typography color="gold" gutterBottom>
-              {renderRatingView(event.reviewRating)}
-            </Typography>
-          </Box>
-        ) : (
-          ""
-        )}
-        <Box
+    <div>
+      {loading ? (
+        <Skeleton
+          variant="rectangular"
+          height={250}
+          animation="wave"
           sx={{
-            position: "absolute",
-            bottom: 0,
-            left: 0,
-            width: "95%",
-            bgcolor: "rgba(0, 0, 0, 0.54)",
-            color: "white",
-            padding: "10px",
+            boxSizing: "border-box",
+            margin: "10px 5px 10px 5px",
+            minWidth: 275,
+            maxWidth: 425,
+            borderRadius: "4px",
           }}
+        />
+      ) : (
+        <Card
+          key={`place-${index}`}
+          sx={{
+            boxSizing: "border-box",
+            margin: "10px 5px 10px 5px",
+            minWidth: 275,
+            maxWidth: 425,
+          }}
+          variant="outlined"
         >
-          <Typography variant="h6">{event.name}</Typography>
-          <Typography variant="body2">{event.address}</Typography>
-        </Box>
-      </Box>
-      <Collapse in={expandedId === index} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph sx={{ display: "inline-block" }}>
-            Schedule
-          </Typography>
-          <Stack
-            spacing={2}
-            direction="row"
-            sx={{
-              display: "inline-block",
-              position: "relative",
-              float: "right",
-            }}
+          <Box
+            onClick={() => handleExpandClick(index)}
+            sx={{ position: "relative" }}
           >
-            <Button variant="text" onClick={() => handleExpandClick(index)}>
-              Close
-            </Button>
-            <Button variant="contained" onClick={handleSaveButtonClick}>
-              Save
-            </Button>
-          </Stack>
-          <Stack spacing={1}>
-            <LocalizationProvider dateAdapter={AdapterDateFns}>
-              <div style={{ marginTop: "10px" }}>
-                <DateTimePicker
-                  label="Start Time"
-                  renderInput={(params) => <TextField {...params} />}
-                  value={new Date(startDateTime)}
-                  inputFormat="dd/MM/yyyy HH:mm"
-                  ampm={false}
-                  ampmInClock={false}
-                  onChange={(newValue) => {
-                    setStartDateTime(newValue.toISOString());
-                    setEndDateTime(newValue.toISOString());
-                  }}
-                />
-              </div>
-              <div style={{ marginTop: "10px" }}>
-                <DateTimePicker
-                  label="End Time"
-                  renderInput={(params) => <TextField {...params} />}
-                  value={new Date(endDateTime)}
-                  minDate={new Date(startDateTime)}
-                  inputFormat="dd/MM/yyyy HH:mm"
-                  ampm={false}
-                  ampmInClock={false}
-                  onChange={(newValue) => {
-                    setEndDateTime(newValue.toISOString());
-                  }}
-                />
-              </div>
-            </LocalizationProvider>
-          </Stack>
-        </CardContent>
-      </Collapse>
-    </Card>
+            <CardMedia
+              component="img"
+              height="250"
+              image={`https://maps.googleapis.com/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=450&key=${process.env.REACT_APP_GOOGLE_API_KEY}`}
+            />
+            {event.reviewRating !== undefined ? (
+              <Box
+                sx={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100px",
+                  height: "20px",
+                  bgcolor: "rgba(0, 0, 0, 0.54)",
+                  color: "white",
+                  padding: "2px",
+                  borderRadius: "0 0 4px 0",
+                }}
+              >
+                <Typography color="gold" gutterBottom>
+                  {renderRatingView(event.reviewRating)}
+                </Typography>
+              </Box>
+            ) : (
+              ""
+            )}
+            <Box
+              sx={{
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                width: "95%",
+                bgcolor: "rgba(0, 0, 0, 0.54)",
+                color: "white",
+                padding: "10px",
+              }}
+            >
+              <Typography variant="h6">{event.name}</Typography>
+              <Typography variant="body2">{event.address}</Typography>
+            </Box>
+          </Box>
+          <Collapse in={expandedId === index} timeout="auto" unmountOnExit>
+            <CardContent>
+              <Typography paragraph sx={{ display: "inline-block" }}>
+                Schedule
+              </Typography>
+              <Stack
+                spacing={2}
+                direction="row"
+                sx={{
+                  display: "inline-block",
+                  position: "relative",
+                  float: "right",
+                }}
+              >
+                <Button variant="text" onClick={() => handleExpandClick(index)}>
+                  Close
+                </Button>
+                <Button variant="contained" onClick={handleSaveButtonClick}>
+                  Save
+                </Button>
+              </Stack>
+              <Stack spacing={1}>
+                <LocalizationProvider dateAdapter={AdapterDateFns}>
+                  <div style={{ marginTop: "10px" }}>
+                    <DateTimePicker
+                      label="Start Time"
+                      renderInput={(params) => <TextField {...params} />}
+                      value={new Date(startDateTime)}
+                      inputFormat="dd/MM/yyyy HH:mm"
+                      ampm={false}
+                      ampmInClock={false}
+                      onChange={(newValue) => {
+                        setStartDateTime(newValue.toISOString());
+                        setEndDateTime(newValue.toISOString());
+                      }}
+                    />
+                  </div>
+                  <div style={{ marginTop: "10px" }}>
+                    <DateTimePicker
+                      label="End Time"
+                      renderInput={(params) => <TextField {...params} />}
+                      value={new Date(endDateTime)}
+                      minDate={new Date(startDateTime)}
+                      inputFormat="dd/MM/yyyy HH:mm"
+                      ampm={false}
+                      ampmInClock={false}
+                      onChange={(newValue) => {
+                        setEndDateTime(newValue.toISOString());
+                      }}
+                    />
+                  </div>
+                </LocalizationProvider>
+              </Stack>
+            </CardContent>
+          </Collapse>
+        </Card>
+      )}
+    </div>
   );
 }
 
