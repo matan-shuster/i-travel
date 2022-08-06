@@ -16,6 +16,9 @@ export default function TripEventsContainer({ data, tripID }) {
   const trip = data.filter((trip) => {
     if (trip.id === tripID) return trip;
   });
+  const sortedEvents = trip[0].events.sort(
+    (objA, objB) => Number(objB.date) - Number(objA.date)
+  );
   const events = trip[0].events.map((event) => {
     return (
       <EventCard
