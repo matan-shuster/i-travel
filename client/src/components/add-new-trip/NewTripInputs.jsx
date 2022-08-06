@@ -21,8 +21,15 @@ export default function NewTripInputs({
   const [startDateValue, setStartDateValue] = useState(new Date());
   const [endDateValue, setEndDateValue] = useState(new Date());
   const [tripName, setTripName] = useState(tripDestination);
+  const [textFieldLabel, setTextFieldLabel] = useState("Trip Location");
+  const [textFieldError, setTextFieldError] = useState(false);
 
   const startNewTrip = async () => {
+    if (tripName.length <= 2) {
+      setTextFieldLabel("Please enter a location");
+      setTextFieldError(true);
+      return;
+    }
     const newTrip = {
       userID: userID,
       startDate: startDateValue,
@@ -39,6 +46,8 @@ export default function NewTripInputs({
     setStartDateValue(new Date());
     setEndDateValue(new Date());
     setTripName("");
+    setTextFieldError(false);
+    setTextFieldLabel("Trip Location");
     onNewTripPressed(newTrip);
     onSubmitEvent();
   };
@@ -80,7 +89,8 @@ export default function NewTripInputs({
         value={tripName}
         margin="normal"
         id="standard-search"
-        label="Trip Location"
+        label={textFieldLabel}
+        error={textFieldError}
         type="search"
         variant="standard"
         required
