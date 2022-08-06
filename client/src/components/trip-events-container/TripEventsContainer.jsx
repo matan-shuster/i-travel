@@ -11,7 +11,7 @@ import { useSearchParams } from "react-router-dom";
 import globeWithMarkers from "../../assets/globeWithMarkers.png";
 import NavBarComponent from "../nav-bar-component/NavBarComponent";
 
-export default function TripEventsContainer({ data, tripID = 0 }) {
+export default function TripEventsContainer({ data, tripID }) {
   let navigate = useNavigate();
   const trip = data.filter((trip) => {
     if (trip.id === tripID) return trip;
