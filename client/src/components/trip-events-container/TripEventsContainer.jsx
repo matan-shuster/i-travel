@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import styles from "./tripEventsContainerStyle.module.css";
 import EventCard from "../trip-event/EventCard";
 
+import { Fab, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
-import Fab from "@mui/material/Fab";
 
 import { useNavigate } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
@@ -41,13 +41,29 @@ export default function TripEventsContainer({ data, tripID = 0 }) {
       {events.length > 0 ? (
         <div className={styles.eventList}>{events}</div>
       ) : (
-        <div>
-          <img
-            alt="emptyEventsList"
-            src={globeWithMarkers}
-            style={{ width: "100%", height: "350px" }}
-          ></img>
-        </div>
+        <Card
+          elevation={0}
+          sx={{
+            maxWidth: 425,
+            textAlign: "center",
+            backgroundColor: "#F6F7FB",
+          }}
+        >
+          <CardMedia
+            component="img"
+            height="350"
+            image={globeWithMarkers}
+            alt="green iguana"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              You've not added any events yet
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Would you like to add one now?
+            </Typography>
+          </CardContent>
+        </Card>
       )}
 
       <div className={`${styles.addNewEvent} `}>

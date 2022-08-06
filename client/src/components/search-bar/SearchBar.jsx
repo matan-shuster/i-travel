@@ -71,7 +71,7 @@ function SearchBar({
       sx={{
         boxSizing: "border-box",
         p: "2px 4px",
-        margin: "5px",
+        margin: "10px 5px 10px 5px",
         display: "flex",
         alignItems: "center",
         minWidth: 275,
