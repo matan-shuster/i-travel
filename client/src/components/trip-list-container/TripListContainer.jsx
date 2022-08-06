@@ -86,6 +86,7 @@ export default function TripListContainer({
           handleClickClose={handleClickClose}
           setDisplayBtnOn={setDisplayBtnOn}
           tripDestination={tripDestination}
+          setTripDestination={setTripDestination}
         />
       </div>
     </div>
