@@ -78,7 +78,7 @@ export default function TripListContainer({
 
 const itemData = [
   {
-    img: "https://cdn.pixabay.com/photo/2018/08/21/11/42/tel-aviv-3621085_960_720.jpg",
+    img: "https://images1.calcalist.co.il/PicServer3/2020/07/16/1005645/rub-shtila-just-towers-171_00000-lm.jpg",
     title: "Tel Aviv",
   },
   {
