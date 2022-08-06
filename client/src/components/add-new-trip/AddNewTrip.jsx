@@ -15,6 +15,7 @@ export default function AddNewTrip({
   handleClickClose,
   setDisplayBtnOn,
   tripDestination,
+  setTripDestination,
 }) {
   const addButton = (
     <Fab
@@ -46,6 +47,7 @@ export default function AddNewTrip({
             userID={userID}
             newTripId={++newTripId}
             tripDestination={tripDestination}
+            setTripDestination={setTripDestination}
           />
         </Dialog>
       )}

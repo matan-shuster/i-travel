@@ -17,6 +17,7 @@ export default function NewTripInputs({
   userID,
   newTripId,
   tripDestination,
+  setTripDestination,
 }) {
   const [startDateValue, setStartDateValue] = useState(new Date());
   const [endDateValue, setEndDateValue] = useState(new Date());
@@ -46,6 +47,7 @@ export default function NewTripInputs({
     setStartDateValue(new Date());
     setEndDateValue(new Date());
     setTripName("");
+    setTripDestination("");
     setTextFieldError(false);
     setTextFieldLabel("Trip Location");
     onNewTripPressed(newTrip);
