@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+import { Typography } from "@mui/material";
 
 import styles from "./tripListContainerStyle.module.css";
 import TripCard from "../trip/TripCard";
@@ -53,11 +54,26 @@ export default function TripListContainer({
       {trips.length > 0 ? (
         <div className={styles.tripList}>{trips}</div>
       ) : (
-        <EmptyTripList
-          itemData={itemData}
-          handleClickOpen={handleClickOpen}
-          setTripDestination={setTripDestination}
-        />
+        <div>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{
+              textAlign: "center",
+              fontSize: "18px",
+              background: "none",
+              margin: "15px",
+            }}
+          >
+            Top destinations for your next trip
+          </Typography>
+          <EmptyTripList
+            itemData={itemData}
+            handleClickOpen={handleClickOpen}
+            setTripDestination={setTripDestination}
+          />
+        </div>
       )}
       <div className={`${styles.addNewTrip} `}>
         <AddNewTrip
@@ -116,5 +132,13 @@ const itemData = [
   {
     img: "https://cdn.pixabay.com/photo/2017/05/28/23/28/rio-2352566_960_720.jpg",
     title: "Rio de Janeiro",
+  },
+  {
+    img: "https://cdn.pixabay.com/photo/2017/03/18/14/56/panorama-2154194_960_720.jpg",
+    title: "San Francisco",
+  },
+  {
+    img: "https://cdn.pixabay.com/photo/2017/02/11/12/14/dubai-2057583_960_720.jpg",
+    title: "Dubai",
   },
 ];

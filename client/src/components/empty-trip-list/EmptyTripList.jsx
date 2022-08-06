@@ -12,19 +12,10 @@ export default function EmptyTripList({
   handleClickOpen,
 }) {
   return (
-    <ImageList variant="quilted" sx={{ width: 350, margin: "0 auto" }}>
-      <ImageListItem key="Subheader" cols={2}>
-        <ListSubheader
-          component="div"
-          sx={{
-            textAlign: "center",
-            fontSize: "18px",
-            background: "none",
-          }}
-        >
-          Top destinations for your next trip
-        </ListSubheader>
-      </ImageListItem>
+    <ImageList
+      variant="quilted"
+      sx={{ width: 350, margin: "0 auto", maxHeight: "71vh" }}
+    >
       {itemData.map((item) => (
         <ImageListItem
           key={item.img}
