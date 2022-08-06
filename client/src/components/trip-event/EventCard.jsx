@@ -74,7 +74,7 @@ function EventCard({
           boxSizing: "border-box",
           margin: "5px",
           minWidth: 275,
-          maxWidth: 240,
+          maxWidth: 275,
         }}
         variant="outlined"
       >
