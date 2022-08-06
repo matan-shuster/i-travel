@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import styles from "./newTripInputStyle.module.css";
 
-import AddIcon from "@mui/icons-material/Add";
 import SendIcon from "@mui/icons-material/Send";
-import Fab from "@mui/material/Fab";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
@@ -18,10 +16,12 @@ export default function NewTripInputs({
   onNewTripPressed,
   userID,
   newTripId,
+  tripDestination,
 }) {
   const [startDateValue, setStartDateValue] = useState(new Date());
   const [endDateValue, setEndDateValue] = useState(new Date());
-  const [tripName, setTripName] = useState("");
+  const [tripName, setTripName] = useState(tripDestination);
+
   const startNewTrip = async () => {
     const newTrip = {
       userID: userID,
