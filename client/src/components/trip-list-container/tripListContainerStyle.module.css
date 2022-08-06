@@ -13,13 +13,11 @@
 }
 
 .logOutButton{
-  /* top right corner */
-    position: absolute;
-    top: 0;
-    right: 0;
     margin: 10px;
-    font-size: 20px;
-    color: #ffffff;
+    position:absolute;
+    top:0;
+    right:0;
+
 }
 
 .addNewTrip {
