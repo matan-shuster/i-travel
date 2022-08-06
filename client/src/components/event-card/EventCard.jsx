@@ -89,17 +89,19 @@ function EventCard({
       eventEnd: endDateTime.toString(),
     };
     if (endDateTime < startDateTime)
-      alert("End Time could not be before Start Time");
-    else await apiService.createEvent(eventWithDateTimes);
+      alert("You can not set the end time before the start time");
+    else {
+      await apiService.createEvent(eventWithDateTimes);
 
-    const newData = [...data];
-    newData.forEach((item) => {
-      if (item.id.toString() === tripId) {
-        item.events.push(eventWithDateTimes);
-      }
-      setData(newData);
-    });
-    navigate(`/trip/${tripId}`);
+      const newData = [...data];
+      newData.forEach((item) => {
+        if (item.id.toString() === tripId) {
+          item.events.push(eventWithDateTimes);
+        }
+        setData(newData);
+      });
+      navigate(`/trip/${tripId}`);
+    }
   };
 
   const renderRatingView = (rating) => {
