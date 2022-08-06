@@ -18,7 +18,7 @@ function LoginComponent({ setUserID }) {
 
   useEffect(() => {
     if(Cookies.get("userID")){
-        setUserID(Cookies.get("userID"));
+        setUserID(parseInt(Cookies.get("userID")));
         navigate("/trips/list");
     }
 
@@ -41,7 +41,7 @@ function LoginComponent({ setUserID }) {
   async function createUser(user) {
     const newUser = await apiService.createUser(user);
     setUserID(newUser.id);
-    setCookie("userID", newUser.id, { expires: 1 });
+    setCookie(newUser.id);
   }
 
   return (
