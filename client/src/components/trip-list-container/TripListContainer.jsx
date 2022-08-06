@@ -78,11 +78,19 @@ export default function TripListContainer({
 
 const itemData = [
   {
+    img: "https://images1.calcalist.co.il/PicServer3/2020/07/16/1005645/rub-shtila-just-towers-171_00000-lm.jpg",
+    title: "Tel Aviv",
+  },
+  {
+    img: "https://cdn.pixabay.com/photo/2019/10/31/18/56/jerusalem-4592574_960_720.jpg",
+    title: "Jerusalem",
+  },
+  {
     img: "https://cdn.pixabay.com/photo/2018/04/25/09/26/eiffel-tower-3349075__340.jpg",
     title: "Paris",
   },
   {
-    img: "https://cdn.pixabay.com/photo/2017/06/22/11/54/manhattan-2430572_960_720.jpg",
+    img: "https://cdn.pixabay.com/photo/2017/12/21/23/44/skyscraper-3032786_960_720.jpg",
     title: "New York",
   },
   {
@@ -90,20 +98,8 @@ const itemData = [
     title: "Tokyo",
   },
   {
-    img: "https://cdn.pixabay.com/photo/2016/02/02/18/33/sphinx-1175828_960_720.jpg",
-    title: "Cairo",
-  },
-  {
-    img: "https://cdn.pixabay.com/photo/2019/10/31/18/56/jerusalem-4592574_960_720.jpg",
-    title: "Jerusalem",
-  },
-  {
     img: "https://cdn.pixabay.com/photo/2014/11/13/23/34/palace-530055_960_720.jpg",
     title: "London",
-  },
-  {
-    img: "https://cdn.pixabay.com/photo/2017/05/28/23/28/rio-2352566_960_720.jpg",
-    title: "Rio de Janeiro",
   },
   {
     img: "https://cdn.pixabay.com/photo/2016/03/27/00/01/australia-1281935_960_720.jpg",
@@ -114,7 +110,11 @@ const itemData = [
     title: "Rome",
   },
   {
-    img: "https://cdn.pixabay.com/photo/2015/11/06/14/12/roof-1028250_960_720.jpg",
-    title: "Beijing",
+    img: "https://cdn.pixabay.com/photo/2017/09/07/16/49/acropolis-2725910_960_720.jpg",
+    title: "Athens",
+  },
+  {
+    img: "https://cdn.pixabay.com/photo/2017/05/28/23/28/rio-2352566_960_720.jpg",
+    title: "Rio de Janeiro",
   },
 ];
