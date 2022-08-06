@@ -25,7 +25,7 @@ export default function NewTripInputs({
   const [textFieldError, setTextFieldError] = useState(false);
 
   const startNewTrip = async () => {
-    if (tripName.length <= 2) {
+    if (tripName.length < 2) {
       setTextFieldLabel("Please enter a location");
       setTextFieldError(true);
       return;
