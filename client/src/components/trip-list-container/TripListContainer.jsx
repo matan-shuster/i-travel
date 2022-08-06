@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import { Typography } from "@mui/material";
+import {Button, Typography} from "@mui/material";
 
 import styles from "./tripListContainerStyle.module.css";
 import TripCard from "../trip/TripCard";
@@ -7,6 +7,9 @@ import AddNewTrip from "../add-new-trip/AddNewTrip";
 
 import NavBarComponent from "../nav-bar-component/NavBarComponent";
 import EmptyTripList from "../empty-trip-list/EmptyTripList";
+import Cookies from "js-cookie";
+import {googleLogout} from "@react-oauth/google";
+import {useNavigate} from "react-router-dom";
 
 export default function TripListContainer({
   data,
@@ -17,6 +20,7 @@ export default function TripListContainer({
   const [displayBtn, setDisplayBtn] = useState(true);
   const [open, setOpen] = useState(false);
   const [tripDestination, setTripDestination] = useState("");
+  const navigate = useNavigate();
 
   const setDisplayBtnOn = useCallback(() => {
     setDisplayBtn(true);
@@ -31,6 +35,13 @@ export default function TripListContainer({
     setOpen(false);
     setDisplayBtn(true);
   };
+
+  const handleLogout = () => {
+    Cookies.remove("userID");
+    googleLogout();
+    navigate("/");
+  }
+
 
   let trips = data
     ? data.map((trip) => {
@@ -51,6 +62,9 @@ export default function TripListContainer({
   return (
     <div>
       <NavBarComponent currentPage="tripListContainer" />
+      <div className={styles.logoutButton}>
+        <Button variant={"contained"} color="primary" onClick={handleLogout}>Logout</Button>
+      </div>
       {trips.length > 0 ? (
         <div className={styles.tripList}>{trips}</div>
       ) : (

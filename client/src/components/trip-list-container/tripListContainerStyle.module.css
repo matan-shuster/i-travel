@@ -12,6 +12,16 @@
   transition: all 0.5s ease;
 }
 
+.logOutButton{
+  /* top right corner */
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
 .addNewTrip {
   margin-top: 10%;
   display: flex;
