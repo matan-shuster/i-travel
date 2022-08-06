@@ -16,13 +16,13 @@ function LoginComponent({ setUserID }) {
     checkIfUserExists(decodedToken);
   }
 
-  useEffect(() => {
-    if(Cookies.get("userID")){
-        setUserID(Cookies.get("userID"));
-        navigate("/trips/list");
-    }
-
-  },[]);
+  // useEffect(() => {
+  //   if(Cookies.get("userID")){
+  //       setUserID(Cookies.get("userID"));
+  //       navigate("/trips/list");
+  //   }
+  //
+  // },[]);
 
   function setCookie(userID) {
     Cookies.set("userID", userID, { expires: 1 });

@@ -6,8 +6,8 @@
 }
 
 .googleLogin{
-    position: absolute;
-    bottom: 30px;
+    position: relative;
+    margin-top: 50%;
     order: 3;
 }
 
