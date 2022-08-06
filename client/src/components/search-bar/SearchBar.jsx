@@ -105,7 +105,6 @@ function SearchBar({
       >
         <SearchIcon />
       </IconButton>
-
       <FormControl variant="filled" sx={{ m: 1, minWidth: 135 }} size="small">
         <InputLabel id="demo-simple-select-filled-label">Category</InputLabel>
         <Select
@@ -114,6 +113,7 @@ function SearchBar({
           value={selectedCategory}
           label="Category"
           onChange={handleCategoryChange}
+          sx={{ backgroundColor: "#F6F7FB" }}
         >
           {categoriesList.map((category, index) => {
             return (
