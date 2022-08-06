@@ -158,7 +158,7 @@ function EventCard({
             position: "absolute",
             bottom: 0,
             left: 0,
-            width: "100%",
+            width: "95%",
             bgcolor: "rgba(0, 0, 0, 0.54)",
             color: "white",
             padding: "10px",
