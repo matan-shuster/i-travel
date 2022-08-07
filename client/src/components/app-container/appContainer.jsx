@@ -7,6 +7,7 @@ import AddNewEvent from "../add-new-event/AddNewEvent";
 import apiService from "../../services/apiService";
 import DUMMY_TRIPS_DATA from "../../trips.json";
 import LoginComponent from "../login-page/LoginComponent";
+import Cookies from "js-cookie";
 
 function AppContainer() {
   const [data, setData] = useState([]);
@@ -18,7 +19,7 @@ function AppContainer() {
       const req = await apiService.getAllTripWithEvents(userID);
       setData(req);
     }
-    callData();
+    userID ? callData() : setUserID(Cookies.get("userID"));
   }, [userID]);
 
   const addNewTripCallback = useCallback(
@@ -40,6 +41,7 @@ function AppContainer() {
   const setDataCallback = useCallback((newData) => {
     setData(newData);
   }, []);
+
   return (
     <div>
       <Routes>
