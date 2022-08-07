@@ -21,7 +21,6 @@ function LoginComponent({ setUserID }) {
   }
 
   useEffect(() => {
-
     if (Cookies.get("userID")) {
       setUserID(Cookies.get("userID"));
       navigate("/trips/list");
