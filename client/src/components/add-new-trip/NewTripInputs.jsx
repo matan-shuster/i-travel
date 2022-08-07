@@ -105,7 +105,7 @@ export default function NewTripInputs({
         variant="contained"
         endIcon={<SendIcon />}
         onClick={startNewTrip}
-        sx={{ bgcolor: "green" }}
+        sx={{ bgcolor: "#1c82cd" }}
         disabled={tripName === ""}
       >
         Start New Adventure!

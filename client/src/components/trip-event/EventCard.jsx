@@ -45,9 +45,9 @@ function EventCard({
   const splitedEndDayHour = splitedEndYearMonthDay[2]?.split("T");
 
   const splitedStartHour = splitedStartDayHour[1]?.split(":");
-  const correctedStartHour = parseInt(splitedStartHour[0])+3;
+  const correctedStartHour = parseInt(splitedStartHour[0]) + 3;
   const splitedEndHour = splitedEndDayHour[1]?.split(":");
-  const correctedEndHour = parseInt(splitedEndHour[0])+3;
+  const correctedEndHour = parseInt(splitedEndHour[0]) + 3;
 
   let splitedAdress = address?.split(",");
 
@@ -96,7 +96,7 @@ function EventCard({
           </Typography> */}
           <Button
             variant="contained"
-            sx={{ marginLeft: "20px" }}
+            sx={{ backgroundColor: "#1c82cd", marginLeft: "20px" }}
             onClick={() => getDirectionInNewTav()}
           >
             Get Directions &nbsp; <DirectionsIcon />

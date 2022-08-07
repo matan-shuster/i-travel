@@ -204,10 +204,18 @@ function EventCard({
                   float: "right",
                 }}
               >
-                <Button variant="text" onClick={() => handleExpandClick(index)}>
+                <Button
+                  variant="text"
+                  onClick={() => handleExpandClick(index)}
+                  sx={{ color: "#1c82cd" }}
+                >
                   Close
                 </Button>
-                <Button variant="contained" onClick={handleSaveButtonClick}>
+                <Button
+                  variant="contained"
+                  onClick={handleSaveButtonClick}
+                  sx={{ backgroundColor: "#1c82cd" }}
+                >
                   Save
                 </Button>
               </Stack>
