@@ -41,7 +41,11 @@ function AddNewEvent({ data, setData }) {
           const placesList = await apiService.getPlacesByLocation(
             `${tripLocationData.results[0].geometry.location.lat},${tripLocationData.results[0].geometry.location.lng}`
           );
-          setPlaces(placesList.results);
+          setPlaces(
+            placesList.results.filter(
+              ({ types }) => !types.includes("political")
+            )
+          );
         }
         setTripEndDate(new Date(tripData[0].endDate));
         setTripStartDate(new Date(tripData[0].startDate));
