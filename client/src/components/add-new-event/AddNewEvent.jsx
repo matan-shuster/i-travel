@@ -16,6 +16,8 @@ function AddNewEvent({ data, setData }) {
   const [tripLatCoordinate, setTripLatCoordinate] = useState(0.0);
   const [tripLngCoordinate, setTripLngCoordinate] = useState(0.0);
   const [loading, setLoading] = useState(true);
+  const [tripEndDate, setTripEndDate] = useState();
+  const [tripStartDate, setTripStartDate] = useState();
   const tripId = window.location.pathname?.split("/")[2];
 
   const isSearchInputEmpty = searchInput === "";
@@ -41,6 +43,8 @@ function AddNewEvent({ data, setData }) {
           );
           setPlaces(placesList.results);
         }
+        setTripEndDate(new Date(tripData[0].endDate));
+        setTripStartDate(new Date(tripData[0].startDate));
       }
     };
 
@@ -81,7 +85,6 @@ function AddNewEvent({ data, setData }) {
     (place) =>
       place.types.includes(selectedCategory) || selectedCategory === "all"
   );
-
   return (
     <div style={{ textAlign: "left" }}>
       <NavBarComponent
@@ -113,6 +116,8 @@ function AddNewEvent({ data, setData }) {
                 setData={setData}
                 loading={loading}
                 setLoading={setLoading}
+                tripStartDate={tripStartDate}
+                tripEndDate={tripEndDate}
               />
             );
           })

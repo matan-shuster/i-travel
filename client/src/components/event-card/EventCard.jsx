@@ -31,6 +31,8 @@ function EventCard({
   setData,
   loading,
   setLoading,
+  tripStartDate,
+  tripEndDate,
 }) {
   const [startDateTime, setStartDateTime] = useState(new Date());
   const [endDateTime, setEndDateTime] = useState(new Date());
@@ -233,6 +235,8 @@ function EventCard({
                         setStartDateTime(newValue.toISOString());
                         setEndDateTime(newValue.toISOString());
                       }}
+                      minDate={tripStartDate || new Date()}
+                      maxDate={tripEndDate || new Date()}
                     />
                   </div>
                   <div style={{ marginTop: "10px" }}>
@@ -247,6 +251,7 @@ function EventCard({
                       onChange={(newValue) => {
                         setEndDateTime(newValue.toISOString());
                       }}
+                      maxDate={tripEndDate || new Date()}
                     />
                   </div>
                 </LocalizationProvider>
