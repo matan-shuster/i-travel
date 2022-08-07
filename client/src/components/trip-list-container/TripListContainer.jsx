@@ -12,7 +12,7 @@ import { googleLogout } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
 
 export default function TripListContainer({
-  data,
+  data = null,
   onTripSelected,
   onNewTripPressed,
   userID,
@@ -41,10 +41,13 @@ export default function TripListContainer({
     googleLogout();
     navigate("/");
   };
-  // startDate
-  let sortedTrips = data.sort(
-    (objA, objB) => new Date(objA.startDate) - new Date(objB.startDate)
-  );
+
+  let sortedTrips =
+    data !== null
+      ? data.sort(
+          (objA, objB) => new Date(objA.startDate) - new Date(objB.startDate)
+        )
+      : null;
   let trips = data
     ? sortedTrips.map((trip) => {
         return (
@@ -60,13 +63,19 @@ export default function TripListContainer({
         );
       })
     : "loading...";
-
   return (
     <div>
       <NavBarComponent currentPage="tripListContainer" />
-        <div className={styles.logOutButton}>
-        <Button variant="contained" color="error" onClick={handleLogout} size="small" >Logout</Button>
-        </div>
+      <div className={styles.logOutButton}>
+        <Button
+          variant="contained"
+          color="error"
+          onClick={handleLogout}
+          size="small"
+        >
+          Logout
+        </Button>
+      </div>
 
       {trips.length > 0 ? (
         <div className={styles.tripList}>{trips}</div>

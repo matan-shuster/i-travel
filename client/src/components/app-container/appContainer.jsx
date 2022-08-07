@@ -10,7 +10,7 @@ import LoginComponent from "../login-page/LoginComponent";
 import Cookies from "js-cookie";
 
 function AppContainer() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState();
   const [trip, setTrip] = useState();
   const [userID, setUserID] = useState();
 
