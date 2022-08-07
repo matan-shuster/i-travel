@@ -113,18 +113,20 @@ export default function TripListContainer({
         </div>
       )}
       <div className={`${styles.addNewTrip} `}>
-        <AddNewTrip
-          onNewTripPressed={onNewTripPressed}
-          userID={userID}
-          newTripId={data?.length}
-          handleClickOpen={handleClickOpen}
-          displayBtn={displayBtn}
-          open={open}
-          handleClickClose={handleClickClose}
-          setDisplayBtnOn={setDisplayBtnOn}
-          tripDestination={tripDestination}
-          setTripDestination={setTripDestination}
-        />
+        {trips.length !== undefined ? (
+          <AddNewTrip
+            onNewTripPressed={onNewTripPressed}
+            userID={userID}
+            newTripId={data?.length}
+            handleClickOpen={handleClickOpen}
+            displayBtn={displayBtn}
+            open={open}
+            handleClickClose={handleClickClose}
+            setDisplayBtnOn={setDisplayBtnOn}
+            tripDestination={tripDestination}
+            setTripDestination={setTripDestination}
+          />
+        ) : null}
       </div>
     </div>
   );
