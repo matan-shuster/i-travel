@@ -71,8 +71,6 @@ export default function TripListContainer({
       <CircularProgress size={90} />
     </Box>
   );
-  console.log(trips);
-  console.log(trips.length);
 
   return (
     <div>
