@@ -7,6 +7,8 @@ import AddNewTrip from "../add-new-trip/AddNewTrip";
 
 import NavBarComponent from "../nav-bar-component/NavBarComponent";
 import EmptyTripList from "../empty-trip-list/EmptyTripList";
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
 import Cookies from "js-cookie";
 import { googleLogout } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
@@ -48,21 +50,28 @@ export default function TripListContainer({
           (objA, objB) => new Date(objA.startDate) - new Date(objB.startDate)
         )
       : null;
-  let trips = data
-    ? sortedTrips.map((trip) => {
-        return (
-          <TripCard
-            key={trip.id}
-            id={trip.id}
-            name={trip.name}
-            startDate={trip.startDate}
-            endDate={trip.endDate}
-            number_of_events={trip.events.length}
-            onTripSelected={onTripSelected}
-          />
-        );
-      })
-    : "loading...";
+  let trips = data ? (
+    sortedTrips.map((trip) => {
+      return (
+        <TripCard
+          key={trip.id}
+          id={trip.id}
+          name={trip.name}
+          startDate={trip.startDate}
+          endDate={trip.endDate}
+          number_of_events={trip.events.length}
+          onTripSelected={onTripSelected}
+        />
+      );
+    })
+  ) : (
+    <Box sx={{ display: "flex" }}>
+      <CircularProgress />
+    </Box>
+  );
+  console.log(trips);
+  console.log(trips.length);
+
   return (
     <div>
       <NavBarComponent currentPage="tripListContainer" />
@@ -77,7 +86,7 @@ export default function TripListContainer({
         </Button>
       </div>
 
-      {trips.length > 0 ? (
+      {trips.length > 0 || trips.length === undefined ? (
         <div className={styles.tripList}>{trips}</div>
       ) : (
         <div>
