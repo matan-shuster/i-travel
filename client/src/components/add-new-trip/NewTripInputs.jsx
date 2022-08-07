@@ -39,8 +39,6 @@ export default function NewTripInputs({
       events: [],
     };
 
-    //validation check
-
     const newTripRes = await apiService.createTrip(newTrip);
     newTrip.id = newTripRes.id;
     //update app (callback/redux)
