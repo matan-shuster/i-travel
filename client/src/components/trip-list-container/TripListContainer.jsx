@@ -65,8 +65,10 @@ export default function TripListContainer({
       );
     })
   ) : (
-    <Box sx={{ display: "flex" }}>
-      <CircularProgress />
+    <Box
+      sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+    >
+      <CircularProgress size={90} />
     </Box>
   );
   console.log(trips);
