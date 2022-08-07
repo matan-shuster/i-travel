@@ -31,6 +31,8 @@ function EventCard({
   setData,
   loading,
   setLoading,
+  tripStartDate,
+  tripEndDate,
 }) {
   const [startDateTime, setStartDateTime] = useState(new Date());
   const [endDateTime, setEndDateTime] = useState(new Date());
@@ -204,10 +206,18 @@ function EventCard({
                   float: "right",
                 }}
               >
-                <Button variant="text" onClick={() => handleExpandClick(index)}>
+                <Button
+                  variant="text"
+                  onClick={() => handleExpandClick(index)}
+                  sx={{ color: "#1c82cd" }}
+                >
                   Close
                 </Button>
-                <Button variant="contained" onClick={handleSaveButtonClick}>
+                <Button
+                  variant="contained"
+                  onClick={handleSaveButtonClick}
+                  sx={{ backgroundColor: "#1c82cd" }}
+                >
                   Save
                 </Button>
               </Stack>
@@ -225,6 +235,8 @@ function EventCard({
                         setStartDateTime(newValue.toISOString());
                         setEndDateTime(newValue.toISOString());
                       }}
+                      minDate={tripStartDate || new Date()}
+                      maxDate={tripEndDate || new Date()}
                     />
                   </div>
                   <div style={{ marginTop: "10px" }}>
@@ -239,6 +251,7 @@ function EventCard({
                       onChange={(newValue) => {
                         setEndDateTime(newValue.toISOString());
                       }}
+                      maxDate={tripEndDate || new Date()}
                     />
                   </div>
                 </LocalizationProvider>

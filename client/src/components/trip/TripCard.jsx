@@ -51,7 +51,7 @@ function TripCard({ id, name, startDate, number_of_events, onTripSelected }) {
           <CardContent>
             <Avatar
               sx={{
-                bgcolor: "black",
+                bgcolor: "#222222",
                 fontSize: "10px",
                 width: 50,
                 height: 50,

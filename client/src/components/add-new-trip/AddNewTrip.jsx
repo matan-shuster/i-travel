@@ -19,7 +19,13 @@ export default function AddNewTrip({
 }) {
   const addButton = (
     <Fab
-      sx={{ bgcolor: "darkblue", color: "white" }}
+      sx={{
+        bgcolor: "#1c82cd",
+        color: "white",
+        "&:hover": {
+          bgcolor: "#4A53A7",
+        },
+      }}
       aria-label="add"
       onClick={handleClickOpen}
     >

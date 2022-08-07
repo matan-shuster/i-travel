@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import {Button, Typography} from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 import styles from "./tripListContainerStyle.module.css";
 import TripCard from "../trip/TripCard";
@@ -8,8 +8,8 @@ import AddNewTrip from "../add-new-trip/AddNewTrip";
 import NavBarComponent from "../nav-bar-component/NavBarComponent";
 import EmptyTripList from "../empty-trip-list/EmptyTripList";
 import Cookies from "js-cookie";
-import {googleLogout} from "@react-oauth/google";
-import {useNavigate} from "react-router-dom";
+import { googleLogout } from "@react-oauth/google";
+import { useNavigate } from "react-router-dom";
 
 export default function TripListContainer({
   data,
@@ -40,11 +40,13 @@ export default function TripListContainer({
     Cookies.remove("userID");
     googleLogout();
     navigate("/");
-  }
-
-
+  };
+  // startDate
+  let sortedTrips = data.sort(
+    (objA, objB) => new Date(objA.startDate) - new Date(objB.startDate)
+  );
   let trips = data
-    ? data.map((trip) => {
+    ? sortedTrips.map((trip) => {
         return (
           <TripCard
             key={trip.id}
@@ -65,6 +67,7 @@ export default function TripListContainer({
         <div className={styles.logOutButton}>
         <Button variant="contained" color="error" onClick={handleLogout} size="small" >Logout</Button>
         </div>
+
       {trips.length > 0 ? (
         <div className={styles.tripList}>{trips}</div>
       ) : (

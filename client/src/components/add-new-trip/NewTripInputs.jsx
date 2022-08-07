@@ -40,8 +40,6 @@ export default function NewTripInputs({
       events: [],
     };
 
-    //validation check
-
     const newTripRes = await apiService.createTrip(newTrip);
     newTrip.id = newTripRes.id;
     //update app (callback/redux)
@@ -107,7 +105,7 @@ export default function NewTripInputs({
           type="submit"
         variant="contained"
         endIcon={<SendIcon />}
-        sx={{ bgcolor: "green" }}
+        sx={{ bgcolor: "#1c82cd" }}
         disabled={tripName === ""}
       >
         Start New Adventure!

@@ -14,7 +14,7 @@ export default function EmptyTripList({
   return (
     <ImageList
       variant="quilted"
-      sx={{ width: 350, margin: "0 auto", maxHeight: "71vh" }}
+      sx={{ width: 350, margin: "0 auto", maxHeight: "65vh" }}
     >
       {itemData.map((item) => (
         <ImageListItem
