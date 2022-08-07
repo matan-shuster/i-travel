@@ -64,16 +64,10 @@ export default function TripListContainer({
   return (
     <div>
       <NavBarComponent currentPage="tripListContainer" />
-      <div className={styles.logOutButton}>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={handleLogout}
-          size="small"
-        >
-          Logout
-        </Button>
-      </div>
+        <div className={styles.logOutButton}>
+        <Button variant="contained" color="error" onClick={handleLogout} size="small" >Logout</Button>
+        </div>
+
       {trips.length > 0 ? (
         <div className={styles.tripList}>{trips}</div>
       ) : (
