@@ -25,7 +25,8 @@ export default function NewTripInputs({
   const [textFieldLabel, setTextFieldLabel] = useState("Trip Location");
   const [textFieldError, setTextFieldError] = useState(false);
 
-  const startNewTrip = async () => {
+  const startNewTrip = async (event) => {
+    event.preventDefault();
     if (tripName.length < 2) {
       setTextFieldLabel("Please enter a location");
       setTextFieldError(true);
@@ -53,6 +54,7 @@ export default function NewTripInputs({
   };
 
   return (
+      <form onSubmit={startNewTrip}>
     <div className={styles.addNewTrip}>
       <div className={styles.addDates}>
         <LocalizationProvider
@@ -100,14 +102,15 @@ export default function NewTripInputs({
         sx={{ width: "100%" }}
       />
       <Button
+          type="submit"
         variant="contained"
         endIcon={<SendIcon />}
-        onClick={startNewTrip}
         sx={{ bgcolor: "#1c82cd" }}
         disabled={tripName === ""}
       >
         Start New Adventure!
       </Button>
     </div>
+      </form>
   );
 }
