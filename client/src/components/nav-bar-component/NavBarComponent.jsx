@@ -34,7 +34,7 @@ function NavBarComponent({ currentPage, tripId, tripName }) {
             sx={{ display: "flex", alignItems: "center" }}
             color="inherit"
             onClick={() => {
-              navigate("/");
+              navigate("/trips/list");
             }}
           >
             <PublicIcon sx={{ mr: 0.5 }} fontSize="inherit" />
@@ -59,7 +59,7 @@ function NavBarComponent({ currentPage, tripId, tripName }) {
             sx={{ display: "flex", alignItems: "center" }}
             color="inherit"
             onClick={() => {
-              navigate("/");
+              navigate("/trips/list");
             }}
           >
             <PublicIcon sx={{ mr: 0.5 }} fontSize="inherit" />
