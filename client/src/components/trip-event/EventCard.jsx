@@ -104,7 +104,7 @@ function EventCard({
           </Typography> */}
           <Button
             variant="contained"
-            sx={{ marginLeft: "20px" }}
+            sx={{ backgroundColor: "#1c82cd", marginLeft: "20px" }}
             onClick={() => getDirectionInNewTav()}
           >
             Get Directions &nbsp; <DirectionsIcon />
