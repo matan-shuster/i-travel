@@ -38,6 +38,18 @@ function EventCard({
     );
   }
 
+  const addTimezone = (hour) => {
+    const timeZone= 3;
+    if (hour+timeZone > 24) {
+
+      return hour+timeZone - 24;
+    }
+    if(hour+timeZone === 24) {
+      return 0;
+    }
+    return hour+timeZone;
+  }
+
   const splitedStartYearMonthDay = eventStart?.split("-");
   const splitedEndYearMonthDay = eventEnd?.split("-");
 
@@ -45,9 +57,9 @@ function EventCard({
   const splitedEndDayHour = splitedEndYearMonthDay[2]?.split("T");
 
   const splitedStartHour = splitedStartDayHour[1]?.split(":");
-  const correctedStartHour = parseInt(splitedStartHour[0]) + 3;
+  const correctedStartHour = addTimezone(parseInt(splitedStartHour[0]));
   const splitedEndHour = splitedEndDayHour[1]?.split(":");
-  const correctedEndHour = parseInt(splitedEndHour[0]) + 3;
+  const correctedEndHour = addTimezone(parseInt(splitedEndHour[0]));
 
   let splitedAdress = address?.split(",");
 
