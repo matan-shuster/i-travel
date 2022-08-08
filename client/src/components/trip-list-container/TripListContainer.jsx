@@ -77,7 +77,7 @@ export default function TripListContainer({
       <NavBarComponent currentPage="tripListContainer" />
       <div className={styles.logOutButton}>
         <Button
-          variant="contained"
+          variant="outlined"
           color="error"
           onClick={handleLogout}
           size="small"
