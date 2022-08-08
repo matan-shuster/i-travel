@@ -40,11 +40,12 @@ function EventCard({
 
   const addTimezone = (hour) => {
     const timeZone= 3;
-    if (hour+timeZone >= 24) {
-      if(hour+timeZone === 24) {
-        return 0;
-      }
+    if (hour+timeZone > 24) {
+
       return hour+timeZone - 24;
+    }
+    if(hour+timeZone === 24) {
+      return 0;
     }
     return hour+timeZone;
   }
